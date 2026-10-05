@@ -21,7 +21,7 @@ jobs:
     name: Catalogue schema and drift
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           # The drift check compares generated exports against the YAML, and provenance records
           # the commit, so a real checkout is needed.
@@ -40,7 +40,7 @@ jobs:
     name: Types and tests
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           fetch-depth: 0
       - uses: actions/setup-node@v4

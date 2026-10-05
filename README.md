@@ -53,8 +53,8 @@ the YAML, so the copies in this repository always match the records they came fr
 | `catalogue.json` | Every record with every field, plus the publisher, category and tag vocabularies. One request, no YAML parser needed. |
 | `directory.json` | The resources flattened to the fields that are useful outside this project, each with a `resource_url`. |
 | `directory.csv` | The same flattened export as CSV, for spreadsheets. |
-| `contract.json` | `schema_version`, the commit the exports were built from, and this repository's URL. Read it before parsing anything else. |
-| `checksums.json` | SHA-256 of each payload file. It proves a copy arrived intact. It does not prove the data is authentic; the commit you pin does that. |
+| `contract.json` | `schema_version`, the commit that last changed `data/`, and this repository's URL. Read it before parsing anything else. |
+| `checksums.json` | SHA-256 of each payload file, taken over its content with `generated_at` and `commit` removed — the file names what was normalised. It proves a copy arrived intact. It does not prove the data is authentic; the commit you pin does that. |
 
 The three JSON files carry `schema_version`, `generated_at`, `commit` and `source`. The categories,
 tags, formats and geographies a record may use are defined in `taxonomies/` and validated against

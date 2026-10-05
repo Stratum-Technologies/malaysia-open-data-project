@@ -3,5 +3,9 @@
   "generated_at": "2026-10-05T11:11:16+08:00",
   "commit": "a636a3eacc278f9a11998468b199fa570fe00269",
   "source": "https://github.com/minimalviability/malaysia-data",
-  "checksums": "checksums.json"
+  "checksums": "checksums.json",
+  "problems": {
+    "errors": 0,
+    "warnings": 77
+  }
 }

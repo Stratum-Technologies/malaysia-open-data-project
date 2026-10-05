@@ -120,6 +120,13 @@ const files: Array<{ name: string; contents: string }> = [
         commit: provenance.commit,
         source: SOURCE,
         checksums: 'checksums.json',
+        // This repository validates its own records, so it publishes how many problems it
+        // found. A consumer that displays those counts should read them here rather than
+        // re-validating records it does not own.
+        problems: {
+          errors: problems.filter((p) => p.level === 'error').length,
+          warnings: problems.filter((p) => p.level === 'warning').length,
+        },
       },
       null,
       2,

@@ -3,8 +3,8 @@
   "generated_at": "2026-10-05T11:11:16+08:00",
   "commit": "a636a3eacc278f9a11998468b199fa570fe00269",
   "source": "https://github.com/Stratum-Technologies/malaysia-open-data-project",
-  "count": 56,
-  "publishers_count": 48,
+  "count": 57,
+  "publishers_count": 49,
   "resources": [
     {
       "id": "mida-investment-statistics",
@@ -1555,6 +1555,142 @@
       "verification": "fresh",
       "warnings": [
         "Update frequency is not recorded.",
+        "Licence is not recorded. Do not infer it from public access."
+      ]
+    },
+    {
+      "id": "klcc-parking-availability-api",
+      "name": "KLCC parking availability API",
+      "aliases": [
+        "KLCC(C) parking data",
+        "KLCC Convention Centre parking availability",
+        "KLCC car park availability"
+      ],
+      "publisher": "klcc-parking-management",
+      "publisher_name": "KLCC Parking Management Sdn Bhd",
+      "publisher_abbreviation": "KPM",
+      "publisher_type": "commercial",
+      "description": "Live JSON feed of parking bay availability for KLCC Parking Management facilities, including KLCC Convention Centre, Suria KLCC, KLCC Park, Menara Dayabumi and other managed car parks.",
+      "categories": [
+        "transport"
+      ],
+      "tags": [
+        "parking",
+        "klcc",
+        "availability",
+        "api",
+        "json",
+        "transport"
+      ],
+      "access": {
+        "type": "public",
+        "label": "Public",
+        "details": "The API endpoint responds without authentication. Reuse terms are not stated, so no open licence is asserted."
+      },
+      "geography": {
+        "coverage": [
+          "kuala-lumpur",
+          "malaysia"
+        ],
+        "granularity": [
+          "site",
+          "facility"
+        ]
+      },
+      "temporal": {
+        "frequency": "real-time"
+      },
+      "languages": [
+        "en"
+      ],
+      "endpoints": [
+        {
+          "type": "api",
+          "url": "https://parking.klcc.com.my/api/api.php",
+          "label": "Parking availability JSON API",
+          "format": "json",
+          "auth": "none",
+          "notes": "Returns an array of car park records with siteid, sitename, available, lastupdate, totalbay and siterename fields. The KLCC Convention Centre record is identified by sitename=CONVEX."
+        },
+        {
+          "type": "landing-page",
+          "url": "https://parking.klcc.com.my/",
+          "label": "KLCC Parking availability page",
+          "notes": "Redirects to the homepage, which calls the parking availability API."
+        },
+        {
+          "type": "landing-page",
+          "url": "https://parking.klcc.com.my/homepage/kuala-lumpur-city-centre/",
+          "label": "Kuala Lumpur City Centre / Suria KLCC car park page",
+          "notes": "Corresponds to the API record sitename=NWD, siterename=SURIA KLCC."
+        },
+        {
+          "type": "landing-page",
+          "url": "https://parking.klcc.com.my/homepage/kuala-lumpur-convention-centre/",
+          "label": "Kuala Lumpur Convention Centre car park page",
+          "notes": "Corresponds to the API record sitename=CONVEX."
+        },
+        {
+          "type": "landing-page",
+          "url": "https://parking.klcc.com.my/homepage/impiana-klcc-hotel/",
+          "label": "Impiana KLCC Hotel car park page",
+          "notes": "Corresponds to the API record sitename=IMPIANA."
+        },
+        {
+          "type": "landing-page",
+          "url": "https://parking.klcc.com.my/homepage/kompleks-dayabumi/",
+          "label": "Kompleks Dayabumi car park page",
+          "notes": "Corresponds to the API record sitename=DAYABUMI."
+        },
+        {
+          "type": "landing-page",
+          "url": "https://parking.klcc.com.my/homepage/pcmc-open-car-park/",
+          "label": "PCMC Open Car Park page",
+          "notes": "Corresponds to the API record sitename=LOT310."
+        },
+        {
+          "type": "landing-page",
+          "url": "https://parking.klcc.com.my/homepage/klcc-park/",
+          "label": "KLCC Park car park page",
+          "notes": "Corresponds to the API record sitename=EXXON."
+        },
+        {
+          "type": "landing-page",
+          "url": "https://parking.klcc.com.my/homepage/menara-exxon/",
+          "label": "Menara Exxon Mobil car park page",
+          "notes": "Corresponds to the API record sitename=OPTIONLOT."
+        },
+        {
+          "type": "landing-page",
+          "url": "https://parking.klcc.com.my/homepage/ombak-klcc/",
+          "label": "Ombak KLCC car park page",
+          "notes": "Corresponds to the API record sitename=OMBAK."
+        },
+        {
+          "type": "catalogue",
+          "url": "https://parking.klcc.com.my/homepage/wp-sitemap-posts-page-1.xml",
+          "label": "WordPress page sitemap",
+          "format": "xml",
+          "notes": "Used to discover public car park pages. No dedicated public page was found for the API record sitename=LOT91."
+        },
+        {
+          "type": "landing-page",
+          "url": "https://parking.klcc.com.my/homepage/contact-us/",
+          "label": "KLCC Parking contact page"
+        }
+      ],
+      "endpoint_types": [
+        "api",
+        "catalogue",
+        "landing-page"
+      ],
+      "machine_readable": true,
+      "has_api": true,
+      "primary_url": "https://parking.klcc.com.my/",
+      "resource_url": "https://data.stratum.my/resources/klcc-parking-availability-api",
+      "last_verified": "2026-10-04",
+      "verification": "fresh",
+      "warnings": [
         "Licence is not recorded. Do not infer it from public access."
       ]
     },
@@ -4913,6 +5049,35 @@
         "explorer",
         "landing-page",
         "map"
+      ]
+    },
+    {
+      "id": "klcc-parking-management",
+      "name": "KLCC Parking Management Sdn Bhd",
+      "abbreviation": "KPM",
+      "type": "commercial",
+      "url": "https://parking.klcc.com.my/",
+      "description": "Commercial car park operator for the KLCC precinct and related Kuala Lumpur facilities, publishing public parking availability on its website.",
+      "aliases": [
+        "KLCC Parking",
+        "KPM"
+      ],
+      "country": "MY",
+      "languages": [
+        "en",
+        "ms"
+      ],
+      "resourceCount": 1,
+      "categories": [
+        "transport"
+      ],
+      "accessTypes": [
+        "public"
+      ],
+      "endpointTypes": [
+        "api",
+        "catalogue",
+        "landing-page"
       ]
     },
     {

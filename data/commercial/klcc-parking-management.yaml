@@ -1,0 +1,107 @@
+publisher:
+  id: klcc-parking-management
+  name: KLCC Parking Management Sdn Bhd
+  abbreviation: KPM
+  type: commercial
+  url: https://parking.klcc.com.my/
+  description: >-
+    Commercial car park operator for the KLCC precinct and related Kuala Lumpur
+    facilities, publishing public parking availability on its website.
+  aliases:
+    - KLCC Parking
+    - KPM
+  country: MY
+  languages: [en, ms]
+
+resources:
+  - id: klcc-parking-availability-api
+    name: KLCC parking availability API
+    aliases:
+      - KLCC(C) parking data
+      - KLCC Convention Centre parking availability
+      - KLCC car park availability
+    publisher: klcc-parking-management
+    description: >-
+      Live JSON feed of parking bay availability for KLCC Parking Management
+      facilities, including KLCC Convention Centre, Suria KLCC, KLCC Park, Menara
+      Dayabumi and other managed car parks.
+    categories: [transport]
+    tags: [parking, klcc, availability, api, json, transport]
+    access:
+      type: public
+      details: >-
+        The API endpoint responds without authentication. Reuse terms are not stated,
+        so no open licence is asserted.
+    geography:
+      coverage: [kuala-lumpur, malaysia]
+      granularity: [site, facility]
+    temporal:
+      frequency: real-time
+    languages: [en]
+    endpoints:
+      - type: api
+        url: https://parking.klcc.com.my/api/api.php
+        label: Parking availability JSON API
+        auth: none
+        format: json
+        mime_type: application/json
+        notes: >-
+          Returns an array of car park records with siteid, sitename, available,
+          lastupdate, totalbay and siterename fields. The KLCC Convention Centre
+          record is identified by sitename=CONVEX.
+      - type: landing-page
+        url: https://parking.klcc.com.my/
+        label: KLCC Parking availability page
+        notes: Redirects to the homepage, which calls the parking availability API.
+      - type: landing-page
+        url: https://parking.klcc.com.my/homepage/kuala-lumpur-city-centre/
+        label: Kuala Lumpur City Centre / Suria KLCC car park page
+        notes: Corresponds to the API record sitename=NWD, siterename=SURIA KLCC.
+      - type: landing-page
+        url: https://parking.klcc.com.my/homepage/kuala-lumpur-convention-centre/
+        label: Kuala Lumpur Convention Centre car park page
+        notes: Corresponds to the API record sitename=CONVEX.
+      - type: landing-page
+        url: https://parking.klcc.com.my/homepage/impiana-klcc-hotel/
+        label: Impiana KLCC Hotel car park page
+        notes: Corresponds to the API record sitename=IMPIANA.
+      - type: landing-page
+        url: https://parking.klcc.com.my/homepage/kompleks-dayabumi/
+        label: Kompleks Dayabumi car park page
+        notes: Corresponds to the API record sitename=DAYABUMI.
+      - type: landing-page
+        url: https://parking.klcc.com.my/homepage/pcmc-open-car-park/
+        label: PCMC Open Car Park page
+        notes: Corresponds to the API record sitename=LOT310.
+      - type: landing-page
+        url: https://parking.klcc.com.my/homepage/klcc-park/
+        label: KLCC Park car park page
+        notes: Corresponds to the API record sitename=EXXON.
+      - type: landing-page
+        url: https://parking.klcc.com.my/homepage/menara-exxon/
+        label: Menara Exxon Mobil car park page
+        notes: Corresponds to the API record sitename=OPTIONLOT.
+      - type: landing-page
+        url: https://parking.klcc.com.my/homepage/ombak-klcc/
+        label: Ombak KLCC car park page
+        notes: Corresponds to the API record sitename=OMBAK.
+      - type: catalogue
+        url: https://parking.klcc.com.my/homepage/wp-sitemap-posts-page-1.xml
+        label: WordPress page sitemap
+        format: xml
+        notes: >-
+          Used to discover public car park pages. No dedicated public page was found
+          for the API record sitename=LOT91.
+      - type: landing-page
+        url: https://parking.klcc.com.my/homepage/contact-us/
+        label: KLCC Parking contact page
+    last_verified: 2026-10-04
+    notes: >-
+      Verified 2026-10-04: the API returned HTTP 200 with JSON-like content and a
+      KLCC CONVENTION CENTRE row (sitename=CONVEX) containing available, totalbay
+      and lastupdate values. The feed also returned rows for PCMC OPEN CARPARK,
+      MENARA DAYABUMI, IMPIANA KLCC HOTEL, SURIA KLCC, OMBAK KLCC, KLCC PARK,
+      MENARA EXXON MOBIL and LOT91. The site root, sitemap and listed car park pages
+      also responded. The API response declares text/html, so consumers should parse
+      the body as JSON despite the header.
+    contributors: []

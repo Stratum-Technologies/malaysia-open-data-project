@@ -2,7 +2,7 @@
   "schema_version": "1.0.0",
   "generated_at": "2026-10-05T11:11:16+08:00",
   "commit": "a636a3eacc278f9a11998468b199fa570fe00269",
-  "source": "https://github.com/minimalviability/malaysia-data",
+  "source": "https://github.com/Stratum-Technologies/malaysia-open-data-project",
   "checksums": "checksums.json",
   "problems": {
     "errors": 0,

@@ -14,7 +14,7 @@ Maintained by [Stratum](https://stratum.my) with the community. An open project 
 - **Browse the directory:** <https://data.stratum.my>
 - **Read every record:** [`generated/catalogue.json`](generated/catalogue.json)
 - **Take the flat export:** [JSON](generated/directory.json) · [CSV](generated/directory.csv)
-- **Suggest a resource:** [open an issue](https://github.com/minimalviability/malaysia-data/issues/new?template=new-resource.yml)
+- **Suggest a resource:** [open an issue](https://github.com/Stratum-Technologies/malaysia-open-data-project/issues/new?template=new-resource.yml)
 
 ---
 
@@ -71,7 +71,7 @@ Two routes, both welcome.
 **If you are comfortable with Git:** add or edit a YAML file under `data/` and open a pull request.
 Run `npm run validate` first — CI runs the same check.
 
-**If you are not:** use the [New data resource issue form](https://github.com/minimalviability/malaysia-data/issues/new?template=new-resource.yml).
+**If you are not:** use the [New data resource issue form](https://github.com/Stratum-Technologies/malaysia-open-data-project/issues/new?template=new-resource.yml).
 It asks for everything a reviewer needs. A maintainer will turn it into a pull request. Nothing is
 published without review.
 

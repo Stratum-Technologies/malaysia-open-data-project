@@ -27,7 +27,7 @@ const check = process.argv.includes('--check');
 const SITE_ORIGIN = 'https://data.stratum.my';
 
 /** This repository, recorded in the exports so a copy can be traced to where it came from. */
-const SOURCE = 'https://github.com/minimalviability/malaysia-data';
+const SOURCE = 'https://github.com/Stratum-Technologies/malaysia-open-data-project';
 
 /**
  * Provenance for the exports: the commit that last changed `data/`, not HEAD.

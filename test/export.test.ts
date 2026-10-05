@@ -24,7 +24,7 @@ const provenance = {
   schema_version: SCHEMA_VERSION,
   generated_at: '2026-10-04T00:00:00.000Z',
   commit: 'test',
-  source: 'https://github.com/minimalviability/malaysia-data',
+  source: 'https://github.com/Stratum-Technologies/malaysia-open-data-project',
 };
 
 /** Minimal RFC 4180 reader — enough to prove the writer quotes and escapes correctly. */
@@ -99,5 +99,5 @@ test('the committed exports match the catalogue in the repository', () => {
     catalogue.resources.length,
     'committed exports are out of date — run `npm run catalogue` and commit',
   );
-  assert.ok(committed.source.includes('malaysia-data'), 'provenance must name this repository');
+  assert.ok(committed.source.includes('malaysia-open-data-project'), 'provenance must name this repository');
 });

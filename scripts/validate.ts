@@ -37,5 +37,10 @@ if (errors.length > 0) process.exit(1);
 
 if (process.argv.includes('--strict-export')) {
   const { execFileSync } = await import('node:child_process');
-  execFileSync('npx', ['tsx', 'scripts/build-exports.ts', '--check'], { stdio: 'inherit' });
+  try {
+    execFileSync('npx', ['tsx', 'scripts/build-exports.ts', '--check'], { stdio: 'inherit' });
+  } catch {
+    // The check already explained which files drifted; do not bury that in a stack trace.
+    process.exit(1);
+  }
 }

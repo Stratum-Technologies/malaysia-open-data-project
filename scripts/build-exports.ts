@@ -29,34 +29,29 @@ const SITE_ORIGIN = 'https://data.stratum.my';
 /** This repository, recorded in the exports so a copy can be traced to where it came from. */
 const SOURCE = 'https://github.com/minimalviability/malaysia-data';
 
-function commitSha(): string {
-  try {
-    return execFileSync('git', ['rev-parse', '--short', 'HEAD'], { cwd: root, encoding: 'utf8' }).trim();
-  } catch {
-    return 'unknown';
-  }
-}
-
 /**
- * The timestamp that goes into the exports.
+ * Provenance for the exports: the commit that last changed `data/`, not HEAD.
  *
- * It must be reproducible or `--check` can never pass: regenerating the exports would always
- * produce a fresh `generated_at` and every CI run would report drift. Precedence is
- * SOURCE_DATE_EPOCH (the reproducible-builds convention, settable in CI), then the HEAD commit
- * time, then now as a last resort outside a git checkout.
+ * These files describe the records, so they must not change when something unrelated is
+ * committed. Deriving them from HEAD would rewrite every export on every commit to the
+ * repository and leave a dirty tree after any rebuild. Read from `data/`'s history, a rebuild
+ * after a commit that did not touch the records is byte-identical.
+ *
+ * Outside a git checkout both fields are empty rather than invented.
  */
-function generatedAt(): string {
-  const fromEnv = Number(process.env.SOURCE_DATE_EPOCH);
-  if (Number.isFinite(fromEnv) && fromEnv > 0) return new Date(fromEnv * 1000).toISOString();
+function dataProvenance(): { commit: string; generated_at: string } {
   try {
-    const fromGit = Number(
-      execFileSync('git', ['log', '-1', '--format=%ct'], { cwd: root, encoding: 'utf8' }).trim(),
-    );
-    if (Number.isFinite(fromGit) && fromGit > 0) return new Date(fromGit * 1000).toISOString();
+    const [commit = '', timestamp = ''] = execFileSync(
+      'git',
+      ['log', '-1', '--format=%H%n%cI', '--', 'data'],
+      { cwd: root, encoding: 'utf8', stdio: ['ignore', 'pipe', 'ignore'] },
+    )
+      .trim()
+      .split('\n');
+    return { commit: commit || 'unknown', generated_at: timestamp };
   } catch {
-    // Not a git checkout; fall through.
+    return { commit: 'unknown', generated_at: '' };
   }
-  return new Date().toISOString();
 }
 
 const sha256 = (contents: string): string => createHash('sha256').update(contents).digest('hex');
@@ -75,10 +70,12 @@ if (hasErrors(problems)) {
   process.exit(1);
 }
 
+const { commit, generated_at } = dataProvenance();
+
 const provenance = {
   schema_version: SCHEMA_VERSION,
-  generated_at: generatedAt(),
-  commit: commitSha(),
+  generated_at,
+  commit,
   source: SOURCE,
 };
 

@@ -1,0 +1,44 @@
+publisher:
+  id: did
+  name: Department of Irrigation and Drainage
+  abbreviation: DID
+  type: government
+  url: https://www.water.gov.my/
+  description: >-
+    The federal department responsible for water resources, drainage and flood management. It
+    operates the national network of rainfall and river-level monitoring stations.
+  aliases: [Jabatan Pengairan dan Saliran, JPS, DID Malaysia]
+
+resources:
+  - id: did-public-infobanjir
+    name: Public Infobanjir rainfall and river level monitoring
+    aliases: [Infobanjir, Rainfall by station, River water levels, Banjir]
+    description: >-
+      Near real-time rainfall readings, river water levels and flood warnings collected from
+      monitoring stations across Malaysia, published by the Department of Irrigation and
+      Drainage.
+    publisher: did
+    categories: [weather-climate, environment]
+    tags: [rainfall, hydrology, flood, water-level, banjir, monitoring, stations]
+    access:
+      type: open
+      details: >-
+        Publicly viewable in a browser with no account. There is no stated bulk-export or API
+        path, so treat reuse as subject to the department's terms.
+    geography:
+      coverage: [malaysia]
+      granularity: [station, state, district, national]
+    languages: [ms, en]
+    endpoints:
+      - type: dashboard
+        url: https://publicinfobanjir.water.gov.my/
+        label: Public Infobanjir
+        notes: Current rainfall, water level and flood status by station.
+      - type: landing-page
+        url: https://www.water.gov.my/
+        label: Department of Irrigation and Drainage
+        notes: Department site, for context and published reports.
+    last_verified: 2026-10-04
+    notes: >-
+      Verified 2026-10-04: the monitoring dashboard responds. Readings update frequently but
+      the portal does not expose a documented machine-readable endpoint.

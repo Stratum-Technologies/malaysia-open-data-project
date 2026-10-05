@@ -1,0 +1,42 @@
+publisher:
+  id: pos-malaysia
+  name: Pos Malaysia
+  type: commercial
+  url: https://www.pos.com.my/
+  description: >-
+    The national postal operator. It maintains the authoritative postcode and addressing
+    reference for Malaysia.
+  aliases: [Pos Malaysia Berhad, Pejabat Pos Malaysia]
+
+resources:
+  - id: pos-malaysia-postcode-finder
+    name: Postcode finder
+    aliases: [Postcode lookup, Poskod, Postal code search, Cari poskod]
+    description: >-
+      Look up Malaysian postcodes by postcode, street or area name, and check the address
+      range each postcode covers.
+    publisher: pos-malaysia
+    categories: [geography]
+    tags: [postcode, postal, address, poskod, lookup, reference]
+    access:
+      type: public
+      details: >-
+        Free to use in a browser. It is an interactive lookup rather than a downloadable
+        dataset.
+    geography:
+      coverage: [malaysia]
+      granularity: [postcode]
+    languages: [en, ms]
+    endpoints:
+      - type: search
+        url: https://www.pos.com.my/postal-services/quick-access/?postcode-finder
+        label: Postcode finder
+        notes: Interactive lookup by postcode, street or area.
+      - type: landing-page
+        url: https://www.pos.com.my/
+        label: Pos Malaysia
+        notes: Operator site, for enquiry channels and related postal services.
+    last_verified: 2026-10-04
+    notes: >-
+      Verified 2026-10-04: the postcode finder responds. Pos Malaysia does not publish a
+      bulk postcode file here, so this record points at the lookup rather than an export.

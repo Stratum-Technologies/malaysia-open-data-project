@@ -1,0 +1,62 @@
+publisher:
+  id: seda
+  name: Sustainable Energy Development Authority Malaysia
+  abbreviation: SEDA
+  type: statutory-body
+  url: https://www.seda.gov.my/
+  description: >-
+    The statutory authority responsible for promoting and monitoring sustainable and
+    renewable energy in Malaysia. Publishes installed renewable energy capacity statistics.
+  aliases:
+    - SEDA
+    - SEDA Malaysia
+    - Pihak Berkuasa Pembangunan Tenaga Lestari Malaysia
+  country: MY
+  languages: [ms, en]
+  notes: >-
+    Established under the Sustainable Energy Development Authority Act 2011, so recorded as a
+    statutory body rather than a government department.
+
+resources:
+  - id: seda-renewable-energy
+    name: Renewable energy capacity statistics
+    aliases:
+      - SEDA statistics
+      - renewable energy capacity
+      - tenaga boleh baharu
+      - FiT
+      - feed-in tariff
+      - installed capacity
+      - solar PV capacity
+    publisher: seda
+    description: >-
+      Statistics on renewable energy installations monitored by the authority, including
+      installed and re-installed capacities by technology, and the authority's monitoring and
+      reporting material.
+    categories: [energy, environment]
+    tags: [renewable-energy, solar, biomass, biogas, capacity, seda, fit, energy]
+    access:
+      type: public
+      details: >-
+        Capacity statistics and monitoring reports are freely viewable. Reuse terms are not
+        stated, so no licence is asserted.
+    geography:
+      coverage: [malaysia]
+      granularity: [national, state]
+    languages: [en, ms]
+    endpoints:
+      - type: landing-page
+        url: https://www.seda.gov.my/statistics-monitoring/re-installed-capacities/
+        label: Installed and re-installed capacities
+      - type: dashboard
+        url: https://www.seda.gov.my/reportal/
+        label: RE monitoring portal (REPortal)
+      - type: landing-page
+        url: https://www.seda.gov.my/
+        label: SEDA website
+    related_resources: [st-grid-reliability]
+    last_verified: 2026-10-04
+    notes: >-
+      Verified 2026-10-04: the capacity statistics page, REPortal and site root all respond.
+      Update frequency is not recorded.
+    contributors: []

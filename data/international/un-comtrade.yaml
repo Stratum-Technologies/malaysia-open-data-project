@@ -1,0 +1,71 @@
+publisher:
+  id: un-comtrade
+  name: United Nations Comtrade
+  abbreviation: UN Comtrade
+  type: international
+  url: https://comtradeplus.un.org/
+  description: >-
+    The United Nations Commodity Trade Statistics Database, published by the UN Statistics
+    Division, holding import and export records reported by Malaysia and its trading
+    partners.
+  aliases:
+    - UN Comtrade
+    - Comtrade
+    - UN Comtrade Database
+  country: US
+  languages: [en]
+
+resources:
+  - id: comtrade-malaysia-trade
+    name: Malaysia international merchandise trade
+    aliases:
+      - UN Comtrade Malaysia
+      - Malaysia imports exports
+      - Malaysia trade statistics
+    publisher: un-comtrade
+    description: >-
+      Malaysia's reported and mirrored merchandise trade flows by commodity, partner and
+      year, from the UN Comtrade database, available through a web explorer and a REST API.
+    categories: [trade, economy]
+    tags: [trade, imports, exports, commodities, customs, statistics]
+    access:
+      type: register
+      registration_required: true
+      details: >-
+        The full API now requires a subscription key. A keyless preview endpoint serves a
+        limited sample.
+    license:
+      name: Varies by dataset
+      verified: false
+      notes: >-
+        UN Comtrade data is published under UN terms of use; confirm the current terms on
+        the publisher's site before reuse.
+    geography:
+      coverage: [malaysia, global]
+      granularity: [national]
+    temporal:
+      frequency: annual
+    languages: [en]
+    endpoints:
+      - type: landing-page
+        url: https://comtradeplus.un.org/
+        label: UN Comtrade explorer
+      - type: api
+        url: https://comtradeapi.un.org/data/v1/get/C/A/HS
+        label: Comtrade REST API (Malaysia reporter 458)
+        auth: api_key
+        format: json
+        notes: >-
+          Returns 401 without a subscription key. Requires registration at the Comtrade
+          portal. Malaysia is reporter code 458.
+      - type: api
+        url: https://comtradeapi.un.org/public/v1/preview/C/A/HS
+        label: Comtrade public preview endpoint
+        auth: none
+        format: json
+        notes: Keyless preview endpoint serving a limited sample of records.
+    last_verified: 2026-10-04
+    notes: >-
+      Verified 2026-10-04. The preview endpoint responds without a key; the main API
+      endpoint returns 401, confirming that a subscription key is required. Licence not
+      asserted because UN Comtrade terms are per-dataset.

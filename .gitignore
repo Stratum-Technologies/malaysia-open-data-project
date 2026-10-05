@@ -1,0 +1,17 @@
+# Dependencies
+node_modules/
+
+# Derived endpoint-health reports. Regenerate with `npm run check:links`; they are a snapshot of
+# third-party availability on one day and should not be part of the repository.
+reports/
+
+# Editor / OS
+.DS_Store
+.idea/
+.vscode/*
+
+# Working material, never part of the repository
+.brief/
+
+# The website's pinned copy of this repository, if a clone happens to be inside one
+.stratum-cache/

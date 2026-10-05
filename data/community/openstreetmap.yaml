@@ -1,0 +1,60 @@
+publisher:
+  id: openstreetmap
+  name: OpenStreetMap
+  abbreviation: OSM
+  type: community
+  url: https://www.openstreetmap.org/
+  description: >-
+    A community-built map of the world, published under an open licence. Malaysia is well
+    covered for roads, buildings, places and administrative boundaries.
+  aliases:
+    - OSM
+    - OpenStreetMap Foundation
+    - OSMF
+  country: GB
+  languages: [en]
+
+resources:
+  - id: openstreetmap-malaysia-extract
+    name: OpenStreetMap data for Malaysia
+    aliases:
+      - OSM Malaysia
+      - Malaysia map data
+      - peta Malaysia
+      - roads data
+    publisher: openstreetmap
+    description: >-
+      The full OpenStreetMap database for Malaysia — roads, buildings, land use, points of
+      interest and administrative boundaries — available as planet extracts and through
+      the editing API and Overpass query service.
+    categories: [geography, transport]
+    tags: [gis, maps, geospatial, roads, boundaries, osm, openstreetmap]
+    access:
+      type: open
+      details: Free to download and reuse under the Open Database License, with attribution.
+    license:
+      name: Open Database License (ODbL) 1.0
+      url: https://opendatacommons.org/licenses/odbl/1-0/
+      verified: true
+      notes: Attribution to OpenStreetMap contributors is required, and derived databases must stay open.
+    geography:
+      coverage: [malaysia]
+      granularity: [national, state, district, point]
+    languages: [en]
+    endpoints:
+      - type: bulk-download
+        url: https://download.geofabrik.de/asia/malaysia-singapore-brunei.html
+        label: Malaysia, Singapore and Brunei extract
+        notes: >-
+          Prepared and hosted by Geofabrik, a long-standing third-party mirror. The
+          canonical source is the OpenStreetMap planet file.
+      - type: landing-page
+        url: https://www.openstreetmap.org/
+        label: OpenStreetMap
+      - type: map
+        url: https://www.openstreetmap.org/relation/2108121
+        label: Malaysia boundary on OSM
+    last_verified: 2026-10-04
+    notes: >-
+      Verified 2026-10-04: the OSM site and the Geofabrik extract page both respond. The
+      extract is a mirror, listed as an endpoint rather than a separate resource.

@@ -1,0 +1,67 @@
+publisher:
+  id: oecd
+  name: Organisation for Economic Co-operation and Development
+  abbreviation: OECD
+  type: international
+  url: https://data-explorer.oecd.org/
+  description: >-
+    An intergovernmental organisation that publishes comparable economic, social and
+    environmental statistics through its data explorer and SDMX API. Malaysia is not an
+    OECD member, but it appears as a partner or non-member economy in several datasets.
+  aliases:
+    - OECD
+    - OECD Data
+    - OECD Data Explorer
+  country: FR
+  languages: [en]
+
+resources:
+  - id: oecd-malaysia-indicators
+    name: OECD indicators covering Malaysia
+    aliases:
+      - OECD Malaysia
+      - Malaysia OECD data
+      - OECD statistics
+    publisher: oecd
+    description: >-
+      OECD datasets that include Malaysia as a partner or non-member economy — trade in
+      goods and services, foreign direct investment, development finance and selected
+      economic indicators — available through the OECD Data Explorer and SDMX API.
+    categories: [economy, trade, finance]
+    tags: [trade, investment, development, indicators, sdmx, statistics]
+    access:
+      type: open
+      details: >-
+        The data explorer and the SDMX dataflow listing require no registration. Some
+        data queries returned 403 to automated requests.
+    license:
+      name: Varies by dataset
+      verified: false
+      notes: >-
+        OECD datasets carry their own terms of use. Check the dataset page before reuse.
+    geography:
+      coverage: [malaysia, global]
+      granularity: [national]
+    temporal:
+      frequency: quarterly
+    languages: [en]
+    endpoints:
+      - type: landing-page
+        url: https://data-explorer.oecd.org/
+        label: OECD Data Explorer
+      - type: explorer
+        url: https://stats.oecd.org/
+        label: OECD.Stat
+      - type: api
+        url: https://sdmx.oecd.org/public/rest/dataflow/all
+        label: OECD SDMX API - dataflow list
+        auth: none
+        format: xml
+        notes: >-
+          Malaysia is reported as MYS. The `/all` path lists every dataflow; individual
+          data queries returned 403 to automated requests.
+    last_verified: 2026-10-04
+    notes: >-
+      Verified 2026-10-04. Malaysia is not an OECD member, so coverage is partial and
+      dataset-dependent. The dataflow endpoint responds; some data queries are blocked.
+      Licence not asserted as verified.

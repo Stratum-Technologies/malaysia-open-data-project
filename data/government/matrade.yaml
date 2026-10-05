@@ -1,0 +1,56 @@
+publisher:
+  id: matrade
+  name: Malaysia External Trade Development Corporation
+  abbreviation: MATRADE
+  type: government
+  url: https://www.matrade.gov.my/
+  description: >-
+    The national trade promotion agency. Publishes Malaysia's external trade statistics and
+    market information for exporters and importers.
+  aliases:
+    - MATRADE
+    - Perbadanan Pembangunan Perdagangan Luar Malaysia
+  country: MY
+  languages: [ms, en]
+
+resources:
+  - id: matrade-trade-statistics
+    name: Malaysia external trade statistics
+    aliases:
+      - perdagangan luar
+      - external trade
+      - export statistics
+      - import statistics
+      - trade data
+    publisher: matrade
+    description: >-
+      Malaysia's external trade figures published by the trade promotion agency: exports,
+      imports, trade balances and trade by market and product, together with open data
+      releases and market reports for exporters.
+    categories: [trade, economy]
+    tags: [trade, exports, imports, statistics, matrade, external-trade]
+    access:
+      type: public
+      details: >-
+        Statistics and reports are freely viewable. The agency's open data page is also public;
+        reuse terms are not stated, so no licence is asserted.
+    geography:
+      coverage: [malaysia]
+      granularity: [national]
+    languages: [en, ms]
+    endpoints:
+      - type: landing-page
+        url: https://www.matrade.gov.my/en/open-data
+        label: Open data
+      - type: publication
+        url: https://www.matrade.gov.my/en/export-to-the-world/step-4-export-opportunities/malaysia-external-trade-statistics
+        label: External trade statistics
+      - type: landing-page
+        url: https://www.matrade.gov.my/
+        label: MATRADE website
+    related_resources: [mida-investment-statistics]
+    last_verified: 2026-10-04
+    notes: >-
+      Verified 2026-10-04: the open data page, trade statistics page and site root all
+      respond. Update frequency is not recorded.
+    contributors: []

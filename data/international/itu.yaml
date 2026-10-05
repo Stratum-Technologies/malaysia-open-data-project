@@ -1,0 +1,64 @@
+publisher:
+  id: itu
+  name: International Telecommunication Union
+  abbreviation: ITU
+  type: international
+  url: https://www.itu.int/en/ITU-D/Statistics/Pages/stat/default.aspx
+  description: >-
+    A United Nations specialised agency for information and communication technologies
+    that publishes global ICT statistics, including connectivity, mobile and broadband
+    indicators for Malaysia.
+  aliases:
+    - ITU
+    - International Telecommunication Union
+    - ITU DataHub
+  country: CH
+  languages: [en]
+
+resources:
+  - id: itu-malaysia-ict-statistics
+    name: ITU ICT statistics for Malaysia
+    aliases:
+      - ITU Malaysia
+      - Malaysia ICT statistics
+      - ICT Development Index
+    publisher: itu
+    description: >-
+      Information and communication technology indicators for Malaysia — mobile and fixed
+      broadband subscriptions, internet and mobile penetration, and ICT prices — published
+      by ITU through its statistics pages and the ITU DataHub.
+    categories: [technology-telecoms, economy]
+    tags: [ict, broadband, mobile, internet, telecommunications, statistics]
+    access:
+      type: public
+      details: >-
+        ITU statistics pages and the DataHub are publicly browsable. API access to the
+        DataHub is served through a gate that returned 403 to automated requests.
+    license:
+      name: Varies by dataset
+      verified: false
+      notes: >-
+        ITU statistics carry their own terms of use. Check the dataset page before reuse.
+    geography:
+      coverage: [malaysia, global]
+      granularity: [national]
+    temporal:
+      frequency: annual
+    languages: [en]
+    endpoints:
+      - type: landing-page
+        url: https://www.itu.int/en/ITU-D/Statistics/Pages/stat/default.aspx
+        label: ITU statistics
+      - type: dashboard
+        url: https://www.itu.int/en/ITU-D/Statistics/Dashboards/Pages/default.aspx
+        label: ITU statistics dashboards
+      - type: explorer
+        url: https://datahub.itu.int/
+        label: ITU DataHub
+        notes: >-
+          Responded with 202 (accepted) to automated requests. The DataHub API gate
+          returned 403, so no machine-readable API endpoint is asserted.
+    last_verified: 2026-10-04
+    notes: >-
+      Verified 2026-10-04. The statistics pages respond. The DataHub API host returned 403
+      to automated requests and was not asserted as a usable endpoint. Licence not asserted.

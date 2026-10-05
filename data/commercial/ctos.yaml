@@ -1,0 +1,88 @@
+publisher:
+  id: ctos
+  name: CTOS Data Systems Sdn Bhd
+  abbreviation: CTOS
+  type: commercial
+  url: https://www.ctoscredit.com.my/
+  description: >-
+    A Malaysian private credit reporting agency. It provides consumer credit reports and
+    scores through CTOS Credit, and business and company credit reports through CTOS
+    Business and the CTOS Basis company directory.
+  aliases:
+    - CTOS
+    - CTOS Credit
+    - CTOS Basis
+  country: MY
+  languages: [en]
+
+resources:
+  - id: ctos-consumer-credit-report
+    name: CTOS consumer credit report and score
+    aliases:
+      - CTOS credit report
+      - credit score
+      - credit check
+    publisher: ctos
+    description: >-
+      Consumer credit report and credit score for individuals, based on data held by the
+      CTOS credit bureau and accessed through the CTOS Credit website and mobile app.
+    categories: [finance]
+    tags: [credit-report, credit-score, credit-bureau, consumer-credit]
+    access:
+      type: register
+      registration_required: true
+      paid: true
+      details: >-
+        A basic account is free to register; the full credit report, score and
+        monitoring are paid products.
+    geography:
+      coverage: [malaysia]
+      granularity: [national]
+    languages: [en]
+    endpoints:
+      - type: landing-page
+        url: https://www.ctoscredit.com.my/
+        label: CTOS Credit
+    last_verified: 2026-10-04
+    notes: >-
+      Verified 2026-10-04: the CTOS Credit page responds. Report contents, pricing and
+      reuse terms were not confirmed.
+
+  - id: ctos-business-credit-report
+    name: CTOS business and company credit reports
+    aliases:
+      - CTOS business report
+      - company credit check
+      - CTOS Basis
+      - company search
+    publisher: ctos
+    description: >-
+      Credit and company reports for Malaysian businesses and companies, including
+      one-off company searches, business profiles and credit checks through CTOS
+      Business and the CTOS Basis company directory.
+    categories: [business-companies, finance]
+    tags: [company-search, business-report, credit-report, company-directory, credit-bureau]
+    access:
+      type: paid
+      paid: true
+      registration_required: true
+      details: >-
+        Business and company reports are purchased per report or through a subscription.
+    geography:
+      coverage: [malaysia]
+      granularity: [national]
+    languages: [en]
+    endpoints:
+      - type: commercial-access
+        url: https://businessreport.ctoscredit.com.my/oneoffreport/home
+        label: One-off company and business report
+      - type: commercial-access
+        url: https://ctosbasis.com.my/creditinfo/malaysia-credit-report/
+        label: CTOS Basis Malaysia company report
+      - type: landing-page
+        url: https://www.ctoscredit.com.my/business/
+        label: CTOS Business
+    last_verified: 2026-10-04
+    notes: >-
+      Verified 2026-10-04: all three pages respond. Pricing and the datasets underlying
+      each report were not confirmed.

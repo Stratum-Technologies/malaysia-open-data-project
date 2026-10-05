@@ -1,0 +1,70 @@
+publisher:
+  id: unhcr
+  name: United Nations High Commissioner for Refugees
+  abbreviation: UNHCR
+  type: international
+  url: https://www.unhcr.org/refugee-statistics/
+  description: >-
+    The United Nations refugee agency, which publishes global forced-displacement
+    statistics — refugees, asylum-seekers, internally displaced people and stateless
+    persons — including figures for Malaysia, with a public data API.
+  aliases:
+    - UNHCR
+    - UN Refugee Agency
+    - UNHCR Refugee Statistics
+    - Refugee Data Finder
+  country: CH
+  languages: [en]
+
+resources:
+  - id: unhcr-malaysia-refugees
+    name: UNHCR displacement statistics for Malaysia
+    aliases:
+      - UNHCR Malaysia
+      - Malaysia refugee data
+      - Refugee Data Finder Malaysia
+    publisher: unhcr
+    description: >-
+      Forced-displacement statistics involving Malaysia — refugees and asylum-seekers by
+      country of origin and destination, returns and resettlement — published through the
+      UNHCR Refugee Data Finder and its population API.
+    categories: [social, demographics]
+    tags: [refugees, asylum, displacement, migration, humanitarian, statistics]
+    access:
+      type: open
+      details: The Refugee Data Finder and the population API require no registration.
+    license:
+      name: Varies by dataset
+      verified: false
+      notes: >-
+        UNHCR data carries its own terms of use. Check the dataset page before reuse.
+    geography:
+      coverage: [malaysia, global]
+      granularity: [national]
+    temporal:
+      frequency: annual
+    languages: [en]
+    endpoints:
+      - type: landing-page
+        url: https://www.unhcr.org/refugee-statistics/
+        label: UNHCR Refugee Data Finder
+        notes: Returns 403 to automated requests (bot protection); reachable in a browser.
+      - type: api
+        url: https://api.unhcr.org/population/v1/population/?coo=MYS
+        label: UNHCR population API (Malaysia as country of origin)
+        auth: none
+        format: json
+        notes: Parameters include coo (origin) and coa (asylum); Malaysia is MYS.
+      - type: api-docs
+        url: https://api.unhcr.org/docs/
+        label: UNHCR population API documentation
+        auth: none
+        documentation: https://api.unhcr.org/docs/
+      - type: landing-page
+        url: https://data.unhcr.org/
+        label: UNHCR operational data portal
+    last_verified: 2026-10-04
+    notes: >-
+      Verified 2026-10-04. Both API endpoints respond without a key and the Malaysia query
+      returns data. The Refugee Data Finder page returns 403 to automated requests.
+      Licence not asserted as verified.

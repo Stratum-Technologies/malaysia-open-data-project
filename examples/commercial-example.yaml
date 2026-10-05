@@ -1,0 +1,24 @@
+publisher:
+  id: example-commercial-publisher
+  name: Example Commercial Publisher
+  type: commercial
+  url: https://example.com/
+
+resources:
+  - id: example-commercial-market-data
+    name: Example Malaysian Market Dataset
+    description: Synthetic example demonstrating how paid private data belongs in the same directory without being represented as open data.
+    publisher: example-commercial-publisher
+    categories: [economy]
+    tags: [market-data]
+    access:
+      type: paid
+      paid: true
+    license:
+      name: Proprietary
+      verified: false
+    endpoints:
+      - type: commercial-access
+        url: https://example.com/
+    last_verified: 2026-10-04
+    notes: SYNTHETIC EXAMPLE — never publish as a real resource.

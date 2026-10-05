@@ -1,0 +1,48 @@
+publisher:
+  id: usm
+  name: Universiti Sains Malaysia
+  abbreviation: USM
+  type: academic
+  url: https://www.usm.my/
+  description: >-
+    A Malaysian public research university. It operates Repository@USM, an institutional
+    repository of its research outputs and publications.
+  aliases:
+    - USM
+    - University of Science, Malaysia
+  country: MY
+  languages: [en, ms]
+
+resources:
+  - id: usm-institutional-repository
+    name: Repository@USM
+    aliases:
+      - USM repository
+      - USM eprints
+      - USM research and publication
+    publisher: usm
+    description: >-
+      USM's institutional repository, holding the university's research outputs and
+      publications such as theses, journal articles and conference papers, searchable
+      and browsable by author, title and subject.
+    categories: [science-research, education]
+    tags: [institutional-repository, research, theses, publications, open-access]
+    access:
+      type: public
+      details: >-
+        Records are publicly searchable. Reuse terms for individual items vary by item
+        and were not confirmed.
+    geography:
+      coverage: [malaysia]
+      granularity: [national]
+    languages: [en]
+    endpoints:
+      - type: catalogue
+        url: https://eprints.usm.my/
+        label: Repository@USM
+      - type: landing-page
+        url: https://www.usm.my/
+        label: Universiti Sains Malaysia
+    last_verified: 2026-10-04
+    notes: >-
+      Verified 2026-10-04: both sites respond. Item-level licences were not confirmed.

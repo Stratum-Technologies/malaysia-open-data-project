@@ -1,0 +1,61 @@
+publisher:
+  id: unicef
+  name: United Nations Children's Fund
+  abbreviation: UNICEF
+  type: international
+  url: https://data.unicef.org/
+  description: >-
+    A United Nations agency that publishes global statistics on children and women —
+    child mortality, nutrition, health, education and child protection — including
+    country-level data for Malaysia.
+  aliases:
+    - UNICEF
+    - UNICEF Data
+    - United Nations Children's Fund
+  country: US
+  languages: [en]
+
+resources:
+  - id: unicef-malaysia-data
+    name: UNICEF data and publications for Malaysia
+    aliases:
+      - UNICEF Malaysia
+      - Malaysia child statistics
+      - UNICEF country data
+    publisher: unicef
+    description: >-
+      Statistics and reports on children in Malaysia — child mortality and health,
+      nutrition, education and child protection — published through the UNICEF data
+      portal and the UNICEF Malaysia country office.
+    categories: [social, health, education]
+    tags: [children, child-mortality, nutrition, education, welfare, statistics]
+    access:
+      type: public
+      details: >-
+        The data portal and country pages are publicly browsable. Automated requests to
+        the data portal returned 403 (bot protection).
+    license:
+      name: Varies by dataset
+      verified: false
+      notes: >-
+        UNICEF datasets carry their own terms of use. Check the dataset page before reuse.
+    geography:
+      coverage: [malaysia, global]
+      granularity: [national]
+    temporal:
+      frequency: annual
+    languages: [en]
+    endpoints:
+      - type: landing-page
+        url: https://www.unicef.org/malaysia/
+        label: UNICEF Malaysia country office
+      - type: landing-page
+        url: https://data.unicef.org/
+        label: UNICEF data portal
+        notes: Returns 403 to automated requests (bot protection); reachable in a browser.
+    last_verified: 2026-10-04
+    notes: >-
+      Verified 2026-10-04. The UNICEF Malaysia page responds. The data portal returns 403
+      to automated requests (bot protection) but is reachable in a browser. No
+      machine-readable API endpoint could be confirmed during verification, so none is
+      asserted. Licence not asserted as verified.

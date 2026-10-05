@@ -1,0 +1,65 @@
+publisher:
+  id: who
+  name: World Health Organization
+  abbreviation: WHO
+  type: international
+  url: https://www.who.int/data/gho
+  description: >-
+    A United Nations specialised agency that publishes the Global Health Observatory, a
+    global collection of health indicators covering Malaysia across mortality, disease,
+    immunisation, health systems and risk factors.
+  aliases:
+    - WHO
+    - World Health Organization
+    - Global Health Observatory
+    - GHO
+  country: CH
+  languages: [en]
+
+resources:
+  - id: who-gho-malaysia-health
+    name: WHO Global Health Observatory indicators for Malaysia
+    aliases:
+      - WHO GHO Malaysia
+      - Malaysia health statistics
+      - Global Health Observatory
+    publisher: who
+    description: >-
+      Global health indicators for Malaysia — life expectancy and mortality, causes of
+      death, immunisation, tuberculosis and malaria, health workforce and health
+      expenditure — published by the WHO Global Health Observatory with an OData API.
+    categories: [health, demographics]
+    tags: [health, mortality, immunisation, disease, indicators, odata]
+    access:
+      type: open
+      details: The portal and the GHO OData API require no registration or key.
+    license:
+      name: CC BY-NC-SA 3.0 IGO
+      verified: false
+      notes: >-
+        WHO Global Health Observatory data is commonly published under a Creative Commons
+        IGO licence. Confirm the current terms on the publisher's site before reuse.
+    geography:
+      coverage: [malaysia, global]
+      granularity: [national]
+    temporal:
+      frequency: annual
+    languages: [en]
+    endpoints:
+      - type: landing-page
+        url: https://www.who.int/data/gho
+        label: Global Health Observatory
+      - type: api
+        url: https://ghoapi.azureedge.net/api/Indicator
+        label: GHO OData API - indicator list
+        auth: none
+        format: json
+        notes: Malaysia is country code MY; filter or join via the Dimension and IndicatorValue sets.
+      - type: catalogue
+        url: https://ghoapi.azureedge.net/api/
+        label: GHO OData API service root
+        auth: none
+    last_verified: 2026-10-04
+    notes: >-
+      Verified 2026-10-04. The portal and both GHO API endpoints respond without a key. The
+      GHO covers Malaysia. Licence not asserted as verified.

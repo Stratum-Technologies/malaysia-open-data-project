@@ -1,0 +1,70 @@
+publisher:
+  id: gbif
+  name: Global Biodiversity Information Facility
+  abbreviation: GBIF
+  type: international
+  url: https://www.gbif.org/
+  description: >-
+    An international network and data infrastructure that publishes open biodiversity
+    occurrence records, including records collected within Malaysia, through a searchable
+    portal and a REST API.
+  aliases:
+    - GBIF
+    - Global Biodiversity Information Facility
+    - GBIF Malaysia
+  country: DK
+  languages: [en]
+
+resources:
+  - id: gbif-malaysia-occurrences
+    name: Biodiversity occurrence records for Malaysia
+    aliases:
+      - GBIF Malaysia
+      - Malaysia species occurrences
+      - biodiversity data Malaysia
+    publisher: gbif
+    description: >-
+      Species occurrence records and datasets for Malaysia aggregated by GBIF from
+      museums, herbaria, surveys and citizen-science projects, searchable through the
+      portal and downloadable via the occurrence API.
+    categories: [environment, science-research, geography]
+    tags: [biodiversity, species, occurrences, ecology, specimens, api]
+    access:
+      type: open
+      details: The occurrence API requires no key or registration.
+    license:
+      name: Varies by dataset
+      verified: false
+      notes: >-
+        Each GBIF dataset and occurrence record states its own licence, commonly CC BY 4.0
+        or CC0. Check the record before reuse.
+    geography:
+      coverage: [malaysia, global]
+      granularity: [point, coordinate, site]
+    temporal:
+      frequency: daily
+    languages: [en]
+    endpoints:
+      - type: landing-page
+        url: https://www.gbif.org/country/MY/summary
+        label: GBIF Malaysia country page
+        notes: Returns 403 to automated requests (bot protection); reachable in a browser.
+      - type: api
+        url: https://api.gbif.org/v1/occurrence/search?country=MY
+        label: GBIF occurrence search API (Malaysia)
+        auth: none
+        format: json
+        notes: Malaysia is country code MY. Add limit, offset and taxonKey parameters to page.
+      - type: api
+        url: https://api.gbif.org/v1/dataset/search?q=malaysia
+        label: GBIF dataset search API
+        auth: none
+        format: json
+      - type: api-docs
+        url: https://techdocs.gbif.org/en/openapi/
+        label: GBIF API documentation
+    last_verified: 2026-10-04
+    notes: >-
+      Verified 2026-10-04. Both API endpoints respond without a key. The country page
+      returns 403 to automated requests (bot protection) but is reachable in a browser.
+      Licence not asserted as verified.

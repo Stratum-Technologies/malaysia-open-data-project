@@ -1,0 +1,5847 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-10-05T03:07:34.061Z",
+  "commit": "unknown",
+  "source": "https://github.com/minimalviability/malaysia-data",
+  "count": 56,
+  "publishers_count": 48,
+  "resources": [
+    {
+      "id": "mida-investment-statistics",
+      "name": "Approved investment statistics",
+      "aliases": [
+        "investment statistics",
+        "pelaburan diluluskan",
+        "approved investments",
+        "FDI",
+        "manufacturing investment"
+      ],
+      "publisher": "mida",
+      "publisher_name": "Malaysian Investment Development Authority",
+      "publisher_abbreviation": "MIDA",
+      "publisher_type": "government",
+      "description": "Statistics on investment projects approved in Malaysia, including approved manufacturing and services investment by state and by source country, published as summary statistics and downloadable reports.",
+      "categories": [
+        "economy",
+        "business-companies"
+      ],
+      "tags": [
+        "investment",
+        "fdi",
+        "manufacturing",
+        "statistics",
+        "mida",
+        "approved-projects"
+      ],
+      "access": {
+        "type": "public",
+        "label": "Public",
+        "details": "Freely viewable. Reuse terms are not stated, so no licence is asserted here."
+      },
+      "geography": {
+        "coverage": [
+          "malaysia"
+        ],
+        "granularity": [
+          "national",
+          "state"
+        ]
+      },
+      "languages": [
+        "en",
+        "ms"
+      ],
+      "endpoints": [
+        {
+          "type": "landing-page",
+          "url": "https://www.mida.gov.my/why-malaysia/investment-statistics/",
+          "label": "Investment statistics"
+        },
+        {
+          "type": "publication",
+          "url": "https://www.mida.gov.my/report",
+          "label": "Reports"
+        },
+        {
+          "type": "landing-page",
+          "url": "https://www.mida.gov.my/",
+          "label": "MIDA website"
+        }
+      ],
+      "endpoint_types": [
+        "landing-page",
+        "publication"
+      ],
+      "machine_readable": false,
+      "has_api": false,
+      "primary_url": "https://www.mida.gov.my/why-malaysia/investment-statistics/",
+      "resource_url": "https://data.stratum.my/resources/mida-investment-statistics",
+      "last_verified": "2026-10-04",
+      "verification": "fresh",
+      "warnings": [
+        "Update frequency is not recorded.",
+        "Licence is not recorded. Do not infer it from public access."
+      ]
+    },
+    {
+      "id": "gbif-malaysia-occurrences",
+      "name": "Biodiversity occurrence records for Malaysia",
+      "aliases": [
+        "GBIF Malaysia",
+        "Malaysia species occurrences",
+        "biodiversity data Malaysia"
+      ],
+      "publisher": "gbif",
+      "publisher_name": "Global Biodiversity Information Facility",
+      "publisher_abbreviation": "GBIF",
+      "publisher_type": "international",
+      "description": "Species occurrence records and datasets for Malaysia aggregated by GBIF from museums, herbaria, surveys and citizen-science projects, searchable through the portal and downloadable via the occurrence API.",
+      "categories": [
+        "environment",
+        "science-research",
+        "geography"
+      ],
+      "tags": [
+        "biodiversity",
+        "species",
+        "occurrences",
+        "ecology",
+        "specimens",
+        "api"
+      ],
+      "access": {
+        "type": "open",
+        "label": "Open",
+        "details": "The occurrence API requires no key or registration."
+      },
+      "license": {
+        "name": "Varies by dataset",
+        "verified": false,
+        "notes": "Each GBIF dataset and occurrence record states its own licence, commonly CC BY 4.0 or CC0. Check the record before reuse."
+      },
+      "geography": {
+        "coverage": [
+          "malaysia",
+          "global"
+        ],
+        "granularity": [
+          "point",
+          "coordinate",
+          "site"
+        ]
+      },
+      "temporal": {
+        "frequency": "daily"
+      },
+      "languages": [
+        "en"
+      ],
+      "endpoints": [
+        {
+          "type": "landing-page",
+          "url": "https://www.gbif.org/country/MY/summary",
+          "label": "GBIF Malaysia country page",
+          "notes": "Returns 403 to automated requests (bot protection); reachable in a browser."
+        },
+        {
+          "type": "api",
+          "url": "https://api.gbif.org/v1/occurrence/search?country=MY",
+          "label": "GBIF occurrence search API (Malaysia)",
+          "format": "json",
+          "auth": "none",
+          "notes": "Malaysia is country code MY. Add limit, offset and taxonKey parameters to page."
+        },
+        {
+          "type": "api",
+          "url": "https://api.gbif.org/v1/dataset/search?q=malaysia",
+          "label": "GBIF dataset search API",
+          "format": "json",
+          "auth": "none"
+        },
+        {
+          "type": "api-docs",
+          "url": "https://techdocs.gbif.org/en/openapi/",
+          "label": "GBIF API documentation"
+        }
+      ],
+      "endpoint_types": [
+        "api",
+        "api-docs",
+        "landing-page"
+      ],
+      "machine_readable": true,
+      "has_api": true,
+      "primary_url": "https://www.gbif.org/country/MY/summary",
+      "resource_url": "https://data.stratum.my/resources/gbif-malaysia-occurrences",
+      "last_verified": "2026-10-04",
+      "verification": "fresh",
+      "warnings": []
+    },
+    {
+      "id": "bnm-open-api",
+      "name": "BNM Open API",
+      "aliases": [
+        "Bank Negara API",
+        "BNM API",
+        "OPR",
+        "overnight policy rate",
+        "exchange rates",
+        "kadar pertukaran"
+      ],
+      "publisher": "bnm",
+      "publisher_name": "Bank Negara Malaysia",
+      "publisher_abbreviation": "BNM",
+      "publisher_type": "statutory-body",
+      "description": "Programmatic access to Bank Negara Malaysia's published series, including the overnight policy rate, exchange rates, interest rates and monetary statistics. Access requires registering for an API token through the Open API portal.",
+      "categories": [
+        "finance",
+        "economy"
+      ],
+      "tags": [
+        "api",
+        "banking",
+        "central-bank",
+        "interest-rates",
+        "exchange-rates",
+        "monetary"
+      ],
+      "access": {
+        "type": "register",
+        "label": "Registration required",
+        "registration_required": true,
+        "details": "Request URLs follow the api.bnm.gov.my host, but a token issued through the Open API portal is required before requests succeed."
+      },
+      "geography": {
+        "coverage": [
+          "malaysia"
+        ],
+        "granularity": [
+          "national"
+        ]
+      },
+      "languages": [
+        "en"
+      ],
+      "endpoints": [
+        {
+          "type": "api-docs",
+          "url": "https://apikijangportal.bnm.gov.my/",
+          "label": "BNM Open API portal",
+          "documentation": "https://apikijangportal.bnm.gov.my/?page_id=629"
+        },
+        {
+          "type": "landing-page",
+          "url": "https://www.bnm.gov.my/",
+          "label": "Bank Negara Malaysia"
+        }
+      ],
+      "endpoint_types": [
+        "api-docs",
+        "landing-page"
+      ],
+      "machine_readable": false,
+      "has_api": false,
+      "primary_url": "https://www.bnm.gov.my/",
+      "resource_url": "https://data.stratum.my/resources/bnm-open-api",
+      "last_verified": "2026-10-04",
+      "verification": "fresh",
+      "warnings": [
+        "Update frequency is not recorded.",
+        "Licence is not recorded. Do not infer it from public access."
+      ]
+    },
+    {
+      "id": "bursa-company-announcements",
+      "name": "Bursa Malaysia company announcements",
+      "aliases": [
+        "company announcements",
+        "listed company disclosures",
+        "Bursa announcements"
+      ],
+      "publisher": "bursa-malaysia",
+      "publisher_name": "Bursa Malaysia",
+      "publisher_abbreviation": "Bursa",
+      "publisher_type": "commercial",
+      "description": "Announcements made by companies listed on Bursa Malaysia, including financial results, corporate actions and material disclosures, searchable by company and announcement category.",
+      "categories": [
+        "business-companies",
+        "finance"
+      ],
+      "tags": [
+        "listed-companies",
+        "announcements",
+        "disclosure",
+        "stock-exchange"
+      ],
+      "access": {
+        "type": "public",
+        "label": "Public",
+        "details": "The announcement pages are viewable on the Bursa Malaysia website. Bulk export and reuse terms were not confirmed."
+      },
+      "geography": {
+        "coverage": [
+          "malaysia"
+        ],
+        "granularity": [
+          "national"
+        ]
+      },
+      "languages": [
+        "en"
+      ],
+      "endpoints": [
+        {
+          "type": "search",
+          "url": "https://www.bursamalaysia.com/market_information/announcements/company_announcement",
+          "label": "Company announcements"
+        },
+        {
+          "type": "landing-page",
+          "url": "https://www.bursamalaysia.com/",
+          "label": "Bursa Malaysia"
+        }
+      ],
+      "endpoint_types": [
+        "landing-page",
+        "search"
+      ],
+      "machine_readable": false,
+      "has_api": false,
+      "primary_url": "https://www.bursamalaysia.com/",
+      "resource_url": "https://data.stratum.my/resources/bursa-company-announcements",
+      "last_verified": "2026-10-04",
+      "verification": "fresh",
+      "warnings": [
+        "Update frequency is not recorded.",
+        "Licence is not recorded. Do not infer it from public access."
+      ]
+    },
+    {
+      "id": "bursa-listed-companies",
+      "name": "Bursa Malaysia listed company directory (JSON)",
+      "aliases": [
+        "listed companies API",
+        "Bursa listed companies"
+      ],
+      "publisher": "bursa-malaysia",
+      "publisher_name": "Bursa Malaysia",
+      "publisher_abbreviation": "Bursa",
+      "publisher_type": "commercial",
+      "description": "JSON endpoint used by the Bursa Malaysia website to list companies listed on the exchange, returning the listed-company directory in machine-readable form.",
+      "categories": [
+        "business-companies"
+      ],
+      "tags": [
+        "listed-companies",
+        "directory",
+        "json",
+        "stock-exchange"
+      ],
+      "access": {
+        "type": "public",
+        "label": "Public",
+        "details": "The endpoint is used by the public website. Whether it requires a session or blocks automated clients was not confirmed."
+      },
+      "geography": {
+        "coverage": [
+          "malaysia"
+        ],
+        "granularity": [
+          "national"
+        ]
+      },
+      "languages": [
+        "en"
+      ],
+      "endpoints": [
+        {
+          "type": "api",
+          "url": "https://www.bursamalaysia.com/api/v1/listed_companies/companies",
+          "label": "Listed companies (JSON)"
+        }
+      ],
+      "endpoint_types": [
+        "api"
+      ],
+      "machine_readable": true,
+      "has_api": true,
+      "primary_url": "https://www.bursamalaysia.com/api/v1/listed_companies/companies",
+      "resource_url": "https://data.stratum.my/resources/bursa-listed-companies",
+      "last_verified": "2026-10-04",
+      "verification": "fresh",
+      "warnings": [
+        "Update frequency is not recorded.",
+        "Licence is not recorded. Do not infer it from public access."
+      ]
+    },
+    {
+      "id": "bursa-market-statistics",
+      "name": "Bursa Malaysia securities market statistics",
+      "aliases": [
+        "market statistics",
+        "securities market data",
+        "Bursa statistics"
+      ],
+      "publisher": "bursa-malaysia",
+      "publisher_name": "Bursa Malaysia",
+      "publisher_abbreviation": "Bursa",
+      "publisher_type": "commercial",
+      "description": "Market statistics for the Malaysian securities market, covering trading activity, volumes and indices published on the Bursa Malaysia website.",
+      "categories": [
+        "finance",
+        "economy"
+      ],
+      "tags": [
+        "market-statistics",
+        "stock-market",
+        "indices",
+        "trading"
+      ],
+      "access": {
+        "type": "public",
+        "label": "Public",
+        "details": "The statistics pages are viewable on the Bursa Malaysia website. Real-time and historical market data are sold separately as commercial data products."
+      },
+      "geography": {
+        "coverage": [
+          "malaysia"
+        ],
+        "granularity": [
+          "national"
+        ]
+      },
+      "languages": [
+        "en"
+      ],
+      "endpoints": [
+        {
+          "type": "dashboard",
+          "url": "https://www.bursamalaysia.com/market_information/market_statistic/securities",
+          "label": "Securities market statistics"
+        }
+      ],
+      "endpoint_types": [
+        "dashboard"
+      ],
+      "machine_readable": false,
+      "has_api": false,
+      "primary_url": "https://www.bursamalaysia.com/market_information/market_statistic/securities",
+      "resource_url": "https://data.stratum.my/resources/bursa-market-statistics",
+      "last_verified": "2026-10-04",
+      "verification": "fresh",
+      "warnings": [
+        "Update frequency is not recorded.",
+        "Licence is not recorded. Do not infer it from public access."
+      ]
+    },
+    {
+      "id": "mcmc-communications-statistics",
+      "name": "Communications and multimedia statistics",
+      "aliases": [
+        "MCMC statistics",
+        "statistik komunikasi",
+        "telecommunications statistics",
+        "broadband penetration",
+        "postal statistics"
+      ],
+      "publisher": "mcmc",
+      "publisher_name": "Malaysian Communications and Multimedia Commission",
+      "publisher_abbreviation": "MCMC",
+      "publisher_type": "statutory-body",
+      "description": "The regulator's published figures for the communications and multimedia sectors, covering telecommunications, broadband, broadcasting and postal services, together with the commission's reports and annual publications.",
+      "categories": [
+        "technology-telecoms",
+        "economy"
+      ],
+      "tags": [
+        "telecoms",
+        "broadband",
+        "communications",
+        "statistics",
+        "mcmc",
+        "internet",
+        "regulator"
+      ],
+      "access": {
+        "type": "public",
+        "label": "Public",
+        "details": "Statistics and reports are freely viewable. Reuse terms are not stated, so no licence is asserted."
+      },
+      "geography": {
+        "coverage": [
+          "malaysia"
+        ],
+        "granularity": [
+          "national"
+        ]
+      },
+      "languages": [
+        "en",
+        "ms"
+      ],
+      "endpoints": [
+        {
+          "type": "landing-page",
+          "url": "https://www.mcmc.gov.my/en/resources/statistics",
+          "label": "Statistics"
+        },
+        {
+          "type": "publication",
+          "url": "https://www.mcmc.gov.my/en/resources/reports",
+          "label": "Reports"
+        },
+        {
+          "type": "landing-page",
+          "url": "https://www.mcmc.gov.my/",
+          "label": "MCMC website"
+        }
+      ],
+      "endpoint_types": [
+        "landing-page",
+        "publication"
+      ],
+      "machine_readable": false,
+      "has_api": false,
+      "primary_url": "https://www.mcmc.gov.my/en/resources/statistics",
+      "resource_url": "https://data.stratum.my/resources/mcmc-communications-statistics",
+      "last_verified": "2026-10-04",
+      "verification": "fresh",
+      "warnings": [
+        "Update frequency is not recorded.",
+        "Licence is not recorded. Do not infer it from public access."
+      ]
+    },
+    {
+      "id": "dosm-cpi-headline",
+      "name": "Consumer Price Index (headline)",
+      "aliases": [
+        "CPI",
+        "Indeks Harga Pengguna",
+        "inflation",
+        "inflasi"
+      ],
+      "publisher": "dosm",
+      "publisher_name": "Department of Statistics Malaysia",
+      "publisher_abbreviation": "DOSM",
+      "publisher_type": "government",
+      "description": "The headline Consumer Price Index for Malaysia, the standard measure of consumer inflation, with index values and year-on-year change over time.",
+      "categories": [
+        "prices-cost-of-living",
+        "economy"
+      ],
+      "tags": [
+        "cpi",
+        "inflation",
+        "prices",
+        "index",
+        "harga",
+        "statistics"
+      ],
+      "access": {
+        "type": "public",
+        "label": "Public",
+        "details": "Freely viewable and queryable. Reuse terms are not stated on the resource page."
+      },
+      "geography": {
+        "coverage": [
+          "malaysia"
+        ],
+        "granularity": [
+          "national"
+        ]
+      },
+      "languages": [
+        "ms",
+        "en"
+      ],
+      "endpoints": [
+        {
+          "type": "api",
+          "url": "https://api.data.gov.my/data-catalogue?id=cpi_headline",
+          "label": "JSON API",
+          "auth": "none",
+          "notes": "Requires the query parameter id=cpi_headline."
+        },
+        {
+          "type": "landing-page",
+          "url": "https://open.dosm.gov.my/data-catalogue",
+          "label": "OpenDOSM data catalogue"
+        },
+        {
+          "type": "api-docs",
+          "url": "https://developer.data.gov.my/",
+          "label": "API documentation",
+          "documentation": "https://developer.data.gov.my/"
+        }
+      ],
+      "endpoint_types": [
+        "api",
+        "api-docs",
+        "landing-page"
+      ],
+      "machine_readable": true,
+      "has_api": true,
+      "primary_url": "https://open.dosm.gov.my/data-catalogue",
+      "resource_url": "https://data.stratum.my/resources/dosm-cpi-headline",
+      "last_verified": "2026-10-04",
+      "verification": "fresh",
+      "warnings": [
+        "Update frequency is not recorded.",
+        "Licence is not recorded. Do not infer it from public access."
+      ]
+    },
+    {
+      "id": "copernicus-malaysia-eo",
+      "name": "Copernicus Earth observation data over Malaysia",
+      "aliases": [
+        "Copernicus Malaysia",
+        "Sentinel Malaysia",
+        "ERA5 Malaysia climate"
+      ],
+      "publisher": "copernicus",
+      "publisher_name": "Copernicus",
+      "publisher_abbreviation": "Copernicus",
+      "publisher_type": "international",
+      "description": "Satellite and modelled environmental data covering Malaysia — Sentinel imagery, global land cover, and ERA5 climate reanalysis — published through the Copernicus Data Space Ecosystem, the Climate Data Store and the land-monitoring service.",
+      "categories": [
+        "environment",
+        "weather-climate",
+        "geography"
+      ],
+      "tags": [
+        "earth-observation",
+        "satellite",
+        "sentinel",
+        "land-cover",
+        "climate",
+        "reanalysis"
+      ],
+      "access": {
+        "type": "register",
+        "label": "Registration required",
+        "details": "Browse and download require a free Copernicus account; some services need a registered client for programmatic access."
+      },
+      "license": {
+        "name": "Varies by dataset",
+        "verified": false,
+        "notes": "Most Copernicus data is free and openly licensed, but terms vary by service. Check the dataset page before reuse."
+      },
+      "geography": {
+        "coverage": [
+          "malaysia",
+          "global"
+        ],
+        "granularity": [
+          "grid",
+          "coordinate",
+          "point"
+        ]
+      },
+      "temporal": {
+        "frequency": "daily"
+      },
+      "languages": [
+        "en"
+      ],
+      "endpoints": [
+        {
+          "type": "landing-page",
+          "url": "https://www.copernicus.eu/en",
+          "label": "Copernicus programme"
+        },
+        {
+          "type": "explorer",
+          "url": "https://cds.climate.copernicus.eu/",
+          "label": "Copernicus Climate Data Store"
+        },
+        {
+          "type": "landing-page",
+          "url": "https://dataspace.copernicus.eu/",
+          "label": "Copernicus Data Space Ecosystem"
+        },
+        {
+          "type": "landing-page",
+          "url": "https://land.copernicus.eu/",
+          "label": "Copernicus Land Monitoring Service"
+        }
+      ],
+      "endpoint_types": [
+        "explorer",
+        "landing-page"
+      ],
+      "machine_readable": false,
+      "has_api": false,
+      "primary_url": "https://www.copernicus.eu/en",
+      "resource_url": "https://data.stratum.my/resources/copernicus-malaysia-eo",
+      "last_verified": "2026-10-04",
+      "verification": "fresh",
+      "warnings": []
+    },
+    {
+      "id": "ctos-business-credit-report",
+      "name": "CTOS business and company credit reports",
+      "aliases": [
+        "CTOS business report",
+        "company credit check",
+        "CTOS Basis",
+        "company search"
+      ],
+      "publisher": "ctos",
+      "publisher_name": "CTOS Data Systems Sdn Bhd",
+      "publisher_abbreviation": "CTOS",
+      "publisher_type": "commercial",
+      "description": "Credit and company reports for Malaysian businesses and companies, including one-off company searches, business profiles and credit checks through CTOS Business and the CTOS Basis company directory.",
+      "categories": [
+        "business-companies",
+        "finance"
+      ],
+      "tags": [
+        "company-search",
+        "business-report",
+        "credit-report",
+        "company-directory",
+        "credit-bureau"
+      ],
+      "access": {
+        "type": "paid",
+        "label": "Paid",
+        "registration_required": true,
+        "paid": true,
+        "details": "Business and company reports are purchased per report or through a subscription."
+      },
+      "geography": {
+        "coverage": [
+          "malaysia"
+        ],
+        "granularity": [
+          "national"
+        ]
+      },
+      "languages": [
+        "en"
+      ],
+      "endpoints": [
+        {
+          "type": "commercial-access",
+          "url": "https://businessreport.ctoscredit.com.my/oneoffreport/home",
+          "label": "One-off company and business report"
+        },
+        {
+          "type": "commercial-access",
+          "url": "https://ctosbasis.com.my/creditinfo/malaysia-credit-report/",
+          "label": "CTOS Basis Malaysia company report"
+        },
+        {
+          "type": "landing-page",
+          "url": "https://www.ctoscredit.com.my/business/",
+          "label": "CTOS Business"
+        }
+      ],
+      "endpoint_types": [
+        "commercial-access",
+        "landing-page"
+      ],
+      "machine_readable": false,
+      "has_api": false,
+      "primary_url": "https://www.ctoscredit.com.my/business/",
+      "resource_url": "https://data.stratum.my/resources/ctos-business-credit-report",
+      "last_verified": "2026-10-04",
+      "verification": "fresh",
+      "warnings": [
+        "Update frequency is not recorded.",
+        "Licence is not recorded. Do not infer it from public access."
+      ]
+    },
+    {
+      "id": "ctos-consumer-credit-report",
+      "name": "CTOS consumer credit report and score",
+      "aliases": [
+        "CTOS credit report",
+        "credit score",
+        "credit check"
+      ],
+      "publisher": "ctos",
+      "publisher_name": "CTOS Data Systems Sdn Bhd",
+      "publisher_abbreviation": "CTOS",
+      "publisher_type": "commercial",
+      "description": "Consumer credit report and credit score for individuals, based on data held by the CTOS credit bureau and accessed through the CTOS Credit website and mobile app.",
+      "categories": [
+        "finance"
+      ],
+      "tags": [
+        "credit-report",
+        "credit-score",
+        "credit-bureau",
+        "consumer-credit"
+      ],
+      "access": {
+        "type": "register",
+        "label": "Registration required",
+        "registration_required": true,
+        "paid": true,
+        "details": "A basic account is free to register; the full credit report, score and monitoring are paid products."
+      },
+      "geography": {
+        "coverage": [
+          "malaysia"
+        ],
+        "granularity": [
+          "national"
+        ]
+      },
+      "languages": [
+        "en"
+      ],
+      "endpoints": [
+        {
+          "type": "landing-page",
+          "url": "https://www.ctoscredit.com.my/",
+          "label": "CTOS Credit"
+        }
+      ],
+      "endpoint_types": [
+        "landing-page"
+      ],
+      "machine_readable": false,
+      "has_api": false,
+      "primary_url": "https://www.ctoscredit.com.my/",
+      "resource_url": "https://data.stratum.my/resources/ctos-consumer-credit-report",
+      "last_verified": "2026-10-04",
+      "verification": "fresh",
+      "warnings": [
+        "Update frequency is not recorded.",
+        "Licence is not recorded. Do not infer it from public access."
+      ]
+    },
+    {
+      "id": "st-grid-reliability",
+      "name": "Electricity supply reliability indices",
+      "aliases": [
+        "SAIDI",
+        "SAIFI",
+        "SARFI",
+        "system average interruption duration index",
+        "grid reliability",
+        "keandalan bekalan elektrik"
+      ],
+      "publisher": "suruhanjaya-tenaga",
+      "publisher_name": "Energy Commission Malaysia",
+      "publisher_abbreviation": "ST",
+      "publisher_type": "statutory-body",
+      "description": "The commission's published electricity supply reliability indices for the grid: System Average Interruption Duration Index (SAIDI), System Average Interruption Frequency Index (SAIFI) and System Average RMS Frequency Index (SARFI).",
+      "categories": [
+        "energy"
+      ],
+      "tags": [
+        "energy",
+        "electricity",
+        "reliability",
+        "saidi",
+        "saifi",
+        "grid",
+        "regulator"
+      ],
+      "access": {
+        "type": "public",
+        "label": "Public",
+        "details": "The indices are published on the commission's website and freely viewable. Reuse terms are not stated, so no licence is asserted."
+      },
+      "geography": {
+        "coverage": [
+          "malaysia"
+        ],
+        "granularity": [
+          "national"
+        ]
+      },
+      "languages": [
+        "en",
+        "ms"
+      ],
+      "endpoints": [
+        {
+          "type": "landing-page",
+          "url": "https://www.st.gov.my/security/system-average-interruption-duration-index-saidi",
+          "label": "SAIDI (interruption duration)"
+        },
+        {
+          "type": "landing-page",
+          "url": "https://www.st.gov.my/security/system-average-interruption-frequency-index-saifi",
+          "label": "SAIFI (interruption frequency)"
+        },
+        {
+          "type": "landing-page",
+          "url": "https://www.st.gov.my/security/system-average-rms-frequency-index-sarfi",
+          "label": "SARFI (RMS frequency)"
+        },
+        {
+          "type": "landing-page",
+          "url": "https://www.st.gov.my/",
+          "label": "Energy Commission website"
+        }
+      ],
+      "endpoint_types": [
+        "landing-page"
+      ],
+      "machine_readable": false,
+      "has_api": false,
+      "primary_url": "https://www.st.gov.my/security/system-average-interruption-duration-index-saidi",
+      "resource_url": "https://data.stratum.my/resources/st-grid-reliability",
+      "last_verified": "2026-10-04",
+      "verification": "fresh",
+      "warnings": [
+        "Update frequency is not recorded.",
+        "Licence is not recorded. Do not infer it from public access."
+      ]
+    },
+    {
+      "id": "doe-environmental-data",
+      "name": "Environmental quality data and reports",
+      "aliases": [
+        "JAS data",
+        "air quality index",
+        "indeks kualiti udara",
+        "IKU",
+        "environmental impact assessment reports",
+        "laporan EIA"
+      ],
+      "publisher": "doe",
+      "publisher_name": "Department of Environment Malaysia",
+      "publisher_abbreviation": "DOE",
+      "publisher_type": "government",
+      "description": "The department's shared data and reports, including environmental quality standards and indices, environmental impact assessment (EIA) reports, and pollution monitoring material published for public reference.",
+      "categories": [
+        "environment"
+      ],
+      "tags": [
+        "environment",
+        "air-quality",
+        "water-quality",
+        "eia",
+        "pollution",
+        "doe",
+        "jas"
+      ],
+      "access": {
+        "type": "public",
+        "label": "Public",
+        "details": "Reports and guidance are freely viewable on the department's site. Reuse terms are not stated, so no licence is asserted here."
+      },
+      "geography": {
+        "coverage": [
+          "malaysia"
+        ],
+        "granularity": [
+          "national",
+          "state"
+        ]
+      },
+      "languages": [
+        "ms",
+        "en"
+      ],
+      "endpoints": [
+        {
+          "type": "landing-page",
+          "url": "https://www.doe.gov.my/perkongsian-data-dan-laporan/",
+          "label": "Data and report sharing"
+        },
+        {
+          "type": "publication",
+          "url": "https://www.doe.gov.my/standard-dan-indeks-kualiti/",
+          "label": "Quality standards and indices"
+        },
+        {
+          "type": "report",
+          "url": "https://www.doe.gov.my/category/laporan-eia/",
+          "label": "EIA reports"
+        },
+        {
+          "type": "landing-page",
+          "url": "https://www.doe.gov.my/",
+          "label": "Department of Environment website",
+          "notes": "Served in Malay; some sections are also published in English."
+        }
+      ],
+      "endpoint_types": [
+        "landing-page",
+        "publication",
+        "report"
+      ],
+      "machine_readable": false,
+      "has_api": false,
+      "primary_url": "https://www.doe.gov.my/perkongsian-data-dan-laporan/",
+      "resource_url": "https://data.stratum.my/resources/doe-environmental-data",
+      "last_verified": "2026-10-04",
+      "verification": "fresh",
+      "warnings": [
+        "Update frequency is not recorded.",
+        "Licence is not recorded. Do not infer it from public access."
+      ]
+    },
+    {
+      "id": "faostat-malaysia-agriculture",
+      "name": "FAOSTAT food and agriculture statistics for Malaysia",
+      "aliases": [
+        "FAOSTAT Malaysia",
+        "Malaysia agricultural statistics",
+        "Malaysia crop production"
+      ],
+      "publisher": "fao",
+      "publisher_name": "Food and Agriculture Organization of the United Nations",
+      "publisher_abbreviation": "FAO",
+      "publisher_type": "international",
+      "description": "Country-level food and agriculture statistics for Malaysia — crop and livestock production, land use, fertilisers, food balance sheets and agricultural trade — published by FAOSTAT with an interactive portal and API access.",
+      "categories": [
+        "agriculture",
+        "environment",
+        "trade"
+      ],
+      "tags": [
+        "agriculture",
+        "crops",
+        "livestock",
+        "food-security",
+        "land-use",
+        "statistics"
+      ],
+      "access": {
+        "type": "register",
+        "label": "Registration required",
+        "registration_required": true,
+        "details": "The FAOSTAT portal and bulk downloads are open. The current FAOSTAT API endpoint returns 401 without credentials and may require registration."
+      },
+      "license": {
+        "name": "CC BY 4.0",
+        "verified": false,
+        "notes": "FAOSTAT data is generally published under CC BY 4.0. Confirm the current terms on the publisher's site before reuse."
+      },
+      "geography": {
+        "coverage": [
+          "malaysia",
+          "global"
+        ],
+        "granularity": [
+          "national"
+        ]
+      },
+      "temporal": {
+        "frequency": "annual"
+      },
+      "languages": [
+        "en"
+      ],
+      "endpoints": [
+        {
+          "type": "landing-page",
+          "url": "https://www.fao.org/faostat/en/",
+          "label": "FAOSTAT portal"
+        },
+        {
+          "type": "catalogue",
+          "url": "https://www.fao.org/faostat/en/#data",
+          "label": "FAOSTAT data domains"
+        },
+        {
+          "type": "bulk-download",
+          "url": "https://bulks-faostat.fao.org/production/",
+          "label": "FAOSTAT bulk downloads",
+          "notes": "Returns 403 to the root URL from some networks; the production path responds."
+        },
+        {
+          "type": "api",
+          "url": "https://faostatservices.fao.org/api/v1/en/data/QCL",
+          "label": "FAOSTAT API (crops and livestock, domain QCL)",
+          "format": "json",
+          "auth": "unknown",
+          "notes": "Returns 401 without credentials, indicating the API is gated. The older fenixservices.fao.org host did not resolve to a response during verification."
+        }
+      ],
+      "endpoint_types": [
+        "api",
+        "bulk-download",
+        "catalogue",
+        "landing-page"
+      ],
+      "machine_readable": true,
+      "has_api": true,
+      "primary_url": "https://www.fao.org/faostat/en/",
+      "resource_url": "https://data.stratum.my/resources/faostat-malaysia-agriculture",
+      "last_verified": "2026-10-04",
+      "verification": "fresh",
+      "warnings": []
+    },
+    {
+      "id": "gfw-malaysia-forests",
+      "name": "Forest change and land cover data for Malaysia",
+      "aliases": [
+        "Global Forest Watch Malaysia",
+        "Malaysia deforestation data",
+        "Malaysia tree cover loss"
+      ],
+      "publisher": "global-forest-watch",
+      "publisher_name": "Global Forest Watch",
+      "publisher_abbreviation": "GFW",
+      "publisher_type": "international",
+      "description": "Forest and land-use data for Malaysia — tree cover loss and gain, land cover, fire alerts and forest carbon — published through Global Forest Watch with a country dashboard and a data API.",
+      "categories": [
+        "environment",
+        "geography"
+      ],
+      "tags": [
+        "forests",
+        "deforestation",
+        "land-use",
+        "tree-cover",
+        "fire",
+        "remote-sensing"
+      ],
+      "access": {
+        "type": "open",
+        "label": "Open",
+        "details": "The dashboard is freely browsable; the data API requires a free account key."
+      },
+      "license": {
+        "name": "Varies by dataset",
+        "verified": false,
+        "notes": "Each GFW dataset states its own licence. Check the dataset page before reuse."
+      },
+      "geography": {
+        "coverage": [
+          "malaysia",
+          "global"
+        ],
+        "granularity": [
+          "national",
+          "grid",
+          "point"
+        ]
+      },
+      "temporal": {
+        "frequency": "weekly"
+      },
+      "languages": [
+        "en"
+      ],
+      "endpoints": [
+        {
+          "type": "landing-page",
+          "url": "https://www.globalforestwatch.org/",
+          "label": "Global Forest Watch"
+        },
+        {
+          "type": "dashboard",
+          "url": "https://www.globalforestwatch.org/dashboards/country/MYS/",
+          "label": "Malaysia country dashboard"
+        },
+        {
+          "type": "api",
+          "url": "https://data-api.globalforestwatch.org/datasets",
+          "label": "GFW data API - dataset list",
+          "format": "json",
+          "auth": "api_key",
+          "notes": "Responds without a key for the catalogue; queries to individual datasets require a free API key."
+        },
+        {
+          "type": "api-docs",
+          "url": "https://data-api.globalforestwatch.org/openapi.json",
+          "label": "GFW data API OpenAPI specification",
+          "format": "json"
+        }
+      ],
+      "endpoint_types": [
+        "api",
+        "api-docs",
+        "dashboard",
+        "landing-page"
+      ],
+      "machine_readable": true,
+      "has_api": true,
+      "primary_url": "https://www.globalforestwatch.org/",
+      "resource_url": "https://data.stratum.my/resources/gfw-malaysia-forests",
+      "last_verified": "2026-10-04",
+      "verification": "fresh",
+      "warnings": []
+    },
+    {
+      "id": "hdx-malaysia",
+      "name": "Humanitarian datasets for Malaysia",
+      "aliases": [
+        "HDX Malaysia",
+        "Malaysia humanitarian data",
+        "disaster data Malaysia"
+      ],
+      "publisher": "hdx",
+      "publisher_name": "Humanitarian Data Exchange",
+      "publisher_abbreviation": "HDX",
+      "publisher_type": "international",
+      "description": "Humanitarian and crisis-related datasets covering Malaysia — administrative boundaries, population estimates, displacement and disaster risk — contributed by UN agencies, NGOs and governments.",
+      "categories": [
+        "social",
+        "environment"
+      ],
+      "tags": [
+        "humanitarian",
+        "disaster",
+        "crisis",
+        "boundaries",
+        "population",
+        "ocha"
+      ],
+      "access": {
+        "type": "open",
+        "label": "Open",
+        "details": "Datasets are individually published; most are open, some are restricted."
+      },
+      "license": {
+        "name": "Varies by dataset",
+        "verified": false,
+        "notes": "Each HDX dataset states its own licence. Check the dataset page before reuse."
+      },
+      "geography": {
+        "coverage": [
+          "malaysia"
+        ],
+        "granularity": [
+          "national",
+          "state",
+          "district"
+        ]
+      },
+      "languages": [
+        "en"
+      ],
+      "endpoints": [
+        {
+          "type": "landing-page",
+          "url": "https://data.humdata.org/",
+          "label": "Humanitarian Data Exchange",
+          "notes": "Datasets can be browsed and downloaded from the platform; an API is also documented there."
+        }
+      ],
+      "endpoint_types": [
+        "landing-page"
+      ],
+      "machine_readable": false,
+      "has_api": false,
+      "primary_url": "https://data.humdata.org/",
+      "resource_url": "https://data.stratum.my/resources/hdx-malaysia",
+      "last_verified": "2026-10-04",
+      "verification": "fresh",
+      "warnings": [
+        "Update frequency is not recorded."
+      ]
+    },
+    {
+      "id": "ilostat-malaysia-labour",
+      "name": "ILOSTAT labour statistics for Malaysia",
+      "aliases": [
+        "ILOSTAT Malaysia",
+        "Malaysia employment statistics",
+        "Malaysia labour force data"
+      ],
+      "publisher": "ilo",
+      "publisher_name": "International Labour Organization",
+      "publisher_abbreviation": "ILO",
+      "publisher_type": "international",
+      "description": "Labour market indicators for Malaysia — employment and unemployment, labour force participation, working time, earnings and informal employment — published by ILOSTAT with a web portal and a bulk data API.",
+      "categories": [
+        "labour",
+        "social"
+      ],
+      "tags": [
+        "labour",
+        "employment",
+        "unemployment",
+        "wages",
+        "workforce",
+        "statistics"
+      ],
+      "access": {
+        "type": "open",
+        "label": "Open",
+        "details": "The bulk API serves CSV without a key. The portal returns 403 to automated requests."
+      },
+      "license": {
+        "name": "CC BY 4.0",
+        "verified": false,
+        "notes": "ILOSTAT data is generally published under a Creative Commons licence. Confirm the current terms on the publisher's site before reuse."
+      },
+      "geography": {
+        "coverage": [
+          "malaysia",
+          "global"
+        ],
+        "granularity": [
+          "national"
+        ]
+      },
+      "temporal": {
+        "frequency": "annual"
+      },
+      "languages": [
+        "en"
+      ],
+      "endpoints": [
+        {
+          "type": "landing-page",
+          "url": "https://ilostat.ilo.org/",
+          "label": "ILOSTAT portal",
+          "notes": "Returns 403 to automated requests (bot protection); reachable in a browser."
+        },
+        {
+          "type": "api",
+          "url": "https://rplumber.ilo.org/data/indicator/?id=UNE_TUNE_SEX_AGE_NB_A&type=label&format=.csv",
+          "label": "ILOSTAT bulk indicator API (CSV)",
+          "format": "csv",
+          "auth": "none",
+          "notes": "Bulk indicator download service. Malaysia is the country code MYS; swap the id parameter to request another indicator."
+        }
+      ],
+      "endpoint_types": [
+        "api",
+        "landing-page"
+      ],
+      "machine_readable": true,
+      "has_api": true,
+      "primary_url": "https://ilostat.ilo.org/",
+      "resource_url": "https://data.stratum.my/resources/ilostat-malaysia-labour",
+      "last_verified": "2026-10-04",
+      "verification": "fresh",
+      "warnings": []
+    },
+    {
+      "id": "imf-malaysia-data",
+      "name": "IMF macroeconomic and financial statistics for Malaysia",
+      "aliases": [
+        "IMF Data Malaysia",
+        "IMF International Financial Statistics",
+        "IMF macroeconomic data"
+      ],
+      "publisher": "imf",
+      "publisher_name": "International Monetary Fund",
+      "publisher_abbreviation": "IMF",
+      "publisher_type": "international",
+      "description": "IMF statistical databases covering Malaysia — balance of payments, international financial statistics, government finance, monetary aggregates and exchange rates — available through the IMF data portal and its SDMX 2.1 API.",
+      "categories": [
+        "economy",
+        "finance"
+      ],
+      "tags": [
+        "macroeconomics",
+        "balance-of-payments",
+        "exchange-rates",
+        "monetary",
+        "sdmx",
+        "statistics"
+      ],
+      "access": {
+        "type": "open",
+        "label": "Open",
+        "details": "The data portal and the SDMX API require no registration."
+      },
+      "license": {
+        "name": "Varies by dataset",
+        "verified": false,
+        "notes": "Each IMF dataset states its own terms of use. Check the dataset page before reuse."
+      },
+      "geography": {
+        "coverage": [
+          "malaysia",
+          "global"
+        ],
+        "granularity": [
+          "national"
+        ]
+      },
+      "temporal": {
+        "frequency": "monthly"
+      },
+      "languages": [
+        "en"
+      ],
+      "endpoints": [
+        {
+          "type": "landing-page",
+          "url": "https://data.imf.org/",
+          "label": "IMF Data portal",
+          "notes": "Returns 403 to automated requests (bot protection); reachable in a browser."
+        },
+        {
+          "type": "api",
+          "url": "https://api.imf.org/external/sdmx/2.1/dataflow",
+          "label": "IMF SDMX 2.1 dataflow list",
+          "auth": "none",
+          "notes": "SDMX 2.1 API. Malaysia is the reporter code MY."
+        },
+        {
+          "type": "api",
+          "url": "https://api.imf.org/external/sdmx/2.1/dataflow/all/all/latest",
+          "label": "IMF SDMX 2.1 dataflows (latest)",
+          "auth": "none"
+        }
+      ],
+      "endpoint_types": [
+        "api",
+        "landing-page"
+      ],
+      "machine_readable": true,
+      "has_api": true,
+      "primary_url": "https://data.imf.org/",
+      "resource_url": "https://data.stratum.my/resources/imf-malaysia-data",
+      "last_verified": "2026-10-04",
+      "verification": "fresh",
+      "warnings": []
+    },
+    {
+      "id": "itu-malaysia-ict-statistics",
+      "name": "ITU ICT statistics for Malaysia",
+      "aliases": [
+        "ITU Malaysia",
+        "Malaysia ICT statistics",
+        "ICT Development Index"
+      ],
+      "publisher": "itu",
+      "publisher_name": "International Telecommunication Union",
+      "publisher_abbreviation": "ITU",
+      "publisher_type": "international",
+      "description": "Information and communication technology indicators for Malaysia — mobile and fixed broadband subscriptions, internet and mobile penetration, and ICT prices — published by ITU through its statistics pages and the ITU DataHub.",
+      "categories": [
+        "technology-telecoms",
+        "economy"
+      ],
+      "tags": [
+        "ict",
+        "broadband",
+        "mobile",
+        "internet",
+        "telecommunications",
+        "statistics"
+      ],
+      "access": {
+        "type": "public",
+        "label": "Public",
+        "details": "ITU statistics pages and the DataHub are publicly browsable. API access to the DataHub is served through a gate that returned 403 to automated requests."
+      },
+      "license": {
+        "name": "Varies by dataset",
+        "verified": false,
+        "notes": "ITU statistics carry their own terms of use. Check the dataset page before reuse."
+      },
+      "geography": {
+        "coverage": [
+          "malaysia",
+          "global"
+        ],
+        "granularity": [
+          "national"
+        ]
+      },
+      "temporal": {
+        "frequency": "annual"
+      },
+      "languages": [
+        "en"
+      ],
+      "endpoints": [
+        {
+          "type": "landing-page",
+          "url": "https://www.itu.int/en/ITU-D/Statistics/Pages/stat/default.aspx",
+          "label": "ITU statistics"
+        },
+        {
+          "type": "dashboard",
+          "url": "https://www.itu.int/en/ITU-D/Statistics/Dashboards/Pages/default.aspx",
+          "label": "ITU statistics dashboards"
+        },
+        {
+          "type": "explorer",
+          "url": "https://datahub.itu.int/",
+          "label": "ITU DataHub",
+          "notes": "Responded with 202 (accepted) to automated requests. The DataHub API gate returned 403, so no machine-readable API endpoint is asserted."
+        }
+      ],
+      "endpoint_types": [
+        "dashboard",
+        "explorer",
+        "landing-page"
+      ],
+      "machine_readable": false,
+      "has_api": false,
+      "primary_url": "https://www.itu.int/en/ITU-D/Statistics/Pages/stat/default.aspx",
+      "resource_url": "https://data.stratum.my/resources/itu-malaysia-ict-statistics",
+      "last_verified": "2026-10-04",
+      "verification": "fresh",
+      "warnings": []
+    },
+    {
+      "id": "moh-kkmnow",
+      "name": "KKMNOW health data",
+      "aliases": [
+        "KKMNOW",
+        "KKM NOW",
+        "data.moh.gov.my",
+        "Data Kesihatan",
+        "hospital bed utilisation",
+        "blood donation"
+      ],
+      "publisher": "moh",
+      "publisher_name": "Ministry of Health Malaysia",
+      "publisher_abbreviation": "MOH",
+      "publisher_type": "government",
+      "description": "The Ministry of Health's public data platform. Presents national health indicators as interactive dashboards and publishes the underlying datasets through a data catalogue. Dashboards cover COVID-19, COVID-19 vaccination, hospital bed utilisation, blood donation, organ donation and the PEKA B40 screening programme.",
+      "categories": [
+        "health"
+      ],
+      "tags": [
+        "health",
+        "hospitals",
+        "covid-19",
+        "vaccination",
+        "kkmnow",
+        "dashboard",
+        "ministry-of-health"
+      ],
+      "access": {
+        "type": "public",
+        "label": "Public",
+        "details": "Dashboards and the data catalogue are freely viewable. Reuse terms are not stated on the portal, so no licence is asserted here."
+      },
+      "geography": {
+        "coverage": [
+          "malaysia"
+        ],
+        "granularity": [
+          "national",
+          "state"
+        ]
+      },
+      "languages": [
+        "ms",
+        "en"
+      ],
+      "endpoints": [
+        {
+          "type": "landing-page",
+          "url": "https://data.moh.gov.my/",
+          "label": "KKMNOW portal"
+        },
+        {
+          "type": "explorer",
+          "url": "https://data.moh.gov.my/data-catalogue",
+          "label": "Data catalogue"
+        },
+        {
+          "type": "dashboard",
+          "url": "https://data.moh.gov.my/dashboard/covid-19",
+          "label": "COVID-19 dashboard"
+        },
+        {
+          "type": "dashboard",
+          "url": "https://data.moh.gov.my/dashboard/hospital-bed-utilisation",
+          "label": "Hospital bed utilisation dashboard"
+        }
+      ],
+      "endpoint_types": [
+        "dashboard",
+        "explorer",
+        "landing-page"
+      ],
+      "machine_readable": false,
+      "has_api": false,
+      "primary_url": "https://data.moh.gov.my/",
+      "resource_url": "https://data.stratum.my/resources/moh-kkmnow",
+      "last_verified": "2026-10-04",
+      "verification": "fresh",
+      "warnings": [
+        "Update frequency is not recorded.",
+        "Licence is not recorded. Do not infer it from public access."
+      ]
+    },
+    {
+      "id": "ktmb-train-services",
+      "name": "KTMB train services, timetables and routes",
+      "aliases": [
+        "KTMB timetable",
+        "jadual perjalanan KTM",
+        "ETS timetable",
+        "Komuter schedule",
+        "station information"
+      ],
+      "publisher": "ktmb",
+      "publisher_name": "Keretapi Tanah Melayu Berhad",
+      "publisher_abbreviation": "KTMB",
+      "publisher_type": "government",
+      "description": "The operator's public service information: train timetables by service class, an interactive route and network map, station details, and a live train chart. Covers the intercity, ETS, Komuter and freight networks.",
+      "categories": [
+        "transport"
+      ],
+      "tags": [
+        "rail",
+        "railway",
+        "train",
+        "timetable",
+        "ktmb",
+        "komuter",
+        "ets",
+        "transit"
+      ],
+      "access": {
+        "type": "public",
+        "label": "Public",
+        "details": "Freely viewable on the operator's website. Reuse terms are not stated."
+      },
+      "geography": {
+        "coverage": [
+          "malaysia"
+        ],
+        "granularity": [
+          "station",
+          "national"
+        ]
+      },
+      "languages": [
+        "ms",
+        "en"
+      ],
+      "endpoints": [
+        {
+          "type": "landing-page",
+          "url": "https://www.ktmb.com.my/TrainTime.html",
+          "label": "Timetables"
+        },
+        {
+          "type": "map",
+          "url": "https://www.ktmb.com.my/MapsAndRoute.html",
+          "label": "Network map and routes"
+        },
+        {
+          "type": "explorer",
+          "url": "https://apps.ktmb.com.my/TrainCharted/Home/Index",
+          "label": "Live train chart"
+        },
+        {
+          "type": "landing-page",
+          "url": "https://www.ktmb.com.my/",
+          "label": "KTMB website"
+        }
+      ],
+      "endpoint_types": [
+        "explorer",
+        "landing-page",
+        "map"
+      ],
+      "machine_readable": false,
+      "has_api": false,
+      "primary_url": "https://www.ktmb.com.my/TrainTime.html",
+      "resource_url": "https://data.stratum.my/resources/ktmb-train-services",
+      "last_verified": "2026-10-04",
+      "verification": "fresh",
+      "warnings": [
+        "Update frequency is not recorded.",
+        "Licence is not recorded. Do not infer it from public access."
+      ]
+    },
+    {
+      "id": "matrade-trade-statistics",
+      "name": "Malaysia external trade statistics",
+      "aliases": [
+        "perdagangan luar",
+        "external trade",
+        "export statistics",
+        "import statistics",
+        "trade data"
+      ],
+      "publisher": "matrade",
+      "publisher_name": "Malaysia External Trade Development Corporation",
+      "publisher_abbreviation": "MATRADE",
+      "publisher_type": "government",
+      "description": "Malaysia's external trade figures published by the trade promotion agency: exports, imports, trade balances and trade by market and product, together with open data releases and market reports for exporters.",
+      "categories": [
+        "trade",
+        "economy"
+      ],
+      "tags": [
+        "trade",
+        "exports",
+        "imports",
+        "statistics",
+        "matrade",
+        "external-trade"
+      ],
+      "access": {
+        "type": "public",
+        "label": "Public",
+        "details": "Statistics and reports are freely viewable. The agency's open data page is also public; reuse terms are not stated, so no licence is asserted."
+      },
+      "geography": {
+        "coverage": [
+          "malaysia"
+        ],
+        "granularity": [
+          "national"
+        ]
+      },
+      "languages": [
+        "en",
+        "ms"
+      ],
+      "endpoints": [
+        {
+          "type": "landing-page",
+          "url": "https://www.matrade.gov.my/en/open-data",
+          "label": "Open data"
+        },
+        {
+          "type": "publication",
+          "url": "https://www.matrade.gov.my/en/export-to-the-world/step-4-export-opportunities/malaysia-external-trade-statistics",
+          "label": "External trade statistics"
+        },
+        {
+          "type": "landing-page",
+          "url": "https://www.matrade.gov.my/",
+          "label": "MATRADE website"
+        }
+      ],
+      "endpoint_types": [
+        "landing-page",
+        "publication"
+      ],
+      "machine_readable": false,
+      "has_api": false,
+      "primary_url": "https://www.matrade.gov.my/en/open-data",
+      "resource_url": "https://data.stratum.my/resources/matrade-trade-statistics",
+      "last_verified": "2026-10-04",
+      "verification": "fresh",
+      "warnings": [
+        "Update frequency is not recorded.",
+        "Licence is not recorded. Do not infer it from public access."
+      ]
+    },
+    {
+      "id": "comtrade-malaysia-trade",
+      "name": "Malaysia international merchandise trade",
+      "aliases": [
+        "UN Comtrade Malaysia",
+        "Malaysia imports exports",
+        "Malaysia trade statistics"
+      ],
+      "publisher": "un-comtrade",
+      "publisher_name": "United Nations Comtrade",
+      "publisher_abbreviation": "UN Comtrade",
+      "publisher_type": "international",
+      "description": "Malaysia's reported and mirrored merchandise trade flows by commodity, partner and year, from the UN Comtrade database, available through a web explorer and a REST API.",
+      "categories": [
+        "trade",
+        "economy"
+      ],
+      "tags": [
+        "trade",
+        "imports",
+        "exports",
+        "commodities",
+        "customs",
+        "statistics"
+      ],
+      "access": {
+        "type": "register",
+        "label": "Registration required",
+        "registration_required": true,
+        "details": "The full API now requires a subscription key. A keyless preview endpoint serves a limited sample."
+      },
+      "license": {
+        "name": "Varies by dataset",
+        "verified": false,
+        "notes": "UN Comtrade data is published under UN terms of use; confirm the current terms on the publisher's site before reuse."
+      },
+      "geography": {
+        "coverage": [
+          "malaysia",
+          "global"
+        ],
+        "granularity": [
+          "national"
+        ]
+      },
+      "temporal": {
+        "frequency": "annual"
+      },
+      "languages": [
+        "en"
+      ],
+      "endpoints": [
+        {
+          "type": "landing-page",
+          "url": "https://comtradeplus.un.org/",
+          "label": "UN Comtrade explorer"
+        },
+        {
+          "type": "api",
+          "url": "https://comtradeapi.un.org/data/v1/get/C/A/HS",
+          "label": "Comtrade REST API (Malaysia reporter 458)",
+          "format": "json",
+          "auth": "api_key",
+          "notes": "Returns 401 without a subscription key. Requires registration at the Comtrade portal. Malaysia is reporter code 458."
+        },
+        {
+          "type": "api",
+          "url": "https://comtradeapi.un.org/public/v1/preview/C/A/HS",
+          "label": "Comtrade public preview endpoint",
+          "format": "json",
+          "auth": "none",
+          "notes": "Keyless preview endpoint serving a limited sample of records."
+        }
+      ],
+      "endpoint_types": [
+        "api",
+        "landing-page"
+      ],
+      "machine_readable": true,
+      "has_api": true,
+      "primary_url": "https://comtradeplus.un.org/",
+      "resource_url": "https://data.stratum.my/resources/comtrade-malaysia-trade",
+      "last_verified": "2026-10-04",
+      "verification": "fresh",
+      "warnings": []
+    },
+    {
+      "id": "mybis-biodiversity",
+      "name": "Malaysian biodiversity records",
+      "aliases": [
+        "MyBIS species",
+        "spesies",
+        "biodiversity data",
+        "kepelbagaian biologi",
+        "protected areas"
+      ],
+      "publisher": "mybis",
+      "publisher_name": "Malaysia Biodiversity Information System",
+      "publisher_abbreviation": "MyBIS",
+      "publisher_type": "government",
+      "description": "Species and habitat information for Malaysia: an explorable species catalogue with taxonomy and conservation status, occurrence records, protected area information and summary analysis views.",
+      "categories": [
+        "environment",
+        "science-research"
+      ],
+      "tags": [
+        "biodiversity",
+        "species",
+        "wildlife",
+        "conservation",
+        "environment",
+        "ecology",
+        "mybis"
+      ],
+      "access": {
+        "type": "public",
+        "label": "Public",
+        "details": "Species and habitat records are freely browsable in the portal. Reuse terms are not stated; the portal does not advertise an open licence."
+      },
+      "geography": {
+        "coverage": [
+          "malaysia"
+        ],
+        "granularity": [
+          "national",
+          "state",
+          "site"
+        ]
+      },
+      "languages": [
+        "ms",
+        "en"
+      ],
+      "endpoints": [
+        {
+          "type": "landing-page",
+          "url": "https://www.mybis.gov.my/",
+          "label": "MyBIS portal"
+        },
+        {
+          "type": "explorer",
+          "url": "https://www.mybis.gov.my/one/discover.php",
+          "label": "Discover species records"
+        },
+        {
+          "type": "dashboard",
+          "url": "https://www.mybis.gov.my/one/analysis.php",
+          "label": "Biodiversity analysis"
+        }
+      ],
+      "endpoint_types": [
+        "dashboard",
+        "explorer",
+        "landing-page"
+      ],
+      "machine_readable": false,
+      "has_api": false,
+      "primary_url": "https://www.mybis.gov.my/",
+      "resource_url": "https://data.stratum.my/resources/mybis-biodiversity",
+      "last_verified": "2026-10-04",
+      "verification": "fresh",
+      "warnings": [
+        "Update frequency is not recorded.",
+        "Licence is not recorded. Do not infer it from public access."
+      ]
+    },
+    {
+      "id": "data-gov-my-open-data",
+      "name": "Malaysian government open data",
+      "aliases": [
+        "data.gov.my",
+        "Portal Data Terbuka Malaysia",
+        "Malaysian open data portal",
+        "data terbuka kerajaan"
+      ],
+      "publisher": "data-gov-my",
+      "publisher_name": "Malaysian Open Data Portal",
+      "publisher_abbreviation": "data.gov.my",
+      "publisher_type": "government",
+      "description": "Datasets published by Malaysian federal agencies, covering population, economy, transport, health, education and the environment. Browse the catalogue in a browser, or query the same datasets programmatically through the public data catalogue API.",
+      "categories": [
+        "elections-government"
+      ],
+      "tags": [
+        "open-data",
+        "portal",
+        "catalogue",
+        "government",
+        "api",
+        "data-terbuka"
+      ],
+      "access": {
+        "type": "open",
+        "label": "Open",
+        "details": "Datasets are published individually and may carry different terms; check each dataset."
+      },
+      "license": {
+        "name": "Varies by dataset",
+        "verified": false,
+        "notes": "data.gov.my publishes datasets from many agencies. Individual datasets carry their own licences. Confirm the licence on the dataset page before reuse."
+      },
+      "geography": {
+        "coverage": [
+          "malaysia"
+        ],
+        "granularity": [
+          "national",
+          "state",
+          "district"
+        ]
+      },
+      "languages": [
+        "ms",
+        "en"
+      ],
+      "endpoints": [
+        {
+          "type": "landing-page",
+          "url": "https://data.gov.my/",
+          "label": "Browse the catalogue"
+        },
+        {
+          "type": "api-docs",
+          "url": "https://developer.data.gov.my/",
+          "label": "Developer documentation",
+          "documentation": "https://developer.data.gov.my/"
+        },
+        {
+          "type": "api",
+          "url": "https://api.data.gov.my/data-catalogue?id=population_state",
+          "label": "Data catalogue API",
+          "auth": "none",
+          "notes": "Takes an `id` query parameter naming the dataset, for example `?id=population_state`. Returns JSON. The bare endpoint returns an error without it."
+        },
+        {
+          "type": "data-dump",
+          "url": "https://storage.data.gov.my/",
+          "label": "Bulk file storage",
+          "notes": "Datasets are also published as files, organised by catalogue id."
+        }
+      ],
+      "endpoint_types": [
+        "api",
+        "api-docs",
+        "data-dump",
+        "landing-page"
+      ],
+      "machine_readable": true,
+      "has_api": true,
+      "primary_url": "https://data.gov.my/",
+      "resource_url": "https://data.stratum.my/resources/data-gov-my-open-data",
+      "last_verified": "2026-10-04",
+      "verification": "fresh",
+      "warnings": [
+        "Update frequency is not recorded."
+      ]
+    },
+    {
+      "id": "napic-property-data",
+      "name": "Malaysian property market data",
+      "aliases": [
+        "property market report",
+        "laporan pasaran harta tanah",
+        "house prices",
+        "Malaysian House Price Index",
+        "transaction data",
+        "harta tanah"
+      ],
+      "publisher": "napic",
+      "publisher_name": "National Property Information Centre",
+      "publisher_abbreviation": "NAPIC",
+      "publisher_type": "government",
+      "description": "Malaysian property market information: time series of property market indicators, the Malaysian House Price Index, property transaction records and interactive visualisations of the market by state and property type.",
+      "categories": [
+        "housing-property",
+        "economy"
+      ],
+      "tags": [
+        "property",
+        "housing",
+        "prices",
+        "index",
+        "transactions",
+        "napic",
+        "jpph",
+        "real-estate"
+      ],
+      "access": {
+        "type": "public",
+        "label": "Public",
+        "details": "Time series, transaction and visualisation pages are freely viewable. Some detailed NAPIC reports and data extracts are sold or require an account, so access is recorded as public rather than open."
+      },
+      "geography": {
+        "coverage": [
+          "malaysia"
+        ],
+        "granularity": [
+          "national",
+          "state"
+        ]
+      },
+      "languages": [
+        "ms",
+        "en"
+      ],
+      "endpoints": [
+        {
+          "type": "landing-page",
+          "url": "https://napic.jpph.gov.my/",
+          "label": "NAPIC portal"
+        },
+        {
+          "type": "explorer",
+          "url": "https://napic.jpph.gov.my/data-siri-masa",
+          "label": "Time series data"
+        },
+        {
+          "type": "explorer",
+          "url": "https://napic.jpph.gov.my/data-transaksi",
+          "label": "Transaction data"
+        },
+        {
+          "type": "dashboard",
+          "url": "https://napic.jpph.gov.my/visualisasi-data",
+          "label": "Data visualisation"
+        },
+        {
+          "type": "publication",
+          "url": "https://napic.jpph.gov.my/archives/pasaran-harta-tanah",
+          "label": "Property market reports"
+        }
+      ],
+      "endpoint_types": [
+        "dashboard",
+        "explorer",
+        "landing-page",
+        "publication"
+      ],
+      "machine_readable": false,
+      "has_api": false,
+      "primary_url": "https://napic.jpph.gov.my/",
+      "resource_url": "https://data.stratum.my/resources/napic-property-data",
+      "last_verified": "2026-10-04",
+      "verification": "fresh",
+      "warnings": [
+        "Update frequency is not recorded.",
+        "Licence is not recorded. Do not infer it from public access."
+      ]
+    },
+    {
+      "id": "metmalaysia-weather-api",
+      "name": "METMalaysia weather data API",
+      "aliases": [
+        "weather API",
+        "cuaca API",
+        "ramalan cuaca",
+        "weather forecast",
+        "rainfall data"
+      ],
+      "publisher": "metmalaysia",
+      "publisher_name": "Malaysian Meteorological Department",
+      "publisher_abbreviation": "METMalaysia",
+      "publisher_type": "government",
+      "description": "Programmatic access to METMalaysia's weather datasets: forecasts for states and locations, weather warnings, and the observation and climate records behind them. A token is required and is issued on registration.",
+      "categories": [
+        "weather-climate",
+        "environment"
+      ],
+      "tags": [
+        "weather",
+        "forecast",
+        "rainfall",
+        "climate",
+        "cuaca",
+        "hujan",
+        "api"
+      ],
+      "access": {
+        "type": "register",
+        "label": "Registration required",
+        "registration_required": true,
+        "details": "An API token is issued to registered users and must be supplied with each request."
+      },
+      "geography": {
+        "coverage": [
+          "malaysia"
+        ],
+        "granularity": [
+          "national",
+          "state",
+          "district"
+        ]
+      },
+      "languages": [
+        "en",
+        "ms"
+      ],
+      "endpoints": [
+        {
+          "type": "api",
+          "url": "https://api.met.gov.my/",
+          "label": "Weather data API",
+          "auth": "api_key",
+          "notes": "Requests without a valid token are rejected with 401."
+        },
+        {
+          "type": "landing-page",
+          "url": "https://www.met.gov.my/en/",
+          "label": "METMalaysia"
+        },
+        {
+          "type": "dashboard",
+          "url": "https://www.met.gov.my/en/forecast/",
+          "label": "Public forecasts"
+        }
+      ],
+      "endpoint_types": [
+        "api",
+        "dashboard",
+        "landing-page"
+      ],
+      "machine_readable": true,
+      "has_api": true,
+      "primary_url": "https://www.met.gov.my/en/",
+      "resource_url": "https://data.stratum.my/resources/metmalaysia-weather-api",
+      "last_verified": "2026-10-04",
+      "verification": "fresh",
+      "warnings": [
+        "Update frequency is not recorded.",
+        "Licence is not recorded. Do not infer it from public access."
+      ]
+    },
+    {
+      "id": "mygdi-geoportal",
+      "name": "MyGDI geoportal",
+      "aliases": [
+        "MyGDI",
+        "MyGeoportal",
+        "geospatial data",
+        "data geospatial",
+        "spatial data",
+        "peta"
+      ],
+      "publisher": "mygdi",
+      "publisher_name": "Malaysian Geospatial Data Infrastructure",
+      "publisher_abbreviation": "MyGDI",
+      "publisher_type": "government",
+      "description": "The national geoportal for Malaysian geospatial data. Provides discovery of spatial datasets and metadata published by federal agencies, and access to geospatial applications and data update information.",
+      "categories": [
+        "geography"
+      ],
+      "tags": [
+        "geospatial",
+        "gis",
+        "maps",
+        "spatial-data",
+        "metadata",
+        "mygdi",
+        "geoportal"
+      ],
+      "access": {
+        "type": "public",
+        "label": "Public",
+        "details": "The geoportal and its metadata are freely browsable. Reuse terms for individual datasets are not stated on the landing page, so no licence is asserted."
+      },
+      "geography": {
+        "coverage": [
+          "malaysia"
+        ],
+        "granularity": [
+          "national",
+          "state"
+        ]
+      },
+      "languages": [
+        "ms",
+        "en"
+      ],
+      "endpoints": [
+        {
+          "type": "landing-page",
+          "url": "https://www.mygeoportal.gov.my/",
+          "label": "MyGeoportal"
+        },
+        {
+          "type": "registry",
+          "url": "https://mygeoportal.gov.my/",
+          "label": "Geoportal (alternate host)"
+        }
+      ],
+      "endpoint_types": [
+        "landing-page",
+        "registry"
+      ],
+      "machine_readable": false,
+      "has_api": false,
+      "primary_url": "https://www.mygeoportal.gov.my/",
+      "resource_url": "https://data.stratum.my/resources/mygdi-geoportal",
+      "last_verified": "2026-10-04",
+      "verification": "fresh",
+      "warnings": [
+        "Update frequency is not recorded.",
+        "Licence is not recorded. Do not infer it from public access."
+      ]
+    },
+    {
+      "id": "mygdx-government-data-exchange",
+      "name": "MyGDX government data exchange",
+      "aliases": [
+        "MyGDX",
+        "data exchange",
+        "pertukaran data",
+        "government datasets",
+        "GDX"
+      ],
+      "publisher": "mygdx",
+      "publisher_name": "Malaysian Government Central Data Exchange",
+      "publisher_abbreviation": "MyGDX",
+      "publisher_type": "government",
+      "description": "A platform for sharing data between Malaysian government agencies, providing data exchange, dataset statistics and verification services. Access is intended for public sector users and authorised parties rather than the general public.",
+      "categories": [
+        "elections-government"
+      ],
+      "tags": [
+        "government",
+        "data-exchange",
+        "gdx",
+        "inter-agency",
+        "public-sector"
+      ],
+      "access": {
+        "type": "restricted",
+        "label": "Restricted",
+        "registration_required": true,
+        "details": "The platform is designed for government agencies. Public visitors can read the landing pages, but datasets and exchange services require authorised access."
+      },
+      "geography": {
+        "coverage": [
+          "malaysia"
+        ],
+        "granularity": [
+          "national"
+        ]
+      },
+      "languages": [
+        "ms",
+        "en"
+      ],
+      "endpoints": [
+        {
+          "type": "landing-page",
+          "url": "https://www.mygdx.gov.my/",
+          "label": "MyGDX portal"
+        },
+        {
+          "type": "dashboard",
+          "url": "https://www.mygdx.gov.my/ms/landing-page/statistic",
+          "label": "Dataset statistics"
+        }
+      ],
+      "endpoint_types": [
+        "dashboard",
+        "landing-page"
+      ],
+      "machine_readable": false,
+      "has_api": false,
+      "primary_url": "https://www.mygdx.gov.my/",
+      "resource_url": "https://data.stratum.my/resources/mygdx-government-data-exchange",
+      "last_verified": "2026-10-04",
+      "verification": "fresh",
+      "warnings": [
+        "Update frequency is not recorded.",
+        "Licence is not recorded. Do not infer it from public access."
+      ]
+    },
+    {
+      "id": "oecd-malaysia-indicators",
+      "name": "OECD indicators covering Malaysia",
+      "aliases": [
+        "OECD Malaysia",
+        "Malaysia OECD data",
+        "OECD statistics"
+      ],
+      "publisher": "oecd",
+      "publisher_name": "Organisation for Economic Co-operation and Development",
+      "publisher_abbreviation": "OECD",
+      "publisher_type": "international",
+      "description": "OECD datasets that include Malaysia as a partner or non-member economy — trade in goods and services, foreign direct investment, development finance and selected economic indicators — available through the OECD Data Explorer and SDMX API.",
+      "categories": [
+        "economy",
+        "trade",
+        "finance"
+      ],
+      "tags": [
+        "trade",
+        "investment",
+        "development",
+        "indicators",
+        "sdmx",
+        "statistics"
+      ],
+      "access": {
+        "type": "open",
+        "label": "Open",
+        "details": "The data explorer and the SDMX dataflow listing require no registration. Some data queries returned 403 to automated requests."
+      },
+      "license": {
+        "name": "Varies by dataset",
+        "verified": false,
+        "notes": "OECD datasets carry their own terms of use. Check the dataset page before reuse."
+      },
+      "geography": {
+        "coverage": [
+          "malaysia",
+          "global"
+        ],
+        "granularity": [
+          "national"
+        ]
+      },
+      "temporal": {
+        "frequency": "quarterly"
+      },
+      "languages": [
+        "en"
+      ],
+      "endpoints": [
+        {
+          "type": "landing-page",
+          "url": "https://data-explorer.oecd.org/",
+          "label": "OECD Data Explorer"
+        },
+        {
+          "type": "explorer",
+          "url": "https://stats.oecd.org/",
+          "label": "OECD.Stat"
+        },
+        {
+          "type": "api",
+          "url": "https://sdmx.oecd.org/public/rest/dataflow/all",
+          "label": "OECD SDMX API - dataflow list",
+          "format": "xml",
+          "auth": "none",
+          "notes": "Malaysia is reported as MYS. The `/all` path lists every dataflow; individual data queries returned 403 to automated requests."
+        }
+      ],
+      "endpoint_types": [
+        "api",
+        "explorer",
+        "landing-page"
+      ],
+      "machine_readable": true,
+      "has_api": true,
+      "primary_url": "https://data-explorer.oecd.org/",
+      "resource_url": "https://data.stratum.my/resources/oecd-malaysia-indicators",
+      "last_verified": "2026-10-04",
+      "verification": "fresh",
+      "warnings": []
+    },
+    {
+      "id": "dosm-open-data",
+      "name": "OpenDOSM",
+      "aliases": [
+        "Open DOSM",
+        "DOSM data catalogue",
+        "data terbuka DOSM"
+      ],
+      "publisher": "dosm",
+      "publisher_name": "Department of Statistics Malaysia",
+      "publisher_abbreviation": "DOSM",
+      "publisher_type": "government",
+      "description": "DOSM's own open data platform: the department's statistics presented as browsable datasets, dashboards and charts, with the source data available for download or through an API.",
+      "categories": [
+        "elections-government"
+      ],
+      "tags": [
+        "open-data",
+        "statistics",
+        "catalogue",
+        "dashboard",
+        "data-terbuka"
+      ],
+      "access": {
+        "type": "public",
+        "label": "Public",
+        "details": "Freely browsable. Individual datasets may state additional terms."
+      },
+      "geography": {
+        "coverage": [
+          "malaysia"
+        ],
+        "granularity": [
+          "national",
+          "state"
+        ]
+      },
+      "languages": [
+        "ms",
+        "en"
+      ],
+      "endpoints": [
+        {
+          "type": "landing-page",
+          "url": "https://open.dosm.gov.my/",
+          "label": "OpenDOSM"
+        },
+        {
+          "type": "explorer",
+          "url": "https://open.dosm.gov.my/data-catalogue",
+          "label": "Data catalogue"
+        },
+        {
+          "type": "api-docs",
+          "url": "https://developer.data.gov.my/",
+          "label": "API documentation",
+          "documentation": "https://developer.data.gov.my/"
+        }
+      ],
+      "endpoint_types": [
+        "api-docs",
+        "explorer",
+        "landing-page"
+      ],
+      "machine_readable": false,
+      "has_api": false,
+      "primary_url": "https://open.dosm.gov.my/",
+      "resource_url": "https://data.stratum.my/resources/dosm-open-data",
+      "last_verified": "2026-10-04",
+      "verification": "fresh",
+      "warnings": [
+        "Update frequency is not recorded.",
+        "Licence is not recorded. Do not infer it from public access."
+      ]
+    },
+    {
+      "id": "openstreetmap-malaysia-extract",
+      "name": "OpenStreetMap data for Malaysia",
+      "aliases": [
+        "OSM Malaysia",
+        "Malaysia map data",
+        "peta Malaysia",
+        "roads data"
+      ],
+      "publisher": "openstreetmap",
+      "publisher_name": "OpenStreetMap",
+      "publisher_abbreviation": "OSM",
+      "publisher_type": "community",
+      "description": "The full OpenStreetMap database for Malaysia — roads, buildings, land use, points of interest and administrative boundaries — available as planet extracts and through the editing API and Overpass query service.",
+      "categories": [
+        "geography",
+        "transport"
+      ],
+      "tags": [
+        "gis",
+        "maps",
+        "geospatial",
+        "roads",
+        "boundaries",
+        "osm",
+        "openstreetmap"
+      ],
+      "access": {
+        "type": "open",
+        "label": "Open",
+        "details": "Free to download and reuse under the Open Database License, with attribution."
+      },
+      "license": {
+        "name": "Open Database License (ODbL) 1.0",
+        "url": "https://opendatacommons.org/licenses/odbl/1-0/",
+        "verified": true,
+        "notes": "Attribution to OpenStreetMap contributors is required, and derived databases must stay open."
+      },
+      "geography": {
+        "coverage": [
+          "malaysia"
+        ],
+        "granularity": [
+          "national",
+          "state",
+          "district",
+          "point"
+        ]
+      },
+      "languages": [
+        "en"
+      ],
+      "endpoints": [
+        {
+          "type": "bulk-download",
+          "url": "https://download.geofabrik.de/asia/malaysia-singapore-brunei.html",
+          "label": "Malaysia, Singapore and Brunei extract",
+          "notes": "Prepared and hosted by Geofabrik, a long-standing third-party mirror. The canonical source is the OpenStreetMap planet file."
+        },
+        {
+          "type": "landing-page",
+          "url": "https://www.openstreetmap.org/",
+          "label": "OpenStreetMap"
+        },
+        {
+          "type": "map",
+          "url": "https://www.openstreetmap.org/relation/2108121",
+          "label": "Malaysia boundary on OSM"
+        }
+      ],
+      "endpoint_types": [
+        "bulk-download",
+        "landing-page",
+        "map"
+      ],
+      "machine_readable": true,
+      "has_api": false,
+      "primary_url": "https://www.openstreetmap.org/",
+      "resource_url": "https://data.stratum.my/resources/openstreetmap-malaysia-extract",
+      "last_verified": "2026-10-04",
+      "verification": "fresh",
+      "warnings": [
+        "Update frequency is not recorded."
+      ]
+    },
+    {
+      "id": "mpob-industry-statistics",
+      "name": "Palm oil industry statistics",
+      "aliases": [
+        "Palm oil production and exports",
+        "Statistik industri sawit"
+      ],
+      "publisher": "mpob",
+      "publisher_name": "Malaysian Palm Oil Board",
+      "publisher_abbreviation": "MPOB",
+      "publisher_type": "government",
+      "description": "Production, exports, stocks and prices for the Malaysian palm oil industry, published through the board's economics and industry portal alongside monthly releases.",
+      "categories": [
+        "agriculture",
+        "trade"
+      ],
+      "tags": [
+        "palm-oil",
+        "commodities",
+        "exports",
+        "prices",
+        "sawit",
+        "agriculture"
+      ],
+      "access": {
+        "type": "public",
+        "label": "Public",
+        "details": "Published freely for reading and reference. Reuse terms are not stated on the pages checked, so confirm them with MPOB before republishing."
+      },
+      "geography": {
+        "coverage": [
+          "malaysia"
+        ],
+        "granularity": [
+          "national"
+        ]
+      },
+      "languages": [
+        "en",
+        "ms"
+      ],
+      "endpoints": [
+        {
+          "type": "landing-page",
+          "url": "https://bepi.mpob.gov.my/",
+          "label": "MPOB economics and industry portal",
+          "notes": "Industry statistics and commodity information."
+        },
+        {
+          "type": "landing-page",
+          "url": "https://www.mpob.gov.my/",
+          "label": "Malaysian Palm Oil Board",
+          "notes": "Corporate site, including published statistics and monthly releases."
+        }
+      ],
+      "endpoint_types": [
+        "landing-page"
+      ],
+      "machine_readable": false,
+      "has_api": false,
+      "primary_url": "https://bepi.mpob.gov.my/",
+      "resource_url": "https://data.stratum.my/resources/mpob-industry-statistics",
+      "last_verified": "2026-10-04",
+      "verification": "fresh",
+      "warnings": [
+        "Update frequency is not recorded.",
+        "Licence is not recorded. Do not infer it from public access."
+      ]
+    },
+    {
+      "id": "dosm-population-state",
+      "name": "Population by state",
+      "aliases": [
+        "Jumlah penduduk mengikut negeri",
+        "population state",
+        "state population",
+        "penduduk negeri"
+      ],
+      "publisher": "dosm",
+      "publisher_name": "Department of Statistics Malaysia",
+      "publisher_abbreviation": "DOSM",
+      "publisher_type": "government",
+      "description": "Population counts for Malaysia broken down by state and administrative district, with annual series suitable for comparing states or tracking growth over time.",
+      "categories": [
+        "demographics"
+      ],
+      "tags": [
+        "population",
+        "demography",
+        "state",
+        "district",
+        "penduduk",
+        "statistics"
+      ],
+      "access": {
+        "type": "public",
+        "label": "Public",
+        "details": "Freely viewable and queryable. Reuse terms are not stated on the resource page."
+      },
+      "geography": {
+        "coverage": [
+          "malaysia"
+        ],
+        "granularity": [
+          "national",
+          "state",
+          "district"
+        ]
+      },
+      "languages": [
+        "ms",
+        "en"
+      ],
+      "endpoints": [
+        {
+          "type": "landing-page",
+          "url": "https://open.dosm.gov.my/dashboard/population",
+          "label": "Population dashboard"
+        },
+        {
+          "type": "api",
+          "url": "https://api.data.gov.my/data-catalogue?id=population_state",
+          "label": "JSON API",
+          "auth": "none",
+          "notes": "Requires the query parameter id=population_state."
+        },
+        {
+          "type": "api-docs",
+          "url": "https://developer.data.gov.my/",
+          "label": "API documentation",
+          "documentation": "https://developer.data.gov.my/"
+        },
+        {
+          "type": "explorer",
+          "url": "https://open.dosm.gov.my/data-catalogue",
+          "label": "Explore in the data catalogue"
+        }
+      ],
+      "endpoint_types": [
+        "api",
+        "api-docs",
+        "explorer",
+        "landing-page"
+      ],
+      "machine_readable": true,
+      "has_api": true,
+      "primary_url": "https://open.dosm.gov.my/dashboard/population",
+      "resource_url": "https://data.stratum.my/resources/dosm-population-state",
+      "last_verified": "2026-10-04",
+      "verification": "fresh",
+      "warnings": [
+        "Update frequency is not recorded.",
+        "Licence is not recorded. Do not infer it from public access."
+      ]
+    },
+    {
+      "id": "pos-malaysia-postcode-finder",
+      "name": "Postcode finder",
+      "aliases": [
+        "Postcode lookup",
+        "Poskod",
+        "Postal code search",
+        "Cari poskod"
+      ],
+      "publisher": "pos-malaysia",
+      "publisher_name": "Pos Malaysia",
+      "publisher_type": "commercial",
+      "description": "Look up Malaysian postcodes by postcode, street or area name, and check the address range each postcode covers.",
+      "categories": [
+        "geography"
+      ],
+      "tags": [
+        "postcode",
+        "postal",
+        "address",
+        "poskod",
+        "lookup",
+        "reference"
+      ],
+      "access": {
+        "type": "public",
+        "label": "Public",
+        "details": "Free to use in a browser. It is an interactive lookup rather than a downloadable dataset."
+      },
+      "geography": {
+        "coverage": [
+          "malaysia"
+        ],
+        "granularity": [
+          "postcode"
+        ]
+      },
+      "languages": [
+        "en",
+        "ms"
+      ],
+      "endpoints": [
+        {
+          "type": "search",
+          "url": "https://www.pos.com.my/postal-services/quick-access/?postcode-finder",
+          "label": "Postcode finder",
+          "notes": "Interactive lookup by postcode, street or area."
+        },
+        {
+          "type": "landing-page",
+          "url": "https://www.pos.com.my/",
+          "label": "Pos Malaysia",
+          "notes": "Operator site, for enquiry channels and related postal services."
+        }
+      ],
+      "endpoint_types": [
+        "landing-page",
+        "search"
+      ],
+      "machine_readable": false,
+      "has_api": false,
+      "primary_url": "https://www.pos.com.my/",
+      "resource_url": "https://data.stratum.my/resources/pos-malaysia-postcode-finder",
+      "last_verified": "2026-10-04",
+      "verification": "fresh",
+      "warnings": [
+        "Update frequency is not recorded.",
+        "Licence is not recorded. Do not infer it from public access."
+      ]
+    },
+    {
+      "id": "prasarana-rapid-services",
+      "name": "Prasarana urban transit services",
+      "aliases": [
+        "Rapid KL",
+        "Rapid Rail",
+        "Rapid Bus",
+        "LRT",
+        "MRT",
+        "monorail",
+        "pengangkutan awam"
+      ],
+      "publisher": "prasarana",
+      "publisher_name": "Prasarana Malaysia Berhad",
+      "publisher_abbreviation": "Prasarana",
+      "publisher_type": "government",
+      "description": "Information about the urban rail and bus networks operated by Prasarana, including the Rapid Rail lines (LRT, MRT, monorail) and Rapid Bus routes, plus the operator's sustainability reporting.",
+      "categories": [
+        "transport"
+      ],
+      "tags": [
+        "transport",
+        "rail",
+        "bus",
+        "rapid-kl",
+        "lrt",
+        "mrt",
+        "monorail",
+        "public-transport"
+      ],
+      "access": {
+        "type": "public",
+        "label": "Public",
+        "details": "Freely viewable on the operator's website. Reuse terms are not stated."
+      },
+      "geography": {
+        "coverage": [
+          "malaysia"
+        ],
+        "granularity": [
+          "station",
+          "national"
+        ]
+      },
+      "languages": [
+        "ms",
+        "en"
+      ],
+      "endpoints": [
+        {
+          "type": "landing-page",
+          "url": "https://www.prasarana.com.my/rapid-rail/",
+          "label": "Rapid Rail"
+        },
+        {
+          "type": "landing-page",
+          "url": "https://www.prasarana.com.my/rapid-bus/",
+          "label": "Rapid Bus"
+        },
+        {
+          "type": "report",
+          "url": "https://www.prasarana.com.my/sustainability/",
+          "label": "Sustainability reporting"
+        },
+        {
+          "type": "landing-page",
+          "url": "https://www.prasarana.com.my/",
+          "label": "Prasarana website"
+        }
+      ],
+      "endpoint_types": [
+        "landing-page",
+        "report"
+      ],
+      "machine_readable": false,
+      "has_api": false,
+      "primary_url": "https://www.prasarana.com.my/rapid-rail/",
+      "resource_url": "https://data.stratum.my/resources/prasarana-rapid-services",
+      "last_verified": "2026-10-04",
+      "verification": "fresh",
+      "warnings": [
+        "Update frequency is not recorded.",
+        "Licence is not recorded. Do not infer it from public access."
+      ]
+    },
+    {
+      "id": "kpdn-pricecatcher",
+      "name": "PriceCatcher",
+      "aliases": [
+        "PriceCatcher",
+        "harga",
+        "price comparison",
+        "harga barang",
+        "cost of living prices",
+        "portal harga"
+      ],
+      "publisher": "kpdn",
+      "publisher_name": "Ministry of Domestic Trade and Cost of Living",
+      "publisher_abbreviation": "KPDN",
+      "publisher_type": "government",
+      "description": "The ministry's national price monitoring service. Records prices of a basket of everyday goods and fresh produce at retail outlets across Malaysia, published so the public can compare prices between premises and locations. Data is browsable on the PriceCatcher portal and app.",
+      "categories": [
+        "prices-cost-of-living"
+      ],
+      "tags": [
+        "prices",
+        "groceries",
+        "cost-of-living",
+        "pricecatcher",
+        "kpdn",
+        "consumer",
+        "harga"
+      ],
+      "access": {
+        "type": "public",
+        "label": "Public",
+        "details": "Prices are freely viewable through the portal, the mobile apps and an Open API. The portal's terms page applies to the service; reuse terms for the underlying data are not stated in a licence, so access is recorded as public rather than open."
+      },
+      "geography": {
+        "coverage": [
+          "malaysia"
+        ],
+        "granularity": [
+          "national",
+          "local-authority",
+          "facility"
+        ]
+      },
+      "languages": [
+        "ms",
+        "en"
+      ],
+      "endpoints": [
+        {
+          "type": "landing-page",
+          "url": "https://pricecatcher.kpdn.gov.my/",
+          "label": "PriceCatcher portal"
+        },
+        {
+          "type": "publication",
+          "url": "https://pricecatcher.kpdn.gov.my/portal/terms",
+          "label": "Terms of use"
+        },
+        {
+          "type": "landing-page",
+          "url": "https://www.kpdn.gov.my/",
+          "label": "Ministry website"
+        }
+      ],
+      "endpoint_types": [
+        "landing-page",
+        "publication"
+      ],
+      "machine_readable": false,
+      "has_api": false,
+      "primary_url": "https://pricecatcher.kpdn.gov.my/",
+      "resource_url": "https://data.stratum.my/resources/kpdn-pricecatcher",
+      "last_verified": "2026-10-04",
+      "verification": "fresh",
+      "warnings": [
+        "Update frequency is not recorded.",
+        "Licence is not recorded. Do not infer it from public access."
+      ]
+    },
+    {
+      "id": "did-public-infobanjir",
+      "name": "Public Infobanjir rainfall and river level monitoring",
+      "aliases": [
+        "Infobanjir",
+        "Rainfall by station",
+        "River water levels",
+        "Banjir"
+      ],
+      "publisher": "did",
+      "publisher_name": "Department of Irrigation and Drainage",
+      "publisher_abbreviation": "DID",
+      "publisher_type": "government",
+      "description": "Near real-time rainfall readings, river water levels and flood warnings collected from monitoring stations across Malaysia, published by the Department of Irrigation and Drainage.",
+      "categories": [
+        "weather-climate",
+        "environment"
+      ],
+      "tags": [
+        "rainfall",
+        "hydrology",
+        "flood",
+        "water-level",
+        "banjir",
+        "monitoring",
+        "stations"
+      ],
+      "access": {
+        "type": "open",
+        "label": "Open",
+        "details": "Publicly viewable in a browser with no account. There is no stated bulk-export or API path, so treat reuse as subject to the department's terms."
+      },
+      "geography": {
+        "coverage": [
+          "malaysia"
+        ],
+        "granularity": [
+          "station",
+          "state",
+          "district",
+          "national"
+        ]
+      },
+      "languages": [
+        "ms",
+        "en"
+      ],
+      "endpoints": [
+        {
+          "type": "dashboard",
+          "url": "https://publicinfobanjir.water.gov.my/",
+          "label": "Public Infobanjir",
+          "notes": "Current rainfall, water level and flood status by station."
+        },
+        {
+          "type": "landing-page",
+          "url": "https://www.water.gov.my/",
+          "label": "Department of Irrigation and Drainage",
+          "notes": "Department site, for context and published reports."
+        }
+      ],
+      "endpoint_types": [
+        "dashboard",
+        "landing-page"
+      ],
+      "machine_readable": false,
+      "has_api": false,
+      "primary_url": "https://www.water.gov.my/",
+      "resource_url": "https://data.stratum.my/resources/did-public-infobanjir",
+      "last_verified": "2026-10-04",
+      "verification": "fresh",
+      "warnings": [
+        "Update frequency is not recorded.",
+        "Licence is not recorded. Do not infer it from public access."
+      ]
+    },
+    {
+      "id": "ram-credit-ratings",
+      "name": "RAM credit ratings and rating announcements",
+      "aliases": [
+        "RAM Ratings",
+        "credit ratings",
+        "rating announcements",
+        "bond ratings"
+      ],
+      "publisher": "ram",
+      "publisher_name": "RAM Holdings Berhad",
+      "publisher_abbreviation": "RAM",
+      "publisher_type": "commercial",
+      "description": "Credit ratings and rating actions published by RAM Ratings for Malaysian and regional issuers, including corporate bonds, sukuk and financial institutions, together with rating methodologies and subscription research.",
+      "categories": [
+        "finance",
+        "business-companies"
+      ],
+      "tags": [
+        "credit-ratings",
+        "ratings",
+        "bonds",
+        "sukuk",
+        "risk",
+        "bond-pricing"
+      ],
+      "access": {
+        "type": "paid",
+        "label": "Paid",
+        "registration_required": true,
+        "paid": true,
+        "details": "Rating announcements are listed publicly; detailed rating reports, analytics and data are sold through a subscription (e-purchase). The rating search page resolves to a member login."
+      },
+      "geography": {
+        "coverage": [
+          "malaysia"
+        ],
+        "granularity": [
+          "national"
+        ]
+      },
+      "languages": [
+        "en"
+      ],
+      "endpoints": [
+        {
+          "type": "search",
+          "url": "https://www.ram.com.my/find-a-rating/?a=entity&reset=1",
+          "label": "Find a rating",
+          "auth": "account"
+        },
+        {
+          "type": "publication",
+          "url": "https://www.ram.com.my/news-events/?tab=list-ratingannouncement",
+          "label": "Rating announcements"
+        },
+        {
+          "type": "commercial-access",
+          "url": "https://www.ram.com.my/epurchase?module=subscribe",
+          "label": "RAM e-purchase subscription"
+        },
+        {
+          "type": "landing-page",
+          "url": "https://www.ram.com.my/",
+          "label": "RAM Holdings Berhad"
+        }
+      ],
+      "endpoint_types": [
+        "commercial-access",
+        "landing-page",
+        "publication",
+        "search"
+      ],
+      "machine_readable": false,
+      "has_api": false,
+      "primary_url": "https://www.ram.com.my/",
+      "resource_url": "https://data.stratum.my/resources/ram-credit-ratings",
+      "last_verified": "2026-10-04",
+      "verification": "fresh",
+      "warnings": [
+        "Update frequency is not recorded.",
+        "Licence is not recorded. Do not infer it from public access."
+      ]
+    },
+    {
+      "id": "seda-renewable-energy",
+      "name": "Renewable energy capacity statistics",
+      "aliases": [
+        "SEDA statistics",
+        "renewable energy capacity",
+        "tenaga boleh baharu",
+        "FiT",
+        "feed-in tariff",
+        "installed capacity",
+        "solar PV capacity"
+      ],
+      "publisher": "seda",
+      "publisher_name": "Sustainable Energy Development Authority Malaysia",
+      "publisher_abbreviation": "SEDA",
+      "publisher_type": "statutory-body",
+      "description": "Statistics on renewable energy installations monitored by the authority, including installed and re-installed capacities by technology, and the authority's monitoring and reporting material.",
+      "categories": [
+        "energy",
+        "environment"
+      ],
+      "tags": [
+        "renewable-energy",
+        "solar",
+        "biomass",
+        "biogas",
+        "capacity",
+        "seda",
+        "fit",
+        "energy"
+      ],
+      "access": {
+        "type": "public",
+        "label": "Public",
+        "details": "Capacity statistics and monitoring reports are freely viewable. Reuse terms are not stated, so no licence is asserted."
+      },
+      "geography": {
+        "coverage": [
+          "malaysia"
+        ],
+        "granularity": [
+          "national",
+          "state"
+        ]
+      },
+      "languages": [
+        "en",
+        "ms"
+      ],
+      "endpoints": [
+        {
+          "type": "landing-page",
+          "url": "https://www.seda.gov.my/statistics-monitoring/re-installed-capacities/",
+          "label": "Installed and re-installed capacities"
+        },
+        {
+          "type": "dashboard",
+          "url": "https://www.seda.gov.my/reportal/",
+          "label": "RE monitoring portal (REPortal)"
+        },
+        {
+          "type": "landing-page",
+          "url": "https://www.seda.gov.my/",
+          "label": "SEDA website"
+        }
+      ],
+      "endpoint_types": [
+        "dashboard",
+        "landing-page"
+      ],
+      "machine_readable": false,
+      "has_api": false,
+      "primary_url": "https://www.seda.gov.my/statistics-monitoring/re-installed-capacities/",
+      "resource_url": "https://data.stratum.my/resources/seda-renewable-energy",
+      "last_verified": "2026-10-04",
+      "verification": "fresh",
+      "warnings": [
+        "Update frequency is not recorded.",
+        "Licence is not recorded. Do not infer it from public access."
+      ]
+    },
+    {
+      "id": "usm-institutional-repository",
+      "name": "Repository@USM",
+      "aliases": [
+        "USM repository",
+        "USM eprints",
+        "USM research and publication"
+      ],
+      "publisher": "usm",
+      "publisher_name": "Universiti Sains Malaysia",
+      "publisher_abbreviation": "USM",
+      "publisher_type": "academic",
+      "description": "USM's institutional repository, holding the university's research outputs and publications such as theses, journal articles and conference papers, searchable and browsable by author, title and subject.",
+      "categories": [
+        "science-research",
+        "education"
+      ],
+      "tags": [
+        "institutional-repository",
+        "research",
+        "theses",
+        "publications",
+        "open-access"
+      ],
+      "access": {
+        "type": "public",
+        "label": "Public",
+        "details": "Records are publicly searchable. Reuse terms for individual items vary by item and were not confirmed."
+      },
+      "geography": {
+        "coverage": [
+          "malaysia"
+        ],
+        "granularity": [
+          "national"
+        ]
+      },
+      "languages": [
+        "en"
+      ],
+      "endpoints": [
+        {
+          "type": "catalogue",
+          "url": "https://eprints.usm.my/",
+          "label": "Repository@USM"
+        },
+        {
+          "type": "landing-page",
+          "url": "https://www.usm.my/",
+          "label": "Universiti Sains Malaysia"
+        }
+      ],
+      "endpoint_types": [
+        "catalogue",
+        "landing-page"
+      ],
+      "machine_readable": false,
+      "has_api": false,
+      "primary_url": "https://www.usm.my/",
+      "resource_url": "https://data.stratum.my/resources/usm-institutional-repository",
+      "last_verified": "2026-10-04",
+      "verification": "fresh",
+      "warnings": [
+        "Update frequency is not recorded.",
+        "Licence is not recorded. Do not infer it from public access."
+      ]
+    },
+    {
+      "id": "sc-publications-and-research",
+      "name": "Securities Commission publications, statistics and research",
+      "aliases": [
+        "SC publications",
+        "capital market statistics",
+        "SC quarterly report"
+      ],
+      "publisher": "sc",
+      "publisher_name": "Securities Commission Malaysia",
+      "publisher_abbreviation": "SC",
+      "publisher_type": "statutory-body",
+      "description": "Reports, statistics and research published by the Securities Commission Malaysia, including the annual report, quarterly reports, consultation papers and capital-market data.",
+      "categories": [
+        "finance",
+        "economy"
+      ],
+      "tags": [
+        "capital-market",
+        "securities",
+        "regulator",
+        "statistics",
+        "reports"
+      ],
+      "access": {
+        "type": "public",
+        "label": "Public",
+        "details": "The publications index and quarterly report pages are publicly viewable. Reuse terms and the availability of bulk machine-readable data were not confirmed."
+      },
+      "geography": {
+        "coverage": [
+          "malaysia"
+        ],
+        "granularity": [
+          "national"
+        ]
+      },
+      "languages": [
+        "en"
+      ],
+      "endpoints": [
+        {
+          "type": "report",
+          "url": "https://www.sc.com.my/resources/publications-and-research",
+          "label": "Publications and research"
+        },
+        {
+          "type": "report",
+          "url": "https://www.sc.com.my/resources/quarterly-report",
+          "label": "Quarterly report"
+        },
+        {
+          "type": "landing-page",
+          "url": "https://www.sc.com.my/",
+          "label": "Securities Commission Malaysia"
+        }
+      ],
+      "endpoint_types": [
+        "landing-page",
+        "report"
+      ],
+      "machine_readable": false,
+      "has_api": false,
+      "primary_url": "https://www.sc.com.my/",
+      "resource_url": "https://data.stratum.my/resources/sc-publications-and-research",
+      "last_verified": "2026-10-04",
+      "verification": "fresh",
+      "warnings": [
+        "Update frequency is not recorded.",
+        "Licence is not recorded. Do not infer it from public access."
+      ]
+    },
+    {
+      "id": "ssm-corporate-data-products",
+      "name": "SSM corporate information data products",
+      "aliases": [
+        "MyDATA",
+        "Corporate and Business Information Data",
+        "CBID"
+      ],
+      "publisher": "ssm",
+      "publisher_name": "Companies Commission of Malaysia",
+      "publisher_abbreviation": "SSM",
+      "publisher_type": "statutory-body",
+      "description": "SSM's channels for obtaining corporate and business information data beyond single-document searches, covering the MyDATA purchase service and the Corporate and Business Information Data (CBID) product.",
+      "categories": [
+        "business-companies"
+      ],
+      "tags": [
+        "company-registry",
+        "corporate-information",
+        "data-products",
+        "ssm"
+      ],
+      "access": {
+        "type": "paid",
+        "label": "Paid",
+        "paid": true,
+        "details": "These are purchasable registry-data products. Pricing and the exact datasets, formats and volumes offered on each page were not confirmed."
+      },
+      "geography": {
+        "coverage": [
+          "malaysia"
+        ],
+        "granularity": [
+          "national"
+        ]
+      },
+      "languages": [
+        "en",
+        "ms"
+      ],
+      "endpoints": [
+        {
+          "type": "commercial-access",
+          "url": "https://www.ssm.com.my/Pages/Buy_Corporate_Information/MyDATA.aspx",
+          "label": "MyDATA"
+        },
+        {
+          "type": "commercial-access",
+          "url": "https://www.ssm.com.my/Pages/Product/Corporate-and-Business-Information-Data-(CBID).aspx",
+          "label": "Corporate and Business Information Data (CBID)"
+        }
+      ],
+      "endpoint_types": [
+        "commercial-access"
+      ],
+      "machine_readable": false,
+      "has_api": false,
+      "primary_url": "https://www.ssm.com.my/Pages/Buy_Corporate_Information/MyDATA.aspx",
+      "resource_url": "https://data.stratum.my/resources/ssm-corporate-data-products",
+      "last_verified": "2026-10-04",
+      "verification": "fresh",
+      "warnings": [
+        "Update frequency is not recorded.",
+        "Licence is not recorded. Do not infer it from public access."
+      ]
+    },
+    {
+      "id": "ssm-e-info",
+      "name": "SSM e-Info corporate information search",
+      "aliases": [
+        "SSM e-Info",
+        "company search",
+        "business profile",
+        "carian syarikat"
+      ],
+      "publisher": "ssm",
+      "publisher_name": "Companies Commission of Malaysia",
+      "publisher_abbreviation": "SSM",
+      "publisher_type": "statutory-body",
+      "description": "Official search and purchase of Malaysian company and business registry information through the SSM e-Info portal, including company profiles, business profiles and certified extracts. Documents are bought per item.",
+      "categories": [
+        "business-companies"
+      ],
+      "tags": [
+        "company-registry",
+        "business-registry",
+        "company-search",
+        "corporate-information",
+        "ssm"
+      ],
+      "access": {
+        "type": "paid",
+        "label": "Paid",
+        "paid": true,
+        "details": "Search results are free to view; individual documents such as company and business profiles or certified extracts are purchased per item."
+      },
+      "geography": {
+        "coverage": [
+          "malaysia"
+        ],
+        "granularity": [
+          "national"
+        ]
+      },
+      "languages": [
+        "en",
+        "ms"
+      ],
+      "endpoints": [
+        {
+          "type": "registry",
+          "url": "https://www.ssm-einfo.my/",
+          "label": "SSM e-Info portal"
+        },
+        {
+          "type": "landing-page",
+          "url": "https://www.ssm.com.my/Pages/Buy_Corporate_Information/e-Info.aspx",
+          "label": "e-Info information page"
+        }
+      ],
+      "endpoint_types": [
+        "landing-page",
+        "registry"
+      ],
+      "machine_readable": false,
+      "has_api": false,
+      "primary_url": "https://www.ssm.com.my/Pages/Buy_Corporate_Information/e-Info.aspx",
+      "resource_url": "https://data.stratum.my/resources/ssm-e-info",
+      "last_verified": "2026-10-04",
+      "verification": "fresh",
+      "warnings": [
+        "Update frequency is not recorded.",
+        "Licence is not recorded. Do not infer it from public access."
+      ]
+    },
+    {
+      "id": "ssm-statistics",
+      "name": "SSM registry statistics",
+      "aliases": [
+        "SSM statistics",
+        "company registration statistics"
+      ],
+      "publisher": "ssm",
+      "publisher_name": "Companies Commission of Malaysia",
+      "publisher_abbreviation": "SSM",
+      "publisher_type": "statutory-body",
+      "description": "Statistics and statistical publications from the Companies Commission on company, business and limited liability partnership registration activity in Malaysia.",
+      "categories": [
+        "business-companies",
+        "economy"
+      ],
+      "tags": [
+        "statistics",
+        "company-registry",
+        "registrations",
+        "ssm"
+      ],
+      "access": {
+        "type": "public",
+        "label": "Public",
+        "details": "The statistics page is publicly viewable. Reuse terms for the published figures were not confirmed."
+      },
+      "geography": {
+        "coverage": [
+          "malaysia"
+        ],
+        "granularity": [
+          "national"
+        ]
+      },
+      "languages": [
+        "en",
+        "ms"
+      ],
+      "endpoints": [
+        {
+          "type": "statistical-release",
+          "url": "https://www.ssm.com.my/Pages/Publication/Statistics/Statistics.aspx",
+          "label": "SSM statistics"
+        }
+      ],
+      "endpoint_types": [
+        "statistical-release"
+      ],
+      "machine_readable": false,
+      "has_api": false,
+      "primary_url": "https://www.ssm.com.my/Pages/Publication/Statistics/Statistics.aspx",
+      "resource_url": "https://data.stratum.my/resources/ssm-statistics",
+      "last_verified": "2026-10-04",
+      "verification": "fresh",
+      "warnings": [
+        "Update frequency is not recorded.",
+        "Licence is not recorded. Do not infer it from public access."
+      ]
+    },
+    {
+      "id": "mot-transport-statistics",
+      "name": "Transport sector reports and statistics",
+      "aliases": [
+        "statistik pengangkutan",
+        "transport statistics",
+        "land transport reports",
+        "maritime statistics",
+        "aviation reports"
+      ],
+      "publisher": "mot",
+      "publisher_name": "Ministry of Transport Malaysia",
+      "publisher_abbreviation": "MOT",
+      "publisher_type": "government",
+      "description": "Reports and statistics covering Malaysian land, maritime and aviation transport, including sector statistics collections and the national freight data reports published by the ministry and its agencies.",
+      "categories": [
+        "transport",
+        "economy"
+      ],
+      "tags": [
+        "transport",
+        "statistics",
+        "aviation",
+        "maritime",
+        "land-transport",
+        "freight",
+        "mot"
+      ],
+      "access": {
+        "type": "public",
+        "label": "Public",
+        "details": "Reports and statistics pages are freely viewable. Reuse terms are not stated, so no licence is asserted."
+      },
+      "geography": {
+        "coverage": [
+          "malaysia"
+        ],
+        "granularity": [
+          "national"
+        ]
+      },
+      "languages": [
+        "en",
+        "ms"
+      ],
+      "endpoints": [
+        {
+          "type": "landing-page",
+          "url": "https://www.mot.gov.my/en/browse-by-topic/reports-and-stats",
+          "label": "Reports and statistics"
+        },
+        {
+          "type": "publication",
+          "url": "https://www.mot.gov.my/en/land/reports",
+          "label": "Land transport reports"
+        },
+        {
+          "type": "publication",
+          "url": "https://www.mot.gov.my/en/logistic/reports-and-stats",
+          "label": "Logistics reports and statistics"
+        },
+        {
+          "type": "publication",
+          "url": "https://www.mot.gov.my/en/aviation/reports",
+          "label": "Aviation reports"
+        }
+      ],
+      "endpoint_types": [
+        "landing-page",
+        "publication"
+      ],
+      "machine_readable": false,
+      "has_api": false,
+      "primary_url": "https://www.mot.gov.my/en/browse-by-topic/reports-and-stats",
+      "resource_url": "https://data.stratum.my/resources/mot-transport-statistics",
+      "last_verified": "2026-10-04",
+      "verification": "fresh",
+      "warnings": [
+        "Update frequency is not recorded.",
+        "Licence is not recorded. Do not infer it from public access."
+      ]
+    },
+    {
+      "id": "ukm-research-repository",
+      "name": "UKM journal article repository and e-journals",
+      "aliases": [
+        "UKM Journal Article Repository",
+        "UKM e-Journal System",
+        "UKM repository"
+      ],
+      "publisher": "ukm",
+      "publisher_name": "Universiti Kebangsaan Malaysia",
+      "publisher_abbreviation": "UKM",
+      "publisher_type": "academic",
+      "description": "UKM's journal article repository and e-journal system, hosting UKM-published journals and research articles that are searchable and browsable by journal, author and title.",
+      "categories": [
+        "science-research",
+        "education"
+      ],
+      "tags": [
+        "institutional-repository",
+        "research",
+        "journal-articles",
+        "e-journals",
+        "publications"
+      ],
+      "access": {
+        "type": "public",
+        "label": "Public",
+        "details": "Articles are publicly searchable. Reuse terms for individual articles vary by journal and were not confirmed."
+      },
+      "geography": {
+        "coverage": [
+          "malaysia"
+        ],
+        "granularity": [
+          "national"
+        ]
+      },
+      "languages": [
+        "en"
+      ],
+      "endpoints": [
+        {
+          "type": "catalogue",
+          "url": "https://journalarticle.ukm.my/",
+          "label": "UKM Journal Article Repository"
+        },
+        {
+          "type": "landing-page",
+          "url": "https://ejournal.ukm.my/",
+          "label": "UKM e-Journal System"
+        },
+        {
+          "type": "landing-page",
+          "url": "https://www.ukm.my/",
+          "label": "Universiti Kebangsaan Malaysia"
+        }
+      ],
+      "endpoint_types": [
+        "catalogue",
+        "landing-page"
+      ],
+      "machine_readable": false,
+      "has_api": false,
+      "primary_url": "https://ejournal.ukm.my/",
+      "resource_url": "https://data.stratum.my/resources/ukm-research-repository",
+      "last_verified": "2026-10-04",
+      "verification": "fresh",
+      "warnings": [
+        "Update frequency is not recorded.",
+        "Licence is not recorded. Do not infer it from public access."
+      ]
+    },
+    {
+      "id": "un-data-portal",
+      "name": "UN Data portal",
+      "aliases": [
+        "UN Data",
+        "data.un.org",
+        "UN statistical databases"
+      ],
+      "publisher": "united-nations",
+      "publisher_name": "United Nations",
+      "publisher_abbreviation": "UN",
+      "publisher_type": "international",
+      "description": "An aggregated search and download portal bringing together United Nations statistical databases, with country-level series for Malaysia across population, economy, trade, health and social topics.",
+      "categories": [
+        "demographics",
+        "economy",
+        "social"
+      ],
+      "tags": [
+        "statistics",
+        "indicators",
+        "population",
+        "sdg",
+        "united-nations"
+      ],
+      "access": {
+        "type": "open",
+        "label": "Open",
+        "details": "No registration required for browsing or downloading."
+      },
+      "license": {
+        "name": "Varies by dataset",
+        "verified": false,
+        "notes": "Each underlying UN database states its own terms. Check the source before reuse."
+      },
+      "geography": {
+        "coverage": [
+          "malaysia",
+          "global"
+        ],
+        "granularity": [
+          "national"
+        ]
+      },
+      "temporal": {
+        "frequency": "annual"
+      },
+      "languages": [
+        "en"
+      ],
+      "endpoints": [
+        {
+          "type": "landing-page",
+          "url": "https://data.un.org/",
+          "label": "UN Data home"
+        },
+        {
+          "type": "explorer",
+          "url": "https://data.un.org/Explorer.aspx",
+          "label": "UN Data explorer"
+        }
+      ],
+      "endpoint_types": [
+        "explorer",
+        "landing-page"
+      ],
+      "machine_readable": false,
+      "has_api": false,
+      "primary_url": "https://data.un.org/",
+      "resource_url": "https://data.stratum.my/resources/un-data-portal",
+      "last_verified": "2026-10-04",
+      "verification": "fresh",
+      "warnings": []
+    },
+    {
+      "id": "un-sdg-indicators",
+      "name": "UN Sustainable Development Goal indicators",
+      "aliases": [
+        "UN SDG API",
+        "SDG indicators Malaysia",
+        "global indicator framework"
+      ],
+      "publisher": "united-nations",
+      "publisher_name": "United Nations",
+      "publisher_abbreviation": "UN",
+      "publisher_type": "international",
+      "description": "The global Sustainable Development Goal indicator database, with Malaysia's reported values for the SDG indicator framework, served through the UN Statistics Division SDG API.",
+      "categories": [
+        "social",
+        "economy",
+        "environment"
+      ],
+      "tags": [
+        "sdg",
+        "indicators",
+        "sustainable-development",
+        "statistics",
+        "api"
+      ],
+      "access": {
+        "type": "open",
+        "label": "Open",
+        "details": "No registration or key required."
+      },
+      "license": {
+        "name": "CC BY 3.0 IGO",
+        "verified": false,
+        "notes": "UN SDG indicator data is commonly published under a Creative Commons IGO licence. Confirm the current terms on the publisher's site before reuse."
+      },
+      "geography": {
+        "coverage": [
+          "malaysia",
+          "global"
+        ],
+        "granularity": [
+          "national"
+        ]
+      },
+      "temporal": {
+        "frequency": "annual"
+      },
+      "languages": [
+        "en"
+      ],
+      "endpoints": [
+        {
+          "type": "api",
+          "url": "https://unstats.un.org/sdgapi/v1/sdg/GeoArea/List",
+          "label": "SDG API geographic area list",
+          "format": "json",
+          "auth": "none",
+          "notes": "Malaysia is geographic area code 458."
+        },
+        {
+          "type": "api",
+          "url": "https://unstats.un.org/sdgapi/v1/sdg/Indicator/List",
+          "label": "SDG API indicator list",
+          "format": "json",
+          "auth": "none"
+        }
+      ],
+      "endpoint_types": [
+        "api"
+      ],
+      "machine_readable": true,
+      "has_api": true,
+      "primary_url": "https://unstats.un.org/sdgapi/v1/sdg/GeoArea/List",
+      "resource_url": "https://data.stratum.my/resources/un-sdg-indicators",
+      "last_verified": "2026-10-04",
+      "verification": "fresh",
+      "warnings": []
+    },
+    {
+      "id": "uis-malaysia-education",
+      "name": "UNESCO education, science and culture statistics for Malaysia",
+      "aliases": [
+        "UNESCO UIS Malaysia",
+        "Malaysia education statistics",
+        "UNESCO data"
+      ],
+      "publisher": "unesco-uis",
+      "publisher_name": "UNESCO Institute for Statistics",
+      "publisher_abbreviation": "UIS",
+      "publisher_type": "international",
+      "description": "Cross-nationally comparable indicators for Malaysia — education attainment and enrolment, literacy, research and development expenditure, and culture and communication statistics — published by the UNESCO Institute for Statistics.",
+      "categories": [
+        "education",
+        "science-research",
+        "social"
+      ],
+      "tags": [
+        "education",
+        "literacy",
+        "enrolment",
+        "research",
+        "culture",
+        "statistics"
+      ],
+      "access": {
+        "type": "open",
+        "label": "Open",
+        "details": "The data portal, bulk downloads and the public API require no registration."
+      },
+      "license": {
+        "name": "CC BY-SA 3.0 IGO",
+        "verified": false,
+        "notes": "UIS data is commonly published under a Creative Commons IGO licence. Confirm the current terms on the publisher's site before reuse."
+      },
+      "geography": {
+        "coverage": [
+          "malaysia",
+          "global"
+        ],
+        "granularity": [
+          "national"
+        ]
+      },
+      "temporal": {
+        "frequency": "annual"
+      },
+      "languages": [
+        "en"
+      ],
+      "endpoints": [
+        {
+          "type": "landing-page",
+          "url": "https://uis.unesco.org/",
+          "label": "UIS portal"
+        },
+        {
+          "type": "explorer",
+          "url": "https://data.unesco.org/",
+          "label": "UNESCO data explorer"
+        },
+        {
+          "type": "api",
+          "url": "https://api.uis.unesco.org/api/public/data/indicators?geoUnit=MY",
+          "label": "UIS public API - indicators for Malaysia",
+          "format": "json",
+          "auth": "none",
+          "notes": "Malaysia is geoUnit MY. Add an indicator parameter to narrow the request."
+        },
+        {
+          "type": "bulk-download",
+          "url": "https://uis.unesco.org/en/bulk-data",
+          "label": "UIS bulk downloads"
+        },
+        {
+          "type": "api-docs",
+          "url": "https://data.unesco.org/api/",
+          "label": "UNESCO data API documentation"
+        }
+      ],
+      "endpoint_types": [
+        "api",
+        "api-docs",
+        "bulk-download",
+        "explorer",
+        "landing-page"
+      ],
+      "machine_readable": true,
+      "has_api": true,
+      "primary_url": "https://uis.unesco.org/",
+      "resource_url": "https://data.stratum.my/resources/uis-malaysia-education",
+      "last_verified": "2026-10-04",
+      "verification": "fresh",
+      "warnings": []
+    },
+    {
+      "id": "unhcr-malaysia-refugees",
+      "name": "UNHCR displacement statistics for Malaysia",
+      "aliases": [
+        "UNHCR Malaysia",
+        "Malaysia refugee data",
+        "Refugee Data Finder Malaysia"
+      ],
+      "publisher": "unhcr",
+      "publisher_name": "United Nations High Commissioner for Refugees",
+      "publisher_abbreviation": "UNHCR",
+      "publisher_type": "international",
+      "description": "Forced-displacement statistics involving Malaysia — refugees and asylum-seekers by country of origin and destination, returns and resettlement — published through the UNHCR Refugee Data Finder and its population API.",
+      "categories": [
+        "social",
+        "demographics"
+      ],
+      "tags": [
+        "refugees",
+        "asylum",
+        "displacement",
+        "migration",
+        "humanitarian",
+        "statistics"
+      ],
+      "access": {
+        "type": "open",
+        "label": "Open",
+        "details": "The Refugee Data Finder and the population API require no registration."
+      },
+      "license": {
+        "name": "Varies by dataset",
+        "verified": false,
+        "notes": "UNHCR data carries its own terms of use. Check the dataset page before reuse."
+      },
+      "geography": {
+        "coverage": [
+          "malaysia",
+          "global"
+        ],
+        "granularity": [
+          "national"
+        ]
+      },
+      "temporal": {
+        "frequency": "annual"
+      },
+      "languages": [
+        "en"
+      ],
+      "endpoints": [
+        {
+          "type": "landing-page",
+          "url": "https://www.unhcr.org/refugee-statistics/",
+          "label": "UNHCR Refugee Data Finder",
+          "notes": "Returns 403 to automated requests (bot protection); reachable in a browser."
+        },
+        {
+          "type": "api",
+          "url": "https://api.unhcr.org/population/v1/population/?coo=MYS",
+          "label": "UNHCR population API (Malaysia as country of origin)",
+          "format": "json",
+          "auth": "none",
+          "notes": "Parameters include coo (origin) and coa (asylum); Malaysia is MYS."
+        },
+        {
+          "type": "api-docs",
+          "url": "https://api.unhcr.org/docs/",
+          "label": "UNHCR population API documentation",
+          "documentation": "https://api.unhcr.org/docs/",
+          "auth": "none"
+        },
+        {
+          "type": "landing-page",
+          "url": "https://data.unhcr.org/",
+          "label": "UNHCR operational data portal"
+        }
+      ],
+      "endpoint_types": [
+        "api",
+        "api-docs",
+        "landing-page"
+      ],
+      "machine_readable": true,
+      "has_api": true,
+      "primary_url": "https://www.unhcr.org/refugee-statistics/",
+      "resource_url": "https://data.stratum.my/resources/unhcr-malaysia-refugees",
+      "last_verified": "2026-10-04",
+      "verification": "fresh",
+      "warnings": []
+    },
+    {
+      "id": "unicef-malaysia-data",
+      "name": "UNICEF data and publications for Malaysia",
+      "aliases": [
+        "UNICEF Malaysia",
+        "Malaysia child statistics",
+        "UNICEF country data"
+      ],
+      "publisher": "unicef",
+      "publisher_name": "United Nations Children's Fund",
+      "publisher_abbreviation": "UNICEF",
+      "publisher_type": "international",
+      "description": "Statistics and reports on children in Malaysia — child mortality and health, nutrition, education and child protection — published through the UNICEF data portal and the UNICEF Malaysia country office.",
+      "categories": [
+        "social",
+        "health",
+        "education"
+      ],
+      "tags": [
+        "children",
+        "child-mortality",
+        "nutrition",
+        "education",
+        "welfare",
+        "statistics"
+      ],
+      "access": {
+        "type": "public",
+        "label": "Public",
+        "details": "The data portal and country pages are publicly browsable. Automated requests to the data portal returned 403 (bot protection)."
+      },
+      "license": {
+        "name": "Varies by dataset",
+        "verified": false,
+        "notes": "UNICEF datasets carry their own terms of use. Check the dataset page before reuse."
+      },
+      "geography": {
+        "coverage": [
+          "malaysia",
+          "global"
+        ],
+        "granularity": [
+          "national"
+        ]
+      },
+      "temporal": {
+        "frequency": "annual"
+      },
+      "languages": [
+        "en"
+      ],
+      "endpoints": [
+        {
+          "type": "landing-page",
+          "url": "https://www.unicef.org/malaysia/",
+          "label": "UNICEF Malaysia country office"
+        },
+        {
+          "type": "landing-page",
+          "url": "https://data.unicef.org/",
+          "label": "UNICEF data portal",
+          "notes": "Returns 403 to automated requests (bot protection); reachable in a browser."
+        }
+      ],
+      "endpoint_types": [
+        "landing-page"
+      ],
+      "machine_readable": false,
+      "has_api": false,
+      "primary_url": "https://www.unicef.org/malaysia/",
+      "resource_url": "https://data.stratum.my/resources/unicef-malaysia-data",
+      "last_verified": "2026-10-04",
+      "verification": "fresh",
+      "warnings": []
+    },
+    {
+      "id": "uum-institutional-repository",
+      "name": "UUM institutional repositories",
+      "aliases": [
+        "UUM eTheses",
+        "UUM repository",
+        "UUM electronic theses and dissertation"
+      ],
+      "publisher": "uum",
+      "publisher_name": "Universiti Utara Malaysia",
+      "publisher_abbreviation": "UUM",
+      "publisher_type": "academic",
+      "description": "UUM's institutional repositories: UUM Electronic Theses and Dissertation (eTheses) and the UUM Repository of research and publications, searchable by author, title and subject.",
+      "categories": [
+        "science-research",
+        "education"
+      ],
+      "tags": [
+        "institutional-repository",
+        "theses",
+        "dissertations",
+        "research",
+        "publications"
+      ],
+      "access": {
+        "type": "public",
+        "label": "Public",
+        "details": "Records are publicly searchable. Reuse terms for individual items vary by item and were not confirmed."
+      },
+      "geography": {
+        "coverage": [
+          "malaysia"
+        ],
+        "granularity": [
+          "national"
+        ]
+      },
+      "languages": [
+        "en"
+      ],
+      "endpoints": [
+        {
+          "type": "catalogue",
+          "url": "https://etd.uum.edu.my/",
+          "label": "UUM Electronic Theses and Dissertation (eTheses)"
+        },
+        {
+          "type": "catalogue",
+          "url": "https://eprints.uum.edu.my/",
+          "label": "UUM Repository"
+        },
+        {
+          "type": "landing-page",
+          "url": "https://www.uum.edu.my/",
+          "label": "Universiti Utara Malaysia"
+        }
+      ],
+      "endpoint_types": [
+        "catalogue",
+        "landing-page"
+      ],
+      "machine_readable": false,
+      "has_api": false,
+      "primary_url": "https://www.uum.edu.my/",
+      "resource_url": "https://data.stratum.my/resources/uum-institutional-repository",
+      "last_verified": "2026-10-04",
+      "verification": "fresh",
+      "warnings": [
+        "Update frequency is not recorded.",
+        "Licence is not recorded. Do not infer it from public access."
+      ]
+    },
+    {
+      "id": "jpj-vehicle-registrations",
+      "name": "Vehicle registrations",
+      "aliases": [
+        "pendaftaran kenderaan",
+        "vehicle registration",
+        "monthly vehicle registrations",
+        "registrations by fuel type"
+      ],
+      "publisher": "jpj",
+      "publisher_name": "Road Transport Department Malaysia",
+      "publisher_abbreviation": "JPJ",
+      "publisher_type": "government",
+      "description": "Monthly counts of vehicle registrations in Malaysia, broken down by vehicle type and fuel type, derived from Road Transport Department registration records and published through the national open data portal.",
+      "categories": [
+        "transport"
+      ],
+      "tags": [
+        "vehicles",
+        "registrations",
+        "transport",
+        "jpj",
+        "fuel-type",
+        "kenderaan"
+      ],
+      "access": {
+        "type": "public",
+        "label": "Public",
+        "details": "Freely viewable and queryable on data.gov.my. The dataset page does not state reuse terms, so no licence is asserted here."
+      },
+      "geography": {
+        "coverage": [
+          "malaysia"
+        ],
+        "granularity": [
+          "national"
+        ]
+      },
+      "languages": [
+        "en",
+        "ms"
+      ],
+      "endpoints": [
+        {
+          "type": "landing-page",
+          "url": "https://data.gov.my/data-catalogue?id=registrations_type_fuel",
+          "label": "Dataset page"
+        },
+        {
+          "type": "api",
+          "url": "https://api.data.gov.my/data-catalogue?id=registrations_type_fuel",
+          "label": "JSON API",
+          "auth": "none",
+          "notes": "Requires the query parameter id=registrations_type_fuel. Filtering parameters are documented by data.gov.my."
+        },
+        {
+          "type": "csv",
+          "url": "https://storage.data.gov.my/transportation/registrations_type_fuel.csv",
+          "label": "CSV download"
+        },
+        {
+          "type": "api-docs",
+          "url": "https://developer.data.gov.my/",
+          "label": "API documentation",
+          "documentation": "https://developer.data.gov.my/"
+        }
+      ],
+      "endpoint_types": [
+        "api",
+        "api-docs",
+        "csv",
+        "landing-page"
+      ],
+      "machine_readable": true,
+      "has_api": true,
+      "primary_url": "https://data.gov.my/data-catalogue?id=registrations_type_fuel",
+      "resource_url": "https://data.stratum.my/resources/jpj-vehicle-registrations",
+      "last_verified": "2026-10-04",
+      "verification": "fresh",
+      "warnings": [
+        "Update frequency is not recorded.",
+        "Licence is not recorded. Do not infer it from public access."
+      ]
+    },
+    {
+      "id": "who-gho-malaysia-health",
+      "name": "WHO Global Health Observatory indicators for Malaysia",
+      "aliases": [
+        "WHO GHO Malaysia",
+        "Malaysia health statistics",
+        "Global Health Observatory"
+      ],
+      "publisher": "who",
+      "publisher_name": "World Health Organization",
+      "publisher_abbreviation": "WHO",
+      "publisher_type": "international",
+      "description": "Global health indicators for Malaysia — life expectancy and mortality, causes of death, immunisation, tuberculosis and malaria, health workforce and health expenditure — published by the WHO Global Health Observatory with an OData API.",
+      "categories": [
+        "health",
+        "demographics"
+      ],
+      "tags": [
+        "health",
+        "mortality",
+        "immunisation",
+        "disease",
+        "indicators",
+        "odata"
+      ],
+      "access": {
+        "type": "open",
+        "label": "Open",
+        "details": "The portal and the GHO OData API require no registration or key."
+      },
+      "license": {
+        "name": "CC BY-NC-SA 3.0 IGO",
+        "verified": false,
+        "notes": "WHO Global Health Observatory data is commonly published under a Creative Commons IGO licence. Confirm the current terms on the publisher's site before reuse."
+      },
+      "geography": {
+        "coverage": [
+          "malaysia",
+          "global"
+        ],
+        "granularity": [
+          "national"
+        ]
+      },
+      "temporal": {
+        "frequency": "annual"
+      },
+      "languages": [
+        "en"
+      ],
+      "endpoints": [
+        {
+          "type": "landing-page",
+          "url": "https://www.who.int/data/gho",
+          "label": "Global Health Observatory"
+        },
+        {
+          "type": "api",
+          "url": "https://ghoapi.azureedge.net/api/Indicator",
+          "label": "GHO OData API - indicator list",
+          "format": "json",
+          "auth": "none",
+          "notes": "Malaysia is country code MY; filter or join via the Dimension and IndicatorValue sets."
+        },
+        {
+          "type": "catalogue",
+          "url": "https://ghoapi.azureedge.net/api/",
+          "label": "GHO OData API service root",
+          "auth": "none"
+        }
+      ],
+      "endpoint_types": [
+        "api",
+        "catalogue",
+        "landing-page"
+      ],
+      "machine_readable": true,
+      "has_api": true,
+      "primary_url": "https://www.who.int/data/gho",
+      "resource_url": "https://data.stratum.my/resources/who-gho-malaysia-health",
+      "last_verified": "2026-10-04",
+      "verification": "fresh",
+      "warnings": []
+    },
+    {
+      "id": "world-bank-malaysia-indicators",
+      "name": "World Bank development indicators for Malaysia",
+      "aliases": [
+        "World Bank Malaysia data",
+        "development indicators",
+        "Malaysia GDP World Bank"
+      ],
+      "publisher": "world-bank",
+      "publisher_name": "World Bank",
+      "publisher_abbreviation": "WB",
+      "publisher_type": "international",
+      "description": "Comparable development and economic indicators for Malaysia — population, GDP, trade, health, education and more — presented on a country page and available in full, for every country, through the World Bank's Indicators API.",
+      "categories": [
+        "economy",
+        "social"
+      ],
+      "tags": [
+        "indicators",
+        "development",
+        "gdp",
+        "population",
+        "trade",
+        "statistics"
+      ],
+      "access": {
+        "type": "open",
+        "label": "Open",
+        "details": "No registration and no API key required."
+      },
+      "license": {
+        "name": "CC BY 4.0",
+        "url": "https://creativecommons.org/licenses/by/4.0/",
+        "verified": false,
+        "notes": "World Bank open data is generally published under CC BY 4.0. Confirm the current terms on the publisher's site before reuse."
+      },
+      "geography": {
+        "coverage": [
+          "malaysia",
+          "global"
+        ],
+        "granularity": [
+          "national"
+        ]
+      },
+      "temporal": {
+        "frequency": "annual"
+      },
+      "languages": [
+        "en"
+      ],
+      "endpoints": [
+        {
+          "type": "landing-page",
+          "url": "https://data.worldbank.org/country/malaysia",
+          "label": "Malaysia country page"
+        },
+        {
+          "type": "api",
+          "url": "https://api.worldbank.org/v2/country/MYS",
+          "label": "Indicators API (Malaysia)",
+          "auth": "none",
+          "notes": "Append /indicator/{code} to request a series, and format=json for JSON."
+        },
+        {
+          "type": "api",
+          "url": "https://api.worldbank.org/v2/indicator",
+          "label": "Indicator catalogue",
+          "auth": "none"
+        },
+        {
+          "type": "bulk-download",
+          "url": "https://data.worldbank.org/",
+          "label": "Bulk downloads"
+        }
+      ],
+      "endpoint_types": [
+        "api",
+        "bulk-download",
+        "landing-page"
+      ],
+      "machine_readable": true,
+      "has_api": true,
+      "primary_url": "https://data.worldbank.org/country/malaysia",
+      "resource_url": "https://data.stratum.my/resources/world-bank-malaysia-indicators",
+      "last_verified": "2026-10-04",
+      "verification": "fresh",
+      "warnings": []
+    }
+  ],
+  "publishers": [
+    {
+      "id": "bnm",
+      "name": "Bank Negara Malaysia",
+      "abbreviation": "BNM",
+      "type": "statutory-body",
+      "url": "https://www.bnm.gov.my/",
+      "description": "Malaysia's central bank. Publishes monetary, banking and financial statistics, and operates an Open API for programmatic access to selected series.",
+      "aliases": [
+        "Central Bank of Malaysia",
+        "Bank Pusat Negara Malaysia"
+      ],
+      "country": "MY",
+      "languages": [
+        "ms",
+        "en"
+      ],
+      "resourceCount": 1,
+      "categories": [
+        "economy",
+        "finance"
+      ],
+      "accessTypes": [
+        "register"
+      ],
+      "endpointTypes": [
+        "api-docs",
+        "landing-page"
+      ]
+    },
+    {
+      "id": "bursa-malaysia",
+      "name": "Bursa Malaysia",
+      "abbreviation": "Bursa",
+      "type": "commercial",
+      "url": "https://www.bursamalaysia.com/",
+      "description": "The operator and regulator of the Malaysian stock exchange (Bursa Malaysia Berhad). It publishes listed-company announcements, a listed-company directory and market statistics, and sells real-time and historical market-data products.",
+      "aliases": [
+        "Bursa Malaysia Berhad",
+        "Malaysian stock exchange",
+        "KLSE"
+      ],
+      "country": "MY",
+      "languages": [
+        "en",
+        "ms"
+      ],
+      "resourceCount": 3,
+      "categories": [
+        "business-companies",
+        "economy",
+        "finance"
+      ],
+      "accessTypes": [
+        "public"
+      ],
+      "endpointTypes": [
+        "api",
+        "dashboard",
+        "landing-page",
+        "search"
+      ]
+    },
+    {
+      "id": "ssm",
+      "name": "Companies Commission of Malaysia",
+      "abbreviation": "SSM",
+      "type": "statutory-body",
+      "url": "https://www.ssm.com.my/",
+      "description": "The statutory body that registers companies, businesses and limited liability partnerships in Malaysia (Suruhanjaya Syarikat Malaysia). It maintains the official company and business registry and sells registry information and corporate data.",
+      "aliases": [
+        "Suruhanjaya Syarikat Malaysia",
+        "Companies Commission",
+        "SSM Malaysia"
+      ],
+      "country": "MY",
+      "languages": [
+        "ms",
+        "en"
+      ],
+      "resourceCount": 3,
+      "categories": [
+        "business-companies",
+        "economy"
+      ],
+      "accessTypes": [
+        "paid",
+        "public"
+      ],
+      "endpointTypes": [
+        "commercial-access",
+        "landing-page",
+        "registry",
+        "statistical-release"
+      ]
+    },
+    {
+      "id": "copernicus",
+      "name": "Copernicus",
+      "abbreviation": "Copernicus",
+      "type": "international",
+      "url": "https://www.copernicus.eu/en",
+      "description": "The European Union's Earth observation programme, which publishes satellite and modelled environmental data — land cover, atmosphere, marine and climate reanalysis — that covers Malaysia and the surrounding region.",
+      "aliases": [
+        "Copernicus",
+        "Copernicus Programme",
+        "EU Copernicus",
+        "Copernicus Data Space"
+      ],
+      "languages": [
+        "en"
+      ],
+      "resourceCount": 1,
+      "categories": [
+        "environment",
+        "geography",
+        "weather-climate"
+      ],
+      "accessTypes": [
+        "register"
+      ],
+      "endpointTypes": [
+        "explorer",
+        "landing-page"
+      ]
+    },
+    {
+      "id": "ctos",
+      "name": "CTOS Data Systems Sdn Bhd",
+      "abbreviation": "CTOS",
+      "type": "commercial",
+      "url": "https://www.ctoscredit.com.my/",
+      "description": "A Malaysian private credit reporting agency. It provides consumer credit reports and scores through CTOS Credit, and business and company credit reports through CTOS Business and the CTOS Basis company directory.",
+      "aliases": [
+        "CTOS",
+        "CTOS Credit",
+        "CTOS Basis"
+      ],
+      "country": "MY",
+      "languages": [
+        "en"
+      ],
+      "resourceCount": 2,
+      "categories": [
+        "business-companies",
+        "finance"
+      ],
+      "accessTypes": [
+        "paid",
+        "register"
+      ],
+      "endpointTypes": [
+        "commercial-access",
+        "landing-page"
+      ]
+    },
+    {
+      "id": "doe",
+      "name": "Department of Environment Malaysia",
+      "abbreviation": "DOE",
+      "type": "government",
+      "url": "https://www.doe.gov.my/",
+      "description": "The federal agency responsible for environmental regulation and enforcement, including air and water quality monitoring, environmental impact assessment and scheduled waste control.",
+      "aliases": [
+        "Jabatan Alam Sekitar",
+        "JAS",
+        "DOE Malaysia"
+      ],
+      "country": "MY",
+      "languages": [
+        "ms",
+        "en"
+      ],
+      "resourceCount": 1,
+      "categories": [
+        "environment"
+      ],
+      "accessTypes": [
+        "public"
+      ],
+      "endpointTypes": [
+        "landing-page",
+        "publication",
+        "report"
+      ]
+    },
+    {
+      "id": "did",
+      "name": "Department of Irrigation and Drainage",
+      "abbreviation": "DID",
+      "type": "government",
+      "url": "https://www.water.gov.my/",
+      "description": "The federal department responsible for water resources, drainage and flood management. It operates the national network of rainfall and river-level monitoring stations.",
+      "aliases": [
+        "Jabatan Pengairan dan Saliran",
+        "JPS",
+        "DID Malaysia"
+      ],
+      "resourceCount": 1,
+      "categories": [
+        "environment",
+        "weather-climate"
+      ],
+      "accessTypes": [
+        "open"
+      ],
+      "endpointTypes": [
+        "dashboard",
+        "landing-page"
+      ]
+    },
+    {
+      "id": "dosm",
+      "name": "Department of Statistics Malaysia",
+      "abbreviation": "DOSM",
+      "type": "government",
+      "url": "https://www.dosm.gov.my/",
+      "description": "Malaysia's national statistical office. Produces official statistics on population, the economy, prices, labour and society, and publishes much of it openly through OpenDOSM.",
+      "aliases": [
+        "Jabatan Perangkaan Malaysia",
+        "OpenDOSM",
+        "Statistics Malaysia"
+      ],
+      "country": "MY",
+      "languages": [
+        "ms",
+        "en"
+      ],
+      "resourceCount": 3,
+      "categories": [
+        "demographics",
+        "economy",
+        "elections-government",
+        "prices-cost-of-living"
+      ],
+      "accessTypes": [
+        "public"
+      ],
+      "endpointTypes": [
+        "api",
+        "api-docs",
+        "explorer",
+        "landing-page"
+      ]
+    },
+    {
+      "id": "suruhanjaya-tenaga",
+      "name": "Energy Commission Malaysia",
+      "abbreviation": "ST",
+      "type": "statutory-body",
+      "url": "https://www.st.gov.my/",
+      "description": "The regulator for Peninsular Malaysia's electricity and gas supply industry, established by statute. Publishes reliability and performance indices for the grid.",
+      "aliases": [
+        "Suruhanjaya Tenaga",
+        "Energy Commission",
+        "ST",
+        "Energy Commission of Malaysia"
+      ],
+      "country": "MY",
+      "languages": [
+        "ms",
+        "en"
+      ],
+      "notes": "Established under the Energy Commission Act 2001, so recorded as a statutory body.",
+      "resourceCount": 1,
+      "categories": [
+        "energy"
+      ],
+      "accessTypes": [
+        "public"
+      ],
+      "endpointTypes": [
+        "landing-page"
+      ]
+    },
+    {
+      "id": "fao",
+      "name": "Food and Agriculture Organization of the United Nations",
+      "abbreviation": "FAO",
+      "type": "international",
+      "url": "https://www.fao.org/faostat/en/",
+      "description": "A United Nations specialised agency that publishes FAOSTAT, a global statistical database of food and agriculture covering Malaysia across crops, livestock, land use, food security and trade.",
+      "aliases": [
+        "FAO",
+        "FAOSTAT",
+        "Food and Agriculture Organization"
+      ],
+      "country": "IT",
+      "languages": [
+        "en"
+      ],
+      "resourceCount": 1,
+      "categories": [
+        "agriculture",
+        "environment",
+        "trade"
+      ],
+      "accessTypes": [
+        "register"
+      ],
+      "endpointTypes": [
+        "api",
+        "bulk-download",
+        "catalogue",
+        "landing-page"
+      ]
+    },
+    {
+      "id": "gbif",
+      "name": "Global Biodiversity Information Facility",
+      "abbreviation": "GBIF",
+      "type": "international",
+      "url": "https://www.gbif.org/",
+      "description": "An international network and data infrastructure that publishes open biodiversity occurrence records, including records collected within Malaysia, through a searchable portal and a REST API.",
+      "aliases": [
+        "GBIF",
+        "Global Biodiversity Information Facility",
+        "GBIF Malaysia"
+      ],
+      "country": "DK",
+      "languages": [
+        "en"
+      ],
+      "resourceCount": 1,
+      "categories": [
+        "environment",
+        "geography",
+        "science-research"
+      ],
+      "accessTypes": [
+        "open"
+      ],
+      "endpointTypes": [
+        "api",
+        "api-docs",
+        "landing-page"
+      ]
+    },
+    {
+      "id": "global-forest-watch",
+      "name": "Global Forest Watch",
+      "abbreviation": "GFW",
+      "type": "international",
+      "url": "https://www.globalforestwatch.org/",
+      "description": "An open forest-monitoring platform maintained by the World Resources Institute that publishes near-real-time forest change, land cover and fire data with a country dashboard for Malaysia and a public data API.",
+      "aliases": [
+        "GFW",
+        "Global Forest Watch",
+        "WRI Global Forest Watch"
+      ],
+      "country": "US",
+      "languages": [
+        "en"
+      ],
+      "resourceCount": 1,
+      "categories": [
+        "environment",
+        "geography"
+      ],
+      "accessTypes": [
+        "open"
+      ],
+      "endpointTypes": [
+        "api",
+        "api-docs",
+        "dashboard",
+        "landing-page"
+      ]
+    },
+    {
+      "id": "hdx",
+      "name": "Humanitarian Data Exchange",
+      "abbreviation": "HDX",
+      "type": "international",
+      "url": "https://data.humdata.org/",
+      "description": "An open platform run by the United Nations OCHA Centre for Humanitarian Data that aggregates humanitarian datasets, including country-level data for Malaysia.",
+      "aliases": [
+        "HDX",
+        "OCHA HDX",
+        "Humanitarian Data Exchange"
+      ],
+      "country": "CH",
+      "languages": [
+        "en"
+      ],
+      "resourceCount": 1,
+      "categories": [
+        "environment",
+        "social"
+      ],
+      "accessTypes": [
+        "open"
+      ],
+      "endpointTypes": [
+        "landing-page"
+      ]
+    },
+    {
+      "id": "ilo",
+      "name": "International Labour Organization",
+      "abbreviation": "ILO",
+      "type": "international",
+      "url": "https://ilostat.ilo.org/",
+      "description": "A United Nations specialised agency that publishes ILOSTAT, a global labour statistics database covering Malaysia across employment, unemployment, wages, hours of work and labour force participation.",
+      "aliases": [
+        "ILO",
+        "ILOSTAT",
+        "International Labour Organization"
+      ],
+      "country": "CH",
+      "languages": [
+        "en"
+      ],
+      "resourceCount": 1,
+      "categories": [
+        "labour",
+        "social"
+      ],
+      "accessTypes": [
+        "open"
+      ],
+      "endpointTypes": [
+        "api",
+        "landing-page"
+      ]
+    },
+    {
+      "id": "imf",
+      "name": "International Monetary Fund",
+      "abbreviation": "IMF",
+      "type": "international",
+      "url": "https://data.imf.org/",
+      "description": "An international financial institution that publishes macroeconomic and financial statistics for its member countries, including Malaysia, through its data portal and an SDMX API.",
+      "aliases": [
+        "IMF",
+        "International Monetary Fund",
+        "IMF Data"
+      ],
+      "country": "US",
+      "languages": [
+        "en"
+      ],
+      "resourceCount": 1,
+      "categories": [
+        "economy",
+        "finance"
+      ],
+      "accessTypes": [
+        "open"
+      ],
+      "endpointTypes": [
+        "api",
+        "landing-page"
+      ]
+    },
+    {
+      "id": "itu",
+      "name": "International Telecommunication Union",
+      "abbreviation": "ITU",
+      "type": "international",
+      "url": "https://www.itu.int/en/ITU-D/Statistics/Pages/stat/default.aspx",
+      "description": "A United Nations specialised agency for information and communication technologies that publishes global ICT statistics, including connectivity, mobile and broadband indicators for Malaysia.",
+      "aliases": [
+        "ITU",
+        "International Telecommunication Union",
+        "ITU DataHub"
+      ],
+      "country": "CH",
+      "languages": [
+        "en"
+      ],
+      "resourceCount": 1,
+      "categories": [
+        "economy",
+        "technology-telecoms"
+      ],
+      "accessTypes": [
+        "public"
+      ],
+      "endpointTypes": [
+        "dashboard",
+        "explorer",
+        "landing-page"
+      ]
+    },
+    {
+      "id": "ktmb",
+      "name": "Keretapi Tanah Melayu Berhad",
+      "abbreviation": "KTMB",
+      "type": "government",
+      "url": "https://www.ktmb.com.my/",
+      "description": "Malaysia's national railway operator, running intercity, ETS, Komuter and freight services on the peninsula. Publishes timetables, route maps and station information.",
+      "aliases": [
+        "KTMB",
+        "Malayan Railways",
+        "KTM Berhad",
+        "Keretapi Tanah Melayu"
+      ],
+      "country": "MY",
+      "languages": [
+        "ms",
+        "en"
+      ],
+      "resourceCount": 1,
+      "categories": [
+        "transport"
+      ],
+      "accessTypes": [
+        "public"
+      ],
+      "endpointTypes": [
+        "explorer",
+        "landing-page",
+        "map"
+      ]
+    },
+    {
+      "id": "mybis",
+      "name": "Malaysia Biodiversity Information System",
+      "abbreviation": "MyBIS",
+      "type": "government",
+      "url": "https://www.mybis.gov.my/",
+      "description": "The national biodiversity data platform, maintained for the federal environment ministry. Brings together species records, protected areas and habitat information for Malaysia.",
+      "aliases": [
+        "MyBIS",
+        "Sistem Maklumat Kepelbagaian Biologi Malaysia",
+        "Malaysia Biodiversity Centre"
+      ],
+      "country": "MY",
+      "languages": [
+        "ms",
+        "en"
+      ],
+      "resourceCount": 1,
+      "categories": [
+        "environment",
+        "science-research"
+      ],
+      "accessTypes": [
+        "public"
+      ],
+      "endpointTypes": [
+        "dashboard",
+        "explorer",
+        "landing-page"
+      ]
+    },
+    {
+      "id": "matrade",
+      "name": "Malaysia External Trade Development Corporation",
+      "abbreviation": "MATRADE",
+      "type": "government",
+      "url": "https://www.matrade.gov.my/",
+      "description": "The national trade promotion agency. Publishes Malaysia's external trade statistics and market information for exporters and importers.",
+      "aliases": [
+        "MATRADE",
+        "Perbadanan Pembangunan Perdagangan Luar Malaysia"
+      ],
+      "country": "MY",
+      "languages": [
+        "ms",
+        "en"
+      ],
+      "resourceCount": 1,
+      "categories": [
+        "economy",
+        "trade"
+      ],
+      "accessTypes": [
+        "public"
+      ],
+      "endpointTypes": [
+        "landing-page",
+        "publication"
+      ]
+    },
+    {
+      "id": "mcmc",
+      "name": "Malaysian Communications and Multimedia Commission",
+      "abbreviation": "MCMC",
+      "type": "statutory-body",
+      "url": "https://www.mcmc.gov.my/",
+      "description": "The regulator for the communications and multimedia industry, established by statute. Publishes statistics on the telecoms, broadcasting and postal sectors.",
+      "aliases": [
+        "MCMC",
+        "Suruhanjaya Komunikasi dan Multimedia Malaysia",
+        "SKMM"
+      ],
+      "country": "MY",
+      "languages": [
+        "ms",
+        "en"
+      ],
+      "notes": "Established under the Communications and Multimedia Act 1998, so recorded as a statutory body rather than a government department.",
+      "resourceCount": 1,
+      "categories": [
+        "economy",
+        "technology-telecoms"
+      ],
+      "accessTypes": [
+        "public"
+      ],
+      "endpointTypes": [
+        "landing-page",
+        "publication"
+      ]
+    },
+    {
+      "id": "mygdi",
+      "name": "Malaysian Geospatial Data Infrastructure",
+      "abbreviation": "MyGDI",
+      "type": "government",
+      "url": "https://www.mygeoportal.gov.my/",
+      "description": "Malaysia's national geospatial data infrastructure, providing a geoportal for discovering and using authoritative map and spatial data from federal agencies.",
+      "aliases": [
+        "MyGDI",
+        "MyGeoportal",
+        "Malaysian Geospatial Data Infrastructure"
+      ],
+      "country": "MY",
+      "languages": [
+        "ms",
+        "en"
+      ],
+      "resourceCount": 1,
+      "categories": [
+        "geography"
+      ],
+      "accessTypes": [
+        "public"
+      ],
+      "endpointTypes": [
+        "landing-page",
+        "registry"
+      ]
+    },
+    {
+      "id": "mygdx",
+      "name": "Malaysian Government Central Data Exchange",
+      "abbreviation": "MyGDX",
+      "type": "government",
+      "url": "https://www.mygdx.gov.my/",
+      "description": "The federal government's central platform for sharing data between public agencies. Provides governed access to government datasets and services for authorised users.",
+      "aliases": [
+        "MyGDX",
+        "Malaysian Government Data Exchange",
+        "Pusat Pertukaran Data Kerajaan"
+      ],
+      "country": "MY",
+      "languages": [
+        "ms",
+        "en"
+      ],
+      "resourceCount": 1,
+      "categories": [
+        "elections-government"
+      ],
+      "accessTypes": [
+        "restricted"
+      ],
+      "endpointTypes": [
+        "dashboard",
+        "landing-page"
+      ]
+    },
+    {
+      "id": "mida",
+      "name": "Malaysian Investment Development Authority",
+      "abbreviation": "MIDA",
+      "type": "government",
+      "url": "https://www.mida.gov.my/",
+      "description": "The federal investment promotion agency. Publishes approved manufacturing and services investment statistics for Malaysia and its states.",
+      "aliases": [
+        "MIDA",
+        "Lembaga Pembangunan Pelaburan Malaysia"
+      ],
+      "country": "MY",
+      "languages": [
+        "ms",
+        "en"
+      ],
+      "resourceCount": 1,
+      "categories": [
+        "business-companies",
+        "economy"
+      ],
+      "accessTypes": [
+        "public"
+      ],
+      "endpointTypes": [
+        "landing-page",
+        "publication"
+      ]
+    },
+    {
+      "id": "metmalaysia",
+      "name": "Malaysian Meteorological Department",
+      "abbreviation": "METMalaysia",
+      "type": "government",
+      "url": "https://www.met.gov.my/",
+      "description": "The federal department responsible for weather, climate and earthquake monitoring in Malaysia. Publishes forecasts, warnings, rainfall records and climate data, with an API for the weather datasets.",
+      "aliases": [
+        "Jabatan Meteorologi Malaysia",
+        "MET Malaysia",
+        "MetMalaysia"
+      ],
+      "country": "MY",
+      "languages": [
+        "ms",
+        "en"
+      ],
+      "resourceCount": 1,
+      "categories": [
+        "environment",
+        "weather-climate"
+      ],
+      "accessTypes": [
+        "register"
+      ],
+      "endpointTypes": [
+        "api",
+        "dashboard",
+        "landing-page"
+      ]
+    },
+    {
+      "id": "data-gov-my",
+      "name": "Malaysian Open Data Portal",
+      "abbreviation": "data.gov.my",
+      "type": "government",
+      "url": "https://data.gov.my/",
+      "description": "The Malaysian government's central open data portal. Aggregates datasets published by federal agencies and exposes them through a searchable catalogue and a public API.",
+      "aliases": [
+        "Portal Data Terbuka Malaysia",
+        "Malaysian Government Open Data"
+      ],
+      "country": "MY",
+      "languages": [
+        "ms",
+        "en"
+      ],
+      "resourceCount": 1,
+      "categories": [
+        "elections-government"
+      ],
+      "accessTypes": [
+        "open"
+      ],
+      "endpointTypes": [
+        "api",
+        "api-docs",
+        "data-dump",
+        "landing-page"
+      ]
+    },
+    {
+      "id": "mpob",
+      "name": "Malaysian Palm Oil Board",
+      "abbreviation": "MPOB",
+      "type": "government",
+      "url": "https://www.mpob.gov.my/",
+      "description": "The federal agency responsible for the palm oil industry: research, regulation and the official industry statistics.",
+      "aliases": [
+        "Lembaga Minyak Sawit Malaysia"
+      ],
+      "resourceCount": 1,
+      "categories": [
+        "agriculture",
+        "trade"
+      ],
+      "accessTypes": [
+        "public"
+      ],
+      "endpointTypes": [
+        "landing-page"
+      ]
+    },
+    {
+      "id": "kpdn",
+      "name": "Ministry of Domestic Trade and Cost of Living",
+      "abbreviation": "KPDN",
+      "type": "government",
+      "url": "https://www.kpdn.gov.my/",
+      "description": "The federal ministry responsible for domestic trade, consumer protection and cost of living. Operates PriceCatcher, the national price monitoring service.",
+      "aliases": [
+        "KPDN",
+        "Kementerian Perdagangan Dalam Negeri dan Kos Sara Hidup",
+        "KPDNHEP",
+        "PriceCatcher"
+      ],
+      "country": "MY",
+      "languages": [
+        "ms",
+        "en"
+      ],
+      "resourceCount": 1,
+      "categories": [
+        "prices-cost-of-living"
+      ],
+      "accessTypes": [
+        "public"
+      ],
+      "endpointTypes": [
+        "landing-page",
+        "publication"
+      ]
+    },
+    {
+      "id": "moh",
+      "name": "Ministry of Health Malaysia",
+      "abbreviation": "MOH",
+      "type": "government",
+      "url": "https://www.moh.gov.my/",
+      "description": "Malaysia's federal health ministry. Runs KKMNOW, the ministry's public data portal, where national health indicators are published as dashboards and downloadable datasets.",
+      "aliases": [
+        "Kementerian Kesihatan Malaysia",
+        "KKM",
+        "KKMNOW",
+        "MyHealthData"
+      ],
+      "country": "MY",
+      "languages": [
+        "ms",
+        "en"
+      ],
+      "notes": "The ministry homepage at moh.gov.my returned HTTP 403 to automated requests on 2026-10-04, so it is recorded as gated rather than broken.",
+      "resourceCount": 1,
+      "categories": [
+        "health"
+      ],
+      "accessTypes": [
+        "public"
+      ],
+      "endpointTypes": [
+        "dashboard",
+        "explorer",
+        "landing-page"
+      ]
+    },
+    {
+      "id": "mot",
+      "name": "Ministry of Transport Malaysia",
+      "abbreviation": "MOT",
+      "type": "government",
+      "url": "https://www.mot.gov.my/",
+      "description": "The federal ministry responsible for land, maritime and aviation transport. Publishes transport sector reports and statistics across its modes.",
+      "aliases": [
+        "MOT",
+        "Kementerian Pengangkutan Malaysia",
+        "KPM"
+      ],
+      "country": "MY",
+      "languages": [
+        "ms",
+        "en"
+      ],
+      "resourceCount": 1,
+      "categories": [
+        "economy",
+        "transport"
+      ],
+      "accessTypes": [
+        "public"
+      ],
+      "endpointTypes": [
+        "landing-page",
+        "publication"
+      ]
+    },
+    {
+      "id": "napic",
+      "name": "National Property Information Centre",
+      "abbreviation": "NAPIC",
+      "type": "government",
+      "url": "https://napic.jpph.gov.my/",
+      "description": "The property data centre of the Valuation and Property Services Department (JPPH), Ministry of Finance. Publishes Malaysian property market data, transaction records and price indices.",
+      "aliases": [
+        "NAPIC",
+        "Pusat Maklumat Harta Tanah Negara",
+        "JPPH",
+        "Jabatan Penilaian dan Perkhidmatan Harta"
+      ],
+      "country": "MY",
+      "languages": [
+        "ms",
+        "en"
+      ],
+      "notes": "NAPIC sits within JPPH, a federal department under the Ministry of Finance, so it is recorded as a government publisher rather than a statutory body.",
+      "resourceCount": 1,
+      "categories": [
+        "economy",
+        "housing-property"
+      ],
+      "accessTypes": [
+        "public"
+      ],
+      "endpointTypes": [
+        "dashboard",
+        "explorer",
+        "landing-page",
+        "publication"
+      ]
+    },
+    {
+      "id": "openstreetmap",
+      "name": "OpenStreetMap",
+      "abbreviation": "OSM",
+      "type": "community",
+      "url": "https://www.openstreetmap.org/",
+      "description": "A community-built map of the world, published under an open licence. Malaysia is well covered for roads, buildings, places and administrative boundaries.",
+      "aliases": [
+        "OSM",
+        "OpenStreetMap Foundation",
+        "OSMF"
+      ],
+      "country": "GB",
+      "languages": [
+        "en"
+      ],
+      "resourceCount": 1,
+      "categories": [
+        "geography",
+        "transport"
+      ],
+      "accessTypes": [
+        "open"
+      ],
+      "endpointTypes": [
+        "bulk-download",
+        "landing-page",
+        "map"
+      ]
+    },
+    {
+      "id": "oecd",
+      "name": "Organisation for Economic Co-operation and Development",
+      "abbreviation": "OECD",
+      "type": "international",
+      "url": "https://data-explorer.oecd.org/",
+      "description": "An intergovernmental organisation that publishes comparable economic, social and environmental statistics through its data explorer and SDMX API. Malaysia is not an OECD member, but it appears as a partner or non-member economy in several datasets.",
+      "aliases": [
+        "OECD",
+        "OECD Data",
+        "OECD Data Explorer"
+      ],
+      "country": "FR",
+      "languages": [
+        "en"
+      ],
+      "resourceCount": 1,
+      "categories": [
+        "economy",
+        "finance",
+        "trade"
+      ],
+      "accessTypes": [
+        "open"
+      ],
+      "endpointTypes": [
+        "api",
+        "explorer",
+        "landing-page"
+      ]
+    },
+    {
+      "id": "pos-malaysia",
+      "name": "Pos Malaysia",
+      "type": "commercial",
+      "url": "https://www.pos.com.my/",
+      "description": "The national postal operator. It maintains the authoritative postcode and addressing reference for Malaysia.",
+      "aliases": [
+        "Pos Malaysia Berhad",
+        "Pejabat Pos Malaysia"
+      ],
+      "resourceCount": 1,
+      "categories": [
+        "geography"
+      ],
+      "accessTypes": [
+        "public"
+      ],
+      "endpointTypes": [
+        "landing-page",
+        "search"
+      ]
+    },
+    {
+      "id": "prasarana",
+      "name": "Prasarana Malaysia Berhad",
+      "abbreviation": "Prasarana",
+      "type": "government",
+      "url": "https://www.prasarana.com.my/",
+      "description": "The government-owned urban public transport operator for the Klang Valley and Penang, running Rapid Rail (LRT, MRT, monorail) and Rapid Bus services under the Rapid KL brand.",
+      "aliases": [
+        "Prasarana",
+        "Rapid KL",
+        "Rapid Rail",
+        "Rapid Bus",
+        "MyRapid"
+      ],
+      "country": "MY",
+      "languages": [
+        "ms",
+        "en"
+      ],
+      "notes": "myrapid.com.my and www.myrapid.com.my both entered a redirect loop on 2026-10-04 and could not be verified, so only prasarana.com.my endpoints are recorded.",
+      "resourceCount": 1,
+      "categories": [
+        "transport"
+      ],
+      "accessTypes": [
+        "public"
+      ],
+      "endpointTypes": [
+        "landing-page",
+        "report"
+      ]
+    },
+    {
+      "id": "ram",
+      "name": "RAM Holdings Berhad",
+      "abbreviation": "RAM",
+      "type": "commercial",
+      "url": "https://www.ram.com.my/",
+      "description": "A Malaysian credit rating agency (RAM Ratings) and risk-analytics provider. It publishes credit ratings for issuers and debt instruments, rating announcements, rating methodologies and subscription research.",
+      "aliases": [
+        "RAM Ratings",
+        "RAM Group",
+        "Rating Agency Malaysia"
+      ],
+      "country": "MY",
+      "languages": [
+        "en"
+      ],
+      "resourceCount": 1,
+      "categories": [
+        "business-companies",
+        "finance"
+      ],
+      "accessTypes": [
+        "paid"
+      ],
+      "endpointTypes": [
+        "commercial-access",
+        "landing-page",
+        "publication",
+        "search"
+      ]
+    },
+    {
+      "id": "jpj",
+      "name": "Road Transport Department Malaysia",
+      "abbreviation": "JPJ",
+      "type": "government",
+      "url": "https://www.jpj.gov.my/",
+      "description": "The federal department responsible for vehicle registration, driving licences and road transport enforcement. Vehicle registration data is published through the national open data portal.",
+      "aliases": [
+        "Jabatan Pengangkutan Jalan",
+        "JPJ"
+      ],
+      "country": "MY",
+      "languages": [
+        "ms",
+        "en"
+      ],
+      "notes": "jpj.gov.my did not accept a connection from this network on 2026-10-04 (DNS resolves to 110.159.245.10 but the request timed out), so only the department's published datasets on data.gov.my are recorded here. The site www.jpj.my is not the department and is excluded.",
+      "resourceCount": 1,
+      "categories": [
+        "transport"
+      ],
+      "accessTypes": [
+        "public"
+      ],
+      "endpointTypes": [
+        "api",
+        "api-docs",
+        "csv",
+        "landing-page"
+      ]
+    },
+    {
+      "id": "sc",
+      "name": "Securities Commission Malaysia",
+      "abbreviation": "SC",
+      "type": "statutory-body",
+      "url": "https://www.sc.com.my/",
+      "description": "Malaysia's statutory regulator of the capital market (Suruhanjaya Sekuriti Malaysia). It publishes capital-market statistics, annual and quarterly reports, consultation papers and research.",
+      "aliases": [
+        "Suruhanjaya Sekuriti Malaysia",
+        "SC Malaysia",
+        "Securities Commission"
+      ],
+      "country": "MY",
+      "languages": [
+        "en",
+        "ms"
+      ],
+      "resourceCount": 1,
+      "categories": [
+        "economy",
+        "finance"
+      ],
+      "accessTypes": [
+        "public"
+      ],
+      "endpointTypes": [
+        "landing-page",
+        "report"
+      ]
+    },
+    {
+      "id": "seda",
+      "name": "Sustainable Energy Development Authority Malaysia",
+      "abbreviation": "SEDA",
+      "type": "statutory-body",
+      "url": "https://www.seda.gov.my/",
+      "description": "The statutory authority responsible for promoting and monitoring sustainable and renewable energy in Malaysia. Publishes installed renewable energy capacity statistics.",
+      "aliases": [
+        "SEDA",
+        "SEDA Malaysia",
+        "Pihak Berkuasa Pembangunan Tenaga Lestari Malaysia"
+      ],
+      "country": "MY",
+      "languages": [
+        "ms",
+        "en"
+      ],
+      "notes": "Established under the Sustainable Energy Development Authority Act 2011, so recorded as a statutory body rather than a government department.",
+      "resourceCount": 1,
+      "categories": [
+        "energy",
+        "environment"
+      ],
+      "accessTypes": [
+        "public"
+      ],
+      "endpointTypes": [
+        "dashboard",
+        "landing-page"
+      ]
+    },
+    {
+      "id": "unesco-uis",
+      "name": "UNESCO Institute for Statistics",
+      "abbreviation": "UIS",
+      "type": "international",
+      "url": "https://uis.unesco.org/",
+      "description": "The statistical office of UNESCO, publishing global education, science, culture and communication statistics covering Malaysia, with bulk downloads and a public API.",
+      "aliases": [
+        "UIS",
+        "UNESCO Institute for Statistics",
+        "UNESCO data"
+      ],
+      "country": "CA",
+      "languages": [
+        "en"
+      ],
+      "resourceCount": 1,
+      "categories": [
+        "education",
+        "science-research",
+        "social"
+      ],
+      "accessTypes": [
+        "open"
+      ],
+      "endpointTypes": [
+        "api",
+        "api-docs",
+        "bulk-download",
+        "explorer",
+        "landing-page"
+      ]
+    },
+    {
+      "id": "united-nations",
+      "name": "United Nations",
+      "abbreviation": "UN",
+      "type": "international",
+      "url": "https://data.un.org/",
+      "description": "The United Nations Statistics Division publishes UN Data, an aggregated portal of official statistics for member states including Malaysia, and the global SDG indicators API.",
+      "aliases": [
+        "UN",
+        "United Nations Statistics Division",
+        "UNSD",
+        "UN Data"
+      ],
+      "country": "US",
+      "languages": [
+        "en"
+      ],
+      "resourceCount": 2,
+      "categories": [
+        "demographics",
+        "economy",
+        "environment",
+        "social"
+      ],
+      "accessTypes": [
+        "open"
+      ],
+      "endpointTypes": [
+        "api",
+        "explorer",
+        "landing-page"
+      ]
+    },
+    {
+      "id": "unicef",
+      "name": "United Nations Children's Fund",
+      "abbreviation": "UNICEF",
+      "type": "international",
+      "url": "https://data.unicef.org/",
+      "description": "A United Nations agency that publishes global statistics on children and women — child mortality, nutrition, health, education and child protection — including country-level data for Malaysia.",
+      "aliases": [
+        "UNICEF",
+        "UNICEF Data",
+        "United Nations Children's Fund"
+      ],
+      "country": "US",
+      "languages": [
+        "en"
+      ],
+      "resourceCount": 1,
+      "categories": [
+        "education",
+        "health",
+        "social"
+      ],
+      "accessTypes": [
+        "public"
+      ],
+      "endpointTypes": [
+        "landing-page"
+      ]
+    },
+    {
+      "id": "un-comtrade",
+      "name": "United Nations Comtrade",
+      "abbreviation": "UN Comtrade",
+      "type": "international",
+      "url": "https://comtradeplus.un.org/",
+      "description": "The United Nations Commodity Trade Statistics Database, published by the UN Statistics Division, holding import and export records reported by Malaysia and its trading partners.",
+      "aliases": [
+        "UN Comtrade",
+        "Comtrade",
+        "UN Comtrade Database"
+      ],
+      "country": "US",
+      "languages": [
+        "en"
+      ],
+      "resourceCount": 1,
+      "categories": [
+        "economy",
+        "trade"
+      ],
+      "accessTypes": [
+        "register"
+      ],
+      "endpointTypes": [
+        "api",
+        "landing-page"
+      ]
+    },
+    {
+      "id": "unhcr",
+      "name": "United Nations High Commissioner for Refugees",
+      "abbreviation": "UNHCR",
+      "type": "international",
+      "url": "https://www.unhcr.org/refugee-statistics/",
+      "description": "The United Nations refugee agency, which publishes global forced-displacement statistics — refugees, asylum-seekers, internally displaced people and stateless persons — including figures for Malaysia, with a public data API.",
+      "aliases": [
+        "UNHCR",
+        "UN Refugee Agency",
+        "UNHCR Refugee Statistics",
+        "Refugee Data Finder"
+      ],
+      "country": "CH",
+      "languages": [
+        "en"
+      ],
+      "resourceCount": 1,
+      "categories": [
+        "demographics",
+        "social"
+      ],
+      "accessTypes": [
+        "open"
+      ],
+      "endpointTypes": [
+        "api",
+        "api-docs",
+        "landing-page"
+      ]
+    },
+    {
+      "id": "ukm",
+      "name": "Universiti Kebangsaan Malaysia",
+      "abbreviation": "UKM",
+      "type": "academic",
+      "url": "https://www.ukm.my/",
+      "description": "A Malaysian public research university (The National University of Malaysia). It operates a journal article repository and an e-journal system hosting UKM-published journals.",
+      "aliases": [
+        "UKM",
+        "National University of Malaysia"
+      ],
+      "country": "MY",
+      "languages": [
+        "en",
+        "ms"
+      ],
+      "resourceCount": 1,
+      "categories": [
+        "education",
+        "science-research"
+      ],
+      "accessTypes": [
+        "public"
+      ],
+      "endpointTypes": [
+        "catalogue",
+        "landing-page"
+      ]
+    },
+    {
+      "id": "usm",
+      "name": "Universiti Sains Malaysia",
+      "abbreviation": "USM",
+      "type": "academic",
+      "url": "https://www.usm.my/",
+      "description": "A Malaysian public research university. It operates Repository@USM, an institutional repository of its research outputs and publications.",
+      "aliases": [
+        "USM",
+        "University of Science, Malaysia"
+      ],
+      "country": "MY",
+      "languages": [
+        "en",
+        "ms"
+      ],
+      "resourceCount": 1,
+      "categories": [
+        "education",
+        "science-research"
+      ],
+      "accessTypes": [
+        "public"
+      ],
+      "endpointTypes": [
+        "catalogue",
+        "landing-page"
+      ]
+    },
+    {
+      "id": "uum",
+      "name": "Universiti Utara Malaysia",
+      "abbreviation": "UUM",
+      "type": "academic",
+      "url": "https://www.uum.edu.my/",
+      "description": "A Malaysian public university. It operates institutional repositories covering its electronic theses and dissertations and its research and publications.",
+      "aliases": [
+        "UUM",
+        "Northern University of Malaysia"
+      ],
+      "country": "MY",
+      "languages": [
+        "en",
+        "ms"
+      ],
+      "resourceCount": 1,
+      "categories": [
+        "education",
+        "science-research"
+      ],
+      "accessTypes": [
+        "public"
+      ],
+      "endpointTypes": [
+        "catalogue",
+        "landing-page"
+      ]
+    },
+    {
+      "id": "world-bank",
+      "name": "World Bank",
+      "abbreviation": "WB",
+      "type": "international",
+      "url": "https://data.worldbank.org/",
+      "description": "An international financial institution that publishes a large open collection of development indicators for most countries, including Malaysia, with a documented API.",
+      "aliases": [
+        "World Bank Group",
+        "World Bank Open Data",
+        "IBRD"
+      ],
+      "country": "US",
+      "languages": [
+        "en"
+      ],
+      "resourceCount": 1,
+      "categories": [
+        "economy",
+        "social"
+      ],
+      "accessTypes": [
+        "open"
+      ],
+      "endpointTypes": [
+        "api",
+        "bulk-download",
+        "landing-page"
+      ]
+    },
+    {
+      "id": "who",
+      "name": "World Health Organization",
+      "abbreviation": "WHO",
+      "type": "international",
+      "url": "https://www.who.int/data/gho",
+      "description": "A United Nations specialised agency that publishes the Global Health Observatory, a global collection of health indicators covering Malaysia across mortality, disease, immunisation, health systems and risk factors.",
+      "aliases": [
+        "WHO",
+        "World Health Organization",
+        "Global Health Observatory",
+        "GHO"
+      ],
+      "country": "CH",
+      "languages": [
+        "en"
+      ],
+      "resourceCount": 1,
+      "categories": [
+        "demographics",
+        "health"
+      ],
+      "accessTypes": [
+        "open"
+      ],
+      "endpointTypes": [
+        "api",
+        "catalogue",
+        "landing-page"
+      ]
+    }
+  ]
+}

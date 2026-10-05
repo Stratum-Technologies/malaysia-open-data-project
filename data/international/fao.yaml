@@ -1,0 +1,73 @@
+publisher:
+  id: fao
+  name: Food and Agriculture Organization of the United Nations
+  abbreviation: FAO
+  type: international
+  url: https://www.fao.org/faostat/en/
+  description: >-
+    A United Nations specialised agency that publishes FAOSTAT, a global statistical
+    database of food and agriculture covering Malaysia across crops, livestock, land use,
+    food security and trade.
+  aliases:
+    - FAO
+    - FAOSTAT
+    - Food and Agriculture Organization
+  country: IT
+  languages: [en]
+
+resources:
+  - id: faostat-malaysia-agriculture
+    name: FAOSTAT food and agriculture statistics for Malaysia
+    aliases:
+      - FAOSTAT Malaysia
+      - Malaysia agricultural statistics
+      - Malaysia crop production
+    publisher: fao
+    description: >-
+      Country-level food and agriculture statistics for Malaysia — crop and livestock
+      production, land use, fertilisers, food balance sheets and agricultural trade —
+      published by FAOSTAT with an interactive portal and API access.
+    categories: [agriculture, environment, trade]
+    tags: [agriculture, crops, livestock, food-security, land-use, statistics]
+    access:
+      type: register
+      registration_required: true
+      details: >-
+        The FAOSTAT portal and bulk downloads are open. The current FAOSTAT API endpoint
+        returns 401 without credentials and may require registration.
+    license:
+      name: CC BY 4.0
+      verified: false
+      notes: >-
+        FAOSTAT data is generally published under CC BY 4.0. Confirm the current terms on
+        the publisher's site before reuse.
+    geography:
+      coverage: [malaysia, global]
+      granularity: [national]
+    temporal:
+      frequency: annual
+    languages: [en]
+    endpoints:
+      - type: landing-page
+        url: https://www.fao.org/faostat/en/
+        label: FAOSTAT portal
+      - type: catalogue
+        url: https://www.fao.org/faostat/en/#data
+        label: FAOSTAT data domains
+      - type: bulk-download
+        url: https://bulks-faostat.fao.org/production/
+        label: FAOSTAT bulk downloads
+        notes: Returns 403 to the root URL from some networks; the production path responds.
+      - type: api
+        url: https://faostatservices.fao.org/api/v1/en/data/QCL
+        label: FAOSTAT API (crops and livestock, domain QCL)
+        auth: unknown
+        format: json
+        notes: >-
+          Returns 401 without credentials, indicating the API is gated. The older
+          fenixservices.fao.org host did not resolve to a response during verification.
+    last_verified: 2026-10-04
+    notes: >-
+      Verified 2026-10-04. The portal, data-domains and bulk-download URLs respond. The API
+      endpoint returns 401 (gated) and the legacy fenixservices host returned no response,
+      so neither is asserted as open. Licence not asserted as verified.

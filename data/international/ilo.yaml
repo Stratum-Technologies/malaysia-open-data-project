@@ -1,0 +1,64 @@
+publisher:
+  id: ilo
+  name: International Labour Organization
+  abbreviation: ILO
+  type: international
+  url: https://ilostat.ilo.org/
+  description: >-
+    A United Nations specialised agency that publishes ILOSTAT, a global labour statistics
+    database covering Malaysia across employment, unemployment, wages, hours of work and
+    labour force participation.
+  aliases:
+    - ILO
+    - ILOSTAT
+    - International Labour Organization
+  country: CH
+  languages: [en]
+
+resources:
+  - id: ilostat-malaysia-labour
+    name: ILOSTAT labour statistics for Malaysia
+    aliases:
+      - ILOSTAT Malaysia
+      - Malaysia employment statistics
+      - Malaysia labour force data
+    publisher: ilo
+    description: >-
+      Labour market indicators for Malaysia — employment and unemployment, labour force
+      participation, working time, earnings and informal employment — published by ILOSTAT
+      with a web portal and a bulk data API.
+    categories: [labour, social]
+    tags: [labour, employment, unemployment, wages, workforce, statistics]
+    access:
+      type: open
+      details: The bulk API serves CSV without a key. The portal returns 403 to automated requests.
+    license:
+      name: CC BY 4.0
+      verified: false
+      notes: >-
+        ILOSTAT data is generally published under a Creative Commons licence. Confirm the
+        current terms on the publisher's site before reuse.
+    geography:
+      coverage: [malaysia, global]
+      granularity: [national]
+    temporal:
+      frequency: annual
+    languages: [en]
+    endpoints:
+      - type: landing-page
+        url: https://ilostat.ilo.org/
+        label: ILOSTAT portal
+        notes: Returns 403 to automated requests (bot protection); reachable in a browser.
+      - type: api
+        url: https://rplumber.ilo.org/data/indicator/?id=UNE_TUNE_SEX_AGE_NB_A&type=label&format=.csv
+        label: ILOSTAT bulk indicator API (CSV)
+        auth: none
+        format: csv
+        notes: >-
+          Bulk indicator download service. Malaysia is the country code MYS; swap the id
+          parameter to request another indicator.
+    last_verified: 2026-10-04
+    notes: >-
+      Verified 2026-10-04. The bulk CSV API responds without a key. The ILOSTAT portal
+      returns 403 to automated requests (bot protection) but is reachable in a browser.
+      Licence not asserted as verified.

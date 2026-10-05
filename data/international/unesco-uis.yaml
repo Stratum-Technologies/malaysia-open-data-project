@@ -1,0 +1,68 @@
+publisher:
+  id: unesco-uis
+  name: UNESCO Institute for Statistics
+  abbreviation: UIS
+  type: international
+  url: https://uis.unesco.org/
+  description: >-
+    The statistical office of UNESCO, publishing global education, science, culture and
+    communication statistics covering Malaysia, with bulk downloads and a public API.
+  aliases:
+    - UIS
+    - UNESCO Institute for Statistics
+    - UNESCO data
+  country: CA
+  languages: [en]
+
+resources:
+  - id: uis-malaysia-education
+    name: UNESCO education, science and culture statistics for Malaysia
+    aliases:
+      - UNESCO UIS Malaysia
+      - Malaysia education statistics
+      - UNESCO data
+    publisher: unesco-uis
+    description: >-
+      Cross-nationally comparable indicators for Malaysia — education attainment and
+      enrolment, literacy, research and development expenditure, and culture and
+      communication statistics — published by the UNESCO Institute for Statistics.
+    categories: [education, science-research, social]
+    tags: [education, literacy, enrolment, research, culture, statistics]
+    access:
+      type: open
+      details: The data portal, bulk downloads and the public API require no registration.
+    license:
+      name: CC BY-SA 3.0 IGO
+      verified: false
+      notes: >-
+        UIS data is commonly published under a Creative Commons IGO licence. Confirm the
+        current terms on the publisher's site before reuse.
+    geography:
+      coverage: [malaysia, global]
+      granularity: [national]
+    temporal:
+      frequency: annual
+    languages: [en]
+    endpoints:
+      - type: landing-page
+        url: https://uis.unesco.org/
+        label: UIS portal
+      - type: explorer
+        url: https://data.unesco.org/
+        label: UNESCO data explorer
+      - type: api
+        url: https://api.uis.unesco.org/api/public/data/indicators?geoUnit=MY
+        label: UIS public API - indicators for Malaysia
+        auth: none
+        format: json
+        notes: Malaysia is geoUnit MY. Add an indicator parameter to narrow the request.
+      - type: bulk-download
+        url: https://uis.unesco.org/en/bulk-data
+        label: UIS bulk downloads
+      - type: api-docs
+        url: https://data.unesco.org/api/
+        label: UNESCO data API documentation
+    last_verified: 2026-10-04
+    notes: >-
+      Verified 2026-10-04. The portal, explorer, bulk-download and API endpoints respond
+      without a key. Licence not asserted as verified.

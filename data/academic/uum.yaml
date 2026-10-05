@@ -1,0 +1,52 @@
+publisher:
+  id: uum
+  name: Universiti Utara Malaysia
+  abbreviation: UUM
+  type: academic
+  url: https://www.uum.edu.my/
+  description: >-
+    A Malaysian public university. It operates institutional repositories covering its
+    electronic theses and dissertations and its research and publications.
+  aliases:
+    - UUM
+    - Northern University of Malaysia
+  country: MY
+  languages: [en, ms]
+
+resources:
+  - id: uum-institutional-repository
+    name: UUM institutional repositories
+    aliases:
+      - UUM eTheses
+      - UUM repository
+      - UUM electronic theses and dissertation
+    publisher: uum
+    description: >-
+      UUM's institutional repositories: UUM Electronic Theses and Dissertation (eTheses)
+      and the UUM Repository of research and publications, searchable by author, title
+      and subject.
+    categories: [science-research, education]
+    tags: [institutional-repository, theses, dissertations, research, publications]
+    access:
+      type: public
+      details: >-
+        Records are publicly searchable. Reuse terms for individual items vary by item
+        and were not confirmed.
+    geography:
+      coverage: [malaysia]
+      granularity: [national]
+    languages: [en]
+    endpoints:
+      - type: catalogue
+        url: https://etd.uum.edu.my/
+        label: UUM Electronic Theses and Dissertation (eTheses)
+      - type: catalogue
+        url: https://eprints.uum.edu.my/
+        label: UUM Repository
+      - type: landing-page
+        url: https://www.uum.edu.my/
+        label: Universiti Utara Malaysia
+    last_verified: 2026-10-04
+    notes: >-
+      Verified 2026-10-04: all three sites respond. Item-level licences were not
+      confirmed.

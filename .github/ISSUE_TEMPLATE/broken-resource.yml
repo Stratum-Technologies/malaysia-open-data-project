@@ -1,0 +1,19 @@
+name: Broken or incorrect resource
+description: Report a dead link or inaccurate listing
+title: "[Correction]: "
+labels: ["correction"]
+body:
+  - type: input
+    id: resource
+    attributes: {label: Resource ID or directory URL}
+    validations: {required: true}
+  - type: textarea
+    id: problem
+    attributes: {label: What is wrong?}
+    validations: {required: true}
+  - type: input
+    id: replacement
+    attributes: {label: Correct/replacement URL, if known}
+  - type: textarea
+    id: evidence
+    attributes: {label: Supporting notes}

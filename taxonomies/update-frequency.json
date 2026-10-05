@@ -1,0 +1,12 @@
+[
+  "real-time",
+  "hourly",
+  "daily",
+  "weekly",
+  "monthly",
+  "quarterly",
+  "annual",
+  "irregular",
+  "one-off",
+  "unknown"
+]

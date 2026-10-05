@@ -1,0 +1,67 @@
+publisher:
+  id: jpj
+  name: Road Transport Department Malaysia
+  abbreviation: JPJ
+  type: government
+  url: https://www.jpj.gov.my/
+  description: >-
+    The federal department responsible for vehicle registration, driving licences and road
+    transport enforcement. Vehicle registration data is published through the national open
+    data portal.
+  aliases:
+    - Jabatan Pengangkutan Jalan
+    - JPJ
+  country: MY
+  languages: [ms, en]
+  notes: >-
+    jpj.gov.my did not accept a connection from this network on 2026-10-04 (DNS resolves to
+    110.159.245.10 but the request timed out), so only the department's published datasets on
+    data.gov.my are recorded here. The site www.jpj.my is not the department and is excluded.
+
+resources:
+  - id: jpj-vehicle-registrations
+    name: Vehicle registrations
+    aliases:
+      - pendaftaran kenderaan
+      - vehicle registration
+      - monthly vehicle registrations
+      - registrations by fuel type
+    publisher: jpj
+    description: >-
+      Monthly counts of vehicle registrations in Malaysia, broken down by vehicle type and
+      fuel type, derived from Road Transport Department registration records and published
+      through the national open data portal.
+    categories: [transport]
+    tags: [vehicles, registrations, transport, jpj, fuel-type, kenderaan]
+    access:
+      type: public
+      details: >-
+        Freely viewable and queryable on data.gov.my. The dataset page does not state reuse
+        terms, so no licence is asserted here.
+    geography:
+      coverage: [malaysia]
+      granularity: [national]
+    languages: [en, ms]
+    endpoints:
+      - type: landing-page
+        url: https://data.gov.my/data-catalogue?id=registrations_type_fuel
+        label: Dataset page
+      - type: api
+        url: https://api.data.gov.my/data-catalogue?id=registrations_type_fuel
+        label: JSON API
+        auth: none
+        notes: Requires the query parameter id=registrations_type_fuel. Filtering parameters are documented by data.gov.my.
+      - type: csv
+        url: https://storage.data.gov.my/transportation/registrations_type_fuel.csv
+        label: CSV download
+      - type: api-docs
+        url: https://developer.data.gov.my/
+        label: API documentation
+        documentation: https://developer.data.gov.my/
+    related_resources: [mot-transport-statistics, ktmb-train-services]
+    last_verified: 2026-10-04
+    notes: >-
+      Verified 2026-10-04: dataset page, API and CSV all respond. The dataset is hosted by the
+      national open data portal on behalf of the department. Update frequency is not recorded
+      because the dataset page did not confirm it.
+    contributors: []

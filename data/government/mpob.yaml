@@ -1,0 +1,43 @@
+publisher:
+  id: mpob
+  name: Malaysian Palm Oil Board
+  abbreviation: MPOB
+  type: government
+  url: https://www.mpob.gov.my/
+  description: >-
+    The federal agency responsible for the palm oil industry: research, regulation and the
+    official industry statistics.
+  aliases: [Lembaga Minyak Sawit Malaysia]
+
+resources:
+  - id: mpob-industry-statistics
+    name: Palm oil industry statistics
+    aliases: [Palm oil production and exports, Statistik industri sawit]
+    description: >-
+      Production, exports, stocks and prices for the Malaysian palm oil industry, published
+      through the board's economics and industry portal alongside monthly releases.
+    publisher: mpob
+    categories: [agriculture, trade]
+    tags: [palm-oil, commodities, exports, prices, sawit, agriculture]
+    access:
+      type: public
+      details: >-
+        Published freely for reading and reference. Reuse terms are not stated on the pages
+        checked, so confirm them with MPOB before republishing.
+    geography:
+      coverage: [malaysia]
+      granularity: [national]
+    languages: [en, ms]
+    endpoints:
+      - type: landing-page
+        url: https://bepi.mpob.gov.my/
+        label: MPOB economics and industry portal
+        notes: Industry statistics and commodity information.
+      - type: landing-page
+        url: https://www.mpob.gov.my/
+        label: Malaysian Palm Oil Board
+        notes: Corporate site, including published statistics and monthly releases.
+    last_verified: 2026-10-04
+    notes: >-
+      Verified 2026-10-04: both hosts respond. The specific statistics page previously used
+      for this record now returns 404, so only the verified entry points are listed here.

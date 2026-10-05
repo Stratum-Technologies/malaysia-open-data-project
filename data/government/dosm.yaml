@@ -1,0 +1,136 @@
+publisher:
+  id: dosm
+  name: Department of Statistics Malaysia
+  abbreviation: DOSM
+  type: government
+  url: https://www.dosm.gov.my/
+  description: >-
+    Malaysia's national statistical office. Produces official statistics on population,
+    the economy, prices, labour and society, and publishes much of it openly through
+    OpenDOSM.
+  aliases:
+    - Jabatan Perangkaan Malaysia
+    - OpenDOSM
+    - Statistics Malaysia
+  country: MY
+  languages: [ms, en]
+
+resources:
+  - id: dosm-population-state
+    name: Population by state
+    aliases:
+      - Jumlah penduduk mengikut negeri
+      - population state
+      - state population
+      - penduduk negeri
+    publisher: dosm
+    description: >-
+      Population counts for Malaysia broken down by state and administrative district,
+      with annual series suitable for comparing states or tracking growth over time.
+    categories: [demographics]
+    tags: [population, demography, state, district, penduduk, statistics]
+    access:
+      type: public
+      details: Freely viewable and queryable. Reuse terms are not stated on the resource page.
+    geography:
+      coverage: [malaysia]
+      granularity: [national, state, district]
+    languages: [ms, en]
+    endpoints:
+      - type: landing-page
+        url: https://open.dosm.gov.my/dashboard/population
+        label: Population dashboard
+      - type: api
+        url: https://api.data.gov.my/data-catalogue?id=population_state
+        label: JSON API
+        auth: none
+        notes: Requires the query parameter id=population_state.
+      - type: api-docs
+        url: https://developer.data.gov.my/
+        label: API documentation
+        documentation: https://developer.data.gov.my/
+      - type: explorer
+        url: https://open.dosm.gov.my/data-catalogue
+        label: Explore in the data catalogue
+    related_resources: [dosm-cpi-headline]
+    last_verified: 2026-10-04
+    notes: >-
+      Verified 2026-10-04: dashboard and API endpoint both respond. Update frequency and
+      temporal coverage are deliberately left unrecorded because they were not confirmed
+      on the resource page.
+    contributors: []
+
+  - id: dosm-cpi-headline
+    name: Consumer Price Index (headline)
+    aliases:
+      - CPI
+      - Indeks Harga Pengguna
+      - inflation
+      - inflasi
+    publisher: dosm
+    description: >-
+      The headline Consumer Price Index for Malaysia, the standard measure of consumer
+      inflation, with index values and year-on-year change over time.
+    categories: [prices-cost-of-living, economy]
+    tags: [cpi, inflation, prices, index, harga, statistics]
+    access:
+      type: public
+      details: Freely viewable and queryable. Reuse terms are not stated on the resource page.
+    geography:
+      coverage: [malaysia]
+      granularity: [national]
+    languages: [ms, en]
+    endpoints:
+      - type: api
+        url: https://api.data.gov.my/data-catalogue?id=cpi_headline
+        label: JSON API
+        auth: none
+        notes: Requires the query parameter id=cpi_headline.
+      - type: landing-page
+        url: https://open.dosm.gov.my/data-catalogue
+        label: OpenDOSM data catalogue
+      - type: api-docs
+        url: https://developer.data.gov.my/
+        label: API documentation
+        documentation: https://developer.data.gov.my/
+    related_resources: [dosm-population-state]
+    last_verified: 2026-10-04
+    notes: >-
+      Verified 2026-10-04: the API endpoint returns JSON.
+
+  - id: dosm-open-data
+    name: OpenDOSM
+    aliases:
+      - Open DOSM
+      - DOSM data catalogue
+      - data terbuka DOSM
+    publisher: dosm
+    description: >-
+      DOSM's own open data platform: the department's statistics presented as browsable
+      datasets, dashboards and charts, with the source data available for download or
+      through an API.
+    categories: [elections-government]
+    tags: [open-data, statistics, catalogue, dashboard, data-terbuka]
+    access:
+      type: public
+      details: Freely browsable. Individual datasets may state additional terms.
+    geography:
+      coverage: [malaysia]
+      granularity: [national, state]
+    languages: [ms, en]
+    endpoints:
+      - type: landing-page
+        url: https://open.dosm.gov.my/
+        label: OpenDOSM
+      - type: explorer
+        url: https://open.dosm.gov.my/data-catalogue
+        label: Data catalogue
+      - type: api-docs
+        url: https://developer.data.gov.my/
+        label: API documentation
+        documentation: https://developer.data.gov.my/
+    related_resources: [data-gov-my-open-data]
+    last_verified: 2026-10-04
+    notes: >-
+      Cross-cutting statistics platform, filed under government. Verified 2026-10-04:
+      platform and catalogue both respond.

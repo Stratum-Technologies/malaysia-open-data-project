@@ -1,0 +1,71 @@
+publisher:
+  id: data-gov-my
+  name: Malaysian Open Data Portal
+  abbreviation: data.gov.my
+  type: government
+  url: https://data.gov.my/
+  description: >-
+    The Malaysian government's central open data portal. Aggregates datasets published by
+    federal agencies and exposes them through a searchable catalogue and a public API.
+  aliases:
+    - Portal Data Terbuka Malaysia
+    - Malaysian Government Open Data
+  country: MY
+  languages: [ms, en]
+
+resources:
+  # One logical resource — the portal's data — with several ways in. The catalogue search,
+  # the developer API and the documentation are endpoints of this resource, not separate
+  # listings, so a search for "open data" returns one good answer rather than four.
+  - id: data-gov-my-open-data
+    name: Malaysian government open data
+    aliases:
+      - data.gov.my
+      - Portal Data Terbuka Malaysia
+      - Malaysian open data portal
+      - data terbuka kerajaan
+    publisher: data-gov-my
+    description: >-
+      Datasets published by Malaysian federal agencies, covering population, economy,
+      transport, health, education and the environment. Browse the catalogue in a browser,
+      or query the same datasets programmatically through the public data catalogue API.
+    categories: [elections-government]
+    tags: [open-data, portal, catalogue, government, api, data-terbuka]
+    access:
+      type: open
+      details: Datasets are published individually and may carry different terms; check each dataset.
+    license:
+      name: Varies by dataset
+      verified: false
+      notes: >-
+        data.gov.my publishes datasets from many agencies. Individual datasets carry their
+        own licences. Confirm the licence on the dataset page before reuse.
+    geography:
+      coverage: [malaysia]
+      granularity: [national, state, district]
+    languages: [ms, en]
+    endpoints:
+      - type: landing-page
+        url: https://data.gov.my/
+        label: Browse the catalogue
+      - type: api-docs
+        url: https://developer.data.gov.my/
+        label: Developer documentation
+        documentation: https://developer.data.gov.my/
+      - type: api
+        url: https://api.data.gov.my/data-catalogue?id=population_state
+        label: Data catalogue API
+        auth: none
+        notes: >-
+          Takes an `id` query parameter naming the dataset, for example
+          `?id=population_state`. Returns JSON. The bare endpoint returns an error without it.
+      - type: data-dump
+        url: https://storage.data.gov.my/
+        label: Bulk file storage
+        notes: Datasets are also published as files, organised by catalogue id.
+    related_resources: [dosm-open-data]
+    last_verified: 2026-10-04
+    notes: >-
+      Verified 2026-10-04: portal, developer documentation and the catalogue API all
+      respond. Cross-cutting catalogue, so it is filed under government rather than a
+      single subject category.

@@ -1,0 +1,111 @@
+publisher:
+  id: bursa-malaysia
+  name: Bursa Malaysia
+  abbreviation: Bursa
+  type: commercial
+  url: https://www.bursamalaysia.com/
+  description: >-
+    The operator and regulator of the Malaysian stock exchange (Bursa Malaysia Berhad).
+    It publishes listed-company announcements, a listed-company directory and market
+    statistics, and sells real-time and historical market-data products.
+  aliases:
+    - Bursa Malaysia Berhad
+    - Malaysian stock exchange
+    - KLSE
+  country: MY
+  languages: [en, ms]
+
+resources:
+  - id: bursa-company-announcements
+    name: Bursa Malaysia company announcements
+    aliases:
+      - company announcements
+      - listed company disclosures
+      - Bursa announcements
+    publisher: bursa-malaysia
+    description: >-
+      Announcements made by companies listed on Bursa Malaysia, including financial
+      results, corporate actions and material disclosures, searchable by company and
+      announcement category.
+    categories: [business-companies, finance]
+    tags: [listed-companies, announcements, disclosure, stock-exchange]
+    access:
+      type: public
+      details: >-
+        The announcement pages are viewable on the Bursa Malaysia website. Bulk export
+        and reuse terms were not confirmed.
+    geography:
+      coverage: [malaysia]
+      granularity: [national]
+    languages: [en]
+    endpoints:
+      - type: search
+        url: https://www.bursamalaysia.com/market_information/announcements/company_announcement
+        label: Company announcements
+      - type: landing-page
+        url: https://www.bursamalaysia.com/
+        label: Bursa Malaysia
+    last_verified: 2026-10-04
+    notes: >-
+      Verified 2026-10-04: the whole bursamalaysia.com domain sits behind a Cloudflare
+      bot check, so live requests from the checker returned 403. The announcement path
+      is confirmed to exist by Wayback Machine captures that returned 200.
+
+  - id: bursa-listed-companies
+    name: Bursa Malaysia listed company directory (JSON)
+    aliases:
+      - listed companies API
+      - Bursa listed companies
+    publisher: bursa-malaysia
+    description: >-
+      JSON endpoint used by the Bursa Malaysia website to list companies listed on the
+      exchange, returning the listed-company directory in machine-readable form.
+    categories: [business-companies]
+    tags: [listed-companies, directory, json, stock-exchange]
+    access:
+      type: public
+      details: >-
+        The endpoint is used by the public website. Whether it requires a session or
+        blocks automated clients was not confirmed.
+    geography:
+      coverage: [malaysia]
+      granularity: [national]
+    languages: [en]
+    endpoints:
+      - type: api
+        url: https://www.bursamalaysia.com/api/v1/listed_companies/companies
+        label: Listed companies (JSON)
+    last_verified: 2026-10-04
+    notes: >-
+      Verified 2026-10-04: live requests returned 403 from Cloudflare. Wayback Machine
+      captures from 2023 and 2025 returned 200, confirming the path exists.
+
+  - id: bursa-market-statistics
+    name: Bursa Malaysia securities market statistics
+    aliases:
+      - market statistics
+      - securities market data
+      - Bursa statistics
+    publisher: bursa-malaysia
+    description: >-
+      Market statistics for the Malaysian securities market, covering trading activity,
+      volumes and indices published on the Bursa Malaysia website.
+    categories: [finance, economy]
+    tags: [market-statistics, stock-market, indices, trading]
+    access:
+      type: public
+      details: >-
+        The statistics pages are viewable on the Bursa Malaysia website. Real-time and
+        historical market data are sold separately as commercial data products.
+    geography:
+      coverage: [malaysia]
+      granularity: [national]
+    languages: [en]
+    endpoints:
+      - type: dashboard
+        url: https://www.bursamalaysia.com/market_information/market_statistic/securities
+        label: Securities market statistics
+    last_verified: 2026-10-04
+    notes: >-
+      Verified 2026-10-04: live requests returned 403 from Cloudflare. The path is
+      confirmed to exist by a Wayback Machine capture that returned 200.

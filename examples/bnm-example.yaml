@@ -1,0 +1,21 @@
+publisher:
+  id: bnm
+  name: Bank Negara Malaysia
+  abbreviation: BNM
+  type: government
+  url: https://www.bnm.gov.my/
+
+resources:
+  - id: bnm-example-statistics
+    name: BNM Statistical Resource
+    description: Example record showing how a central-bank statistical resource would be represented after its concrete endpoints are verified.
+    publisher: bnm
+    categories: [finance, economy]
+    tags: [banking, statistics]
+    access: {type: unknown}
+    endpoints:
+      - type: landing-page
+        url: https://www.bnm.gov.my/
+        notes: Placeholder for schema demonstration only.
+    last_verified: 2026-10-04
+    notes: EXAMPLE ONLY — verify the actual resource before seeding production.

@@ -1,0 +1,61 @@
+publisher:
+  id: kpdn
+  name: Ministry of Domestic Trade and Cost of Living
+  abbreviation: KPDN
+  type: government
+  url: https://www.kpdn.gov.my/
+  description: >-
+    The federal ministry responsible for domestic trade, consumer protection and cost of
+    living. Operates PriceCatcher, the national price monitoring service.
+  aliases:
+    - KPDN
+    - Kementerian Perdagangan Dalam Negeri dan Kos Sara Hidup
+    - KPDNHEP
+    - PriceCatcher
+  country: MY
+  languages: [ms, en]
+
+resources:
+  - id: kpdn-pricecatcher
+    name: PriceCatcher
+    aliases:
+      - PriceCatcher
+      - harga
+      - price comparison
+      - harga barang
+      - cost of living prices
+      - portal harga
+    publisher: kpdn
+    description: >-
+      The ministry's national price monitoring service. Records prices of a basket of
+      everyday goods and fresh produce at retail outlets across Malaysia, published so the
+      public can compare prices between premises and locations. Data is browsable on the
+      PriceCatcher portal and app.
+    categories: [prices-cost-of-living]
+    tags: [prices, groceries, cost-of-living, pricecatcher, kpdn, consumer, harga]
+    access:
+      type: public
+      details: >-
+        Prices are freely viewable through the portal, the mobile apps and an Open API. The
+        portal's terms page applies to the service; reuse terms for the underlying data are
+        not stated in a licence, so access is recorded as public rather than open.
+    geography:
+      coverage: [malaysia]
+      granularity: [national, local-authority, facility]
+    languages: [ms, en]
+    endpoints:
+      - type: landing-page
+        url: https://pricecatcher.kpdn.gov.my/
+        label: PriceCatcher portal
+      - type: publication
+        url: https://pricecatcher.kpdn.gov.my/portal/terms
+        label: Terms of use
+      - type: landing-page
+        url: https://www.kpdn.gov.my/
+        label: Ministry website
+    last_verified: 2026-10-04
+    notes: >-
+      Verified 2026-10-04: the portal and its terms page respond (the /download path returned
+      HTTP 500 on that date and is not recorded). The portal links to Android and iOS apps.
+      No downloadable dataset endpoint was verified here.
+    contributors: []

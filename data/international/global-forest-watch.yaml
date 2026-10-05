@@ -1,0 +1,66 @@
+publisher:
+  id: global-forest-watch
+  name: Global Forest Watch
+  abbreviation: GFW
+  type: international
+  url: https://www.globalforestwatch.org/
+  description: >-
+    An open forest-monitoring platform maintained by the World Resources Institute that
+    publishes near-real-time forest change, land cover and fire data with a country
+    dashboard for Malaysia and a public data API.
+  aliases:
+    - GFW
+    - Global Forest Watch
+    - WRI Global Forest Watch
+  country: US
+  languages: [en]
+
+resources:
+  - id: gfw-malaysia-forests
+    name: Forest change and land cover data for Malaysia
+    aliases:
+      - Global Forest Watch Malaysia
+      - Malaysia deforestation data
+      - Malaysia tree cover loss
+    publisher: global-forest-watch
+    description: >-
+      Forest and land-use data for Malaysia — tree cover loss and gain, land cover, fire
+      alerts and forest carbon — published through Global Forest Watch with a country
+      dashboard and a data API.
+    categories: [environment, geography]
+    tags: [forests, deforestation, land-use, tree-cover, fire, remote-sensing]
+    access:
+      type: open
+      details: The dashboard is freely browsable; the data API requires a free account key.
+    license:
+      name: Varies by dataset
+      verified: false
+      notes: >-
+        Each GFW dataset states its own licence. Check the dataset page before reuse.
+    geography:
+      coverage: [malaysia, global]
+      granularity: [national, grid, point]
+    temporal:
+      frequency: weekly
+    languages: [en]
+    endpoints:
+      - type: landing-page
+        url: https://www.globalforestwatch.org/
+        label: Global Forest Watch
+      - type: dashboard
+        url: https://www.globalforestwatch.org/dashboards/country/MYS/
+        label: Malaysia country dashboard
+      - type: api
+        url: https://data-api.globalforestwatch.org/datasets
+        label: GFW data API - dataset list
+        auth: api_key
+        format: json
+        notes: Responds without a key for the catalogue; queries to individual datasets require a free API key.
+      - type: api-docs
+        url: https://data-api.globalforestwatch.org/openapi.json
+        label: GFW data API OpenAPI specification
+        format: json
+    last_verified: 2026-10-04
+    notes: >-
+      Verified 2026-10-04. The site, the Malaysia dashboard, the dataset list and the
+      OpenAPI specification all respond. Licence not asserted as verified.

@@ -1,0 +1,53 @@
+publisher:
+  id: ukm
+  name: Universiti Kebangsaan Malaysia
+  abbreviation: UKM
+  type: academic
+  url: https://www.ukm.my/
+  description: >-
+    A Malaysian public research university (The National University of Malaysia). It
+    operates a journal article repository and an e-journal system hosting UKM-published
+    journals.
+  aliases:
+    - UKM
+    - National University of Malaysia
+  country: MY
+  languages: [en, ms]
+
+resources:
+  - id: ukm-research-repository
+    name: UKM journal article repository and e-journals
+    aliases:
+      - UKM Journal Article Repository
+      - UKM e-Journal System
+      - UKM repository
+    publisher: ukm
+    description: >-
+      UKM's journal article repository and e-journal system, hosting UKM-published
+      journals and research articles that are searchable and browsable by journal,
+      author and title.
+    categories: [science-research, education]
+    tags: [institutional-repository, research, journal-articles, e-journals, publications]
+    access:
+      type: public
+      details: >-
+        Articles are publicly searchable. Reuse terms for individual articles vary by
+        journal and were not confirmed.
+    geography:
+      coverage: [malaysia]
+      granularity: [national]
+    languages: [en]
+    endpoints:
+      - type: catalogue
+        url: https://journalarticle.ukm.my/
+        label: UKM Journal Article Repository
+      - type: landing-page
+        url: https://ejournal.ukm.my/
+        label: UKM e-Journal System
+      - type: landing-page
+        url: https://www.ukm.my/
+        label: Universiti Kebangsaan Malaysia
+    last_verified: 2026-10-04
+    notes: >-
+      Verified 2026-10-04: all three sites respond. Item-level licences were not
+      confirmed.

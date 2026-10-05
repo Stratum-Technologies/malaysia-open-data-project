@@ -1,0 +1,117 @@
+publisher:
+  id: ssm
+  name: Companies Commission of Malaysia
+  abbreviation: SSM
+  type: statutory-body
+  url: https://www.ssm.com.my/
+  description: >-
+    The statutory body that registers companies, businesses and limited liability
+    partnerships in Malaysia (Suruhanjaya Syarikat Malaysia). It maintains the official
+    company and business registry and sells registry information and corporate data.
+  aliases:
+    - Suruhanjaya Syarikat Malaysia
+    - Companies Commission
+    - SSM Malaysia
+  country: MY
+  languages: [ms, en]
+
+resources:
+  - id: ssm-e-info
+    name: SSM e-Info corporate information search
+    aliases:
+      - SSM e-Info
+      - company search
+      - business profile
+      - carian syarikat
+    publisher: ssm
+    description: >-
+      Official search and purchase of Malaysian company and business registry
+      information through the SSM e-Info portal, including company profiles, business
+      profiles and certified extracts. Documents are bought per item.
+    categories: [business-companies]
+    tags: [company-registry, business-registry, company-search, corporate-information, ssm]
+    access:
+      type: paid
+      paid: true
+      details: >-
+        Search results are free to view; individual documents such as company and
+        business profiles or certified extracts are purchased per item.
+    geography:
+      coverage: [malaysia]
+      granularity: [national]
+    languages: [en, ms]
+    endpoints:
+      - type: registry
+        url: https://www.ssm-einfo.my/
+        label: SSM e-Info portal
+      - type: landing-page
+        url: https://www.ssm.com.my/Pages/Buy_Corporate_Information/e-Info.aspx
+        label: e-Info information page
+    last_verified: 2026-10-04
+    notes: >-
+      Verified 2026-10-04: both pages respond. Pricing and the range of document types
+      are shown on the portal; reuse terms for purchased extracts were not confirmed.
+
+  - id: ssm-corporate-data-products
+    name: SSM corporate information data products
+    aliases:
+      - MyDATA
+      - Corporate and Business Information Data
+      - CBID
+    publisher: ssm
+    description: >-
+      SSM's channels for obtaining corporate and business information data beyond
+      single-document searches, covering the MyDATA purchase service and the Corporate
+      and Business Information Data (CBID) product.
+    categories: [business-companies]
+    tags: [company-registry, corporate-information, data-products, ssm]
+    access:
+      type: paid
+      paid: true
+      details: >-
+        These are purchasable registry-data products. Pricing and the exact datasets,
+        formats and volumes offered on each page were not confirmed.
+    geography:
+      coverage: [malaysia]
+      granularity: [national]
+    languages: [en, ms]
+    endpoints:
+      - type: commercial-access
+        url: https://www.ssm.com.my/Pages/Buy_Corporate_Information/MyDATA.aspx
+        label: MyDATA
+      - type: commercial-access
+        url: https://www.ssm.com.my/Pages/Product/Corporate-and-Business-Information-Data-(CBID).aspx
+        label: Corporate and Business Information Data (CBID)
+    last_verified: 2026-10-04
+    notes: >-
+      Verified 2026-10-04: both pages respond. Both are purchasable registry-data
+      products; specific datasets, formats and prices were not confirmed.
+
+  - id: ssm-statistics
+    name: SSM registry statistics
+    aliases:
+      - SSM statistics
+      - company registration statistics
+    publisher: ssm
+    description: >-
+      Statistics and statistical publications from the Companies Commission on company,
+      business and limited liability partnership registration activity in Malaysia.
+    categories: [business-companies, economy]
+    tags: [statistics, company-registry, registrations, ssm]
+    access:
+      type: public
+      details: >-
+        The statistics page is publicly viewable. Reuse terms for the published figures
+        were not confirmed.
+    geography:
+      coverage: [malaysia]
+      granularity: [national]
+    languages: [en, ms]
+    endpoints:
+      - type: statistical-release
+        url: https://www.ssm.com.my/Pages/Publication/Statistics/Statistics.aspx
+        label: SSM statistics
+    last_verified: 2026-10-04
+    notes: >-
+      Verified 2026-10-04: the statistics page responds. The page is served through
+      SSM's SharePoint site, so the exact tables and release cadence were not confirmed.

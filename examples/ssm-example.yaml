@@ -1,0 +1,22 @@
+publisher:
+  id: ssm
+  name: Companies Commission of Malaysia
+  abbreviation: SSM
+  type: statutory-body
+  url: https://www.ssm.com.my/
+
+resources:
+  - id: ssm-example-company-data
+    name: Company Data Access
+    description: Example of a commercial or controlled company-data listing with access conditions kept separate from licensing.
+    publisher: ssm
+    categories: [business-companies]
+    tags: [companies, registry]
+    access:
+      type: unknown
+      details: Confirm the exact product, price and access terms before publication.
+    endpoints:
+      - type: landing-page
+        url: https://www.ssm.com.my/
+    last_verified: 2026-10-04
+    notes: EXAMPLE ONLY.

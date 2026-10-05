@@ -1,0 +1,26 @@
+publisher:
+  id: dosm
+  name: Department of Statistics Malaysia
+  abbreviation: DOSM
+  type: government
+  url: https://www.dosm.gov.my/
+  aliases: [Jabatan Perangkaan Malaysia]
+
+resources:
+  - id: dosm-example-population-state
+    name: Population by State
+    description: Example record demonstrating a state-level population resource. Replace endpoint URLs and metadata with verified canonical values before production.
+    publisher: dosm
+    categories: [demographics]
+    tags: [population, state]
+    access:
+      type: unknown
+    geography:
+      coverage: [malaysia]
+      granularity: [state]
+    endpoints:
+      - type: landing-page
+        url: https://www.dosm.gov.my/
+        notes: Placeholder endpoint for schema demonstration only.
+    last_verified: 2026-10-04
+    notes: EXAMPLE ONLY — not a production catalogue assertion.

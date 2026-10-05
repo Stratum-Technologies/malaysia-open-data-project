@@ -1,0 +1,66 @@
+publisher:
+  id: imf
+  name: International Monetary Fund
+  abbreviation: IMF
+  type: international
+  url: https://data.imf.org/
+  description: >-
+    An international financial institution that publishes macroeconomic and financial
+    statistics for its member countries, including Malaysia, through its data portal and
+    an SDMX API.
+  aliases:
+    - IMF
+    - International Monetary Fund
+    - IMF Data
+  country: US
+  languages: [en]
+
+resources:
+  # The data portal and the SDMX API serve the same statistical databases, so they are
+  # endpoints of one resource.
+  - id: imf-malaysia-data
+    name: IMF macroeconomic and financial statistics for Malaysia
+    aliases:
+      - IMF Data Malaysia
+      - IMF International Financial Statistics
+      - IMF macroeconomic data
+    publisher: imf
+    description: >-
+      IMF statistical databases covering Malaysia — balance of payments, international
+      financial statistics, government finance, monetary aggregates and exchange rates —
+      available through the IMF data portal and its SDMX 2.1 API.
+    categories: [economy, finance]
+    tags: [macroeconomics, balance-of-payments, exchange-rates, monetary, sdmx, statistics]
+    access:
+      type: open
+      details: The data portal and the SDMX API require no registration.
+    license:
+      name: Varies by dataset
+      verified: false
+      notes: >-
+        Each IMF dataset states its own terms of use. Check the dataset page before reuse.
+    geography:
+      coverage: [malaysia, global]
+      granularity: [national]
+    temporal:
+      frequency: monthly
+    languages: [en]
+    endpoints:
+      - type: landing-page
+        url: https://data.imf.org/
+        label: IMF Data portal
+        notes: Returns 403 to automated requests (bot protection); reachable in a browser.
+      - type: api
+        url: https://api.imf.org/external/sdmx/2.1/dataflow
+        label: IMF SDMX 2.1 dataflow list
+        auth: none
+        notes: SDMX 2.1 API. Malaysia is the reporter code MY.
+      - type: api
+        url: https://api.imf.org/external/sdmx/2.1/dataflow/all/all/latest
+        label: IMF SDMX 2.1 dataflows (latest)
+        auth: none
+    last_verified: 2026-10-04
+    notes: >-
+      Verified 2026-10-04. The SDMX dataflow endpoints respond without a key. The data
+      portal returns 403 to automated requests (bot protection) but is reachable in a
+      browser. No licence was asserted because the IMF does not state a single licence.

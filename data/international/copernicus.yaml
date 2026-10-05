@@ -1,0 +1,66 @@
+publisher:
+  id: copernicus
+  name: Copernicus
+  abbreviation: Copernicus
+  type: international
+  url: https://www.copernicus.eu/en
+  description: >-
+    The European Union's Earth observation programme, which publishes satellite and
+    modelled environmental data — land cover, atmosphere, marine and climate reanalysis —
+    that covers Malaysia and the surrounding region.
+  aliases:
+    - Copernicus
+    - Copernicus Programme
+    - EU Copernicus
+    - Copernicus Data Space
+  languages: [en]
+
+resources:
+  - id: copernicus-malaysia-eo
+    name: Copernicus Earth observation data over Malaysia
+    aliases:
+      - Copernicus Malaysia
+      - Sentinel Malaysia
+      - ERA5 Malaysia climate
+    publisher: copernicus
+    description: >-
+      Satellite and modelled environmental data covering Malaysia — Sentinel imagery,
+      global land cover, and ERA5 climate reanalysis — published through the Copernicus
+      Data Space Ecosystem, the Climate Data Store and the land-monitoring service.
+    categories: [environment, weather-climate, geography]
+    tags: [earth-observation, satellite, sentinel, land-cover, climate, reanalysis]
+    access:
+      type: register
+      details: >-
+        Browse and download require a free Copernicus account; some services need a
+        registered client for programmatic access.
+    license:
+      name: Varies by dataset
+      verified: false
+      notes: >-
+        Most Copernicus data is free and openly licensed, but terms vary by service. Check
+        the dataset page before reuse.
+    geography:
+      coverage: [malaysia, global]
+      granularity: [grid, coordinate, point]
+    temporal:
+      frequency: daily
+    languages: [en]
+    endpoints:
+      - type: landing-page
+        url: https://www.copernicus.eu/en
+        label: Copernicus programme
+      - type: explorer
+        url: https://cds.climate.copernicus.eu/
+        label: Copernicus Climate Data Store
+      - type: landing-page
+        url: https://dataspace.copernicus.eu/
+        label: Copernicus Data Space Ecosystem
+      - type: landing-page
+        url: https://land.copernicus.eu/
+        label: Copernicus Land Monitoring Service
+    last_verified: 2026-10-04
+    notes: >-
+      Verified 2026-10-04. All four entry points respond. Copernicus is an EU programme, so
+      no country is recorded. Registration is required to download data; credentials were
+      not exercised during verification. Licence not asserted as verified.

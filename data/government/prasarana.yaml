@@ -1,0 +1,66 @@
+publisher:
+  id: prasarana
+  name: Prasarana Malaysia Berhad
+  abbreviation: Prasarana
+  type: government
+  url: https://www.prasarana.com.my/
+  description: >-
+    The government-owned urban public transport operator for the Klang Valley and Penang,
+    running Rapid Rail (LRT, MRT, monorail) and Rapid Bus services under the Rapid KL brand.
+  aliases:
+    - Prasarana
+    - Rapid KL
+    - Rapid Rail
+    - Rapid Bus
+    - MyRapid
+  country: MY
+  languages: [ms, en]
+  notes: >-
+    myrapid.com.my and www.myrapid.com.my both entered a redirect loop on 2026-10-04 and could
+    not be verified, so only prasarana.com.my endpoints are recorded.
+
+resources:
+  - id: prasarana-rapid-services
+    name: Prasarana urban transit services
+    aliases:
+      - Rapid KL
+      - Rapid Rail
+      - Rapid Bus
+      - LRT
+      - MRT
+      - monorail
+      - pengangkutan awam
+    publisher: prasarana
+    description: >-
+      Information about the urban rail and bus networks operated by Prasarana, including the
+      Rapid Rail lines (LRT, MRT, monorail) and Rapid Bus routes, plus the operator's
+      sustainability reporting.
+    categories: [transport]
+    tags: [transport, rail, bus, rapid-kl, lrt, mrt, monorail, public-transport]
+    access:
+      type: public
+      details: Freely viewable on the operator's website. Reuse terms are not stated.
+    geography:
+      coverage: [malaysia]
+      granularity: [station, national]
+    languages: [ms, en]
+    endpoints:
+      - type: landing-page
+        url: https://www.prasarana.com.my/rapid-rail/
+        label: Rapid Rail
+      - type: landing-page
+        url: https://www.prasarana.com.my/rapid-bus/
+        label: Rapid Bus
+      - type: report
+        url: https://www.prasarana.com.my/sustainability/
+        label: Sustainability reporting
+      - type: landing-page
+        url: https://www.prasarana.com.my/
+        label: Prasarana website
+    related_resources: [ktmb-train-services]
+    last_verified: 2026-10-04
+    notes: >-
+      Verified 2026-10-04: the four prasarana.com.my pages respond. No machine-readable
+      ridership feed was found on this domain; national ridership figures are published
+      through data.gov.my. Update frequency is not recorded.
+    contributors: []

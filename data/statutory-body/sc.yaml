@@ -1,0 +1,54 @@
+publisher:
+  id: sc
+  name: Securities Commission Malaysia
+  abbreviation: SC
+  type: statutory-body
+  url: https://www.sc.com.my/
+  description: >-
+    Malaysia's statutory regulator of the capital market (Suruhanjaya Sekuriti
+    Malaysia). It publishes capital-market statistics, annual and quarterly reports,
+    consultation papers and research.
+  aliases:
+    - Suruhanjaya Sekuriti Malaysia
+    - SC Malaysia
+    - Securities Commission
+  country: MY
+  languages: [en, ms]
+
+resources:
+  - id: sc-publications-and-research
+    name: Securities Commission publications, statistics and research
+    aliases:
+      - SC publications
+      - capital market statistics
+      - SC quarterly report
+    publisher: sc
+    description: >-
+      Reports, statistics and research published by the Securities Commission Malaysia,
+      including the annual report, quarterly reports, consultation papers and
+      capital-market data.
+    categories: [finance, economy]
+    tags: [capital-market, securities, regulator, statistics, reports]
+    access:
+      type: public
+      details: >-
+        The publications index and quarterly report pages are publicly viewable. Reuse
+        terms and the availability of bulk machine-readable data were not confirmed.
+    geography:
+      coverage: [malaysia]
+      granularity: [national]
+    languages: [en]
+    endpoints:
+      - type: report
+        url: https://www.sc.com.my/resources/publications-and-research
+        label: Publications and research
+      - type: report
+        url: https://www.sc.com.my/resources/quarterly-report
+        label: Quarterly report
+      - type: landing-page
+        url: https://www.sc.com.my/
+        label: Securities Commission Malaysia
+    last_verified: 2026-10-04
+    notes: >-
+      Verified 2026-10-04: all three pages respond. The publications index filters by
+      year; bulk datasets and machine-readable formats were not confirmed.

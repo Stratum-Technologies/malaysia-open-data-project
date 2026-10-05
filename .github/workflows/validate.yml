@@ -1,0 +1,52 @@
+name: Validate
+
+# Everything that must be true before a catalogue change can be trusted.
+# Least privilege: this workflow only ever reads the repository, and nothing in a pull
+# request runs with a secret in scope.
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: validate-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  catalogue:
+    name: Catalogue schema and drift
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          # The drift check compares generated exports against the YAML, and provenance records
+          # the commit, so a real checkout is needed.
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Validate catalogue
+        run: npm run validate
+      - name: Committed exports must match the catalogue
+        run: npm run check:catalogue
+
+  test:
+    name: Types and tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run typecheck
+      - run: npm test

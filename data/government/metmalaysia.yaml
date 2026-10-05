@@ -1,0 +1,58 @@
+publisher:
+  id: metmalaysia
+  name: Malaysian Meteorological Department
+  abbreviation: METMalaysia
+  type: government
+  url: https://www.met.gov.my/
+  description: >-
+    The federal department responsible for weather, climate and earthquake monitoring in
+    Malaysia. Publishes forecasts, warnings, rainfall records and climate data, with an
+    API for the weather datasets.
+  aliases:
+    - Jabatan Meteorologi Malaysia
+    - MET Malaysia
+    - MetMalaysia
+  country: MY
+  languages: [ms, en]
+
+resources:
+  - id: metmalaysia-weather-api
+    name: METMalaysia weather data API
+    aliases:
+      - weather API
+      - cuaca API
+      - ramalan cuaca
+      - weather forecast
+      - rainfall data
+    publisher: metmalaysia
+    description: >-
+      Programmatic access to METMalaysia's weather datasets: forecasts for states and
+      locations, weather warnings, and the observation and climate records behind them.
+      A token is required and is issued on registration.
+    categories: [weather-climate, environment]
+    tags: [weather, forecast, rainfall, climate, cuaca, hujan, api]
+    access:
+      type: register
+      registration_required: true
+      details: An API token is issued to registered users and must be supplied with each request.
+    geography:
+      coverage: [malaysia]
+      granularity: [national, state, district]
+    languages: [en, ms]
+    endpoints:
+      - type: api
+        url: https://api.met.gov.my/
+        label: Weather data API
+        auth: api_key
+        notes: Requests without a valid token are rejected with 401.
+      - type: landing-page
+        url: https://www.met.gov.my/en/
+        label: METMalaysia
+      - type: dashboard
+        url: https://www.met.gov.my/en/forecast/
+        label: Public forecasts
+    last_verified: 2026-10-04
+    notes: >-
+      Verified 2026-10-04: the API host responds and correctly rejects an unauthenticated
+      request, which confirms the endpoint exists behind a token. Register on the
+      METMalaysia site to obtain one.

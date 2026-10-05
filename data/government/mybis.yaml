@@ -1,0 +1,57 @@
+publisher:
+  id: mybis
+  name: Malaysia Biodiversity Information System
+  abbreviation: MyBIS
+  type: government
+  url: https://www.mybis.gov.my/
+  description: >-
+    The national biodiversity data platform, maintained for the federal environment ministry.
+    Brings together species records, protected areas and habitat information for Malaysia.
+  aliases:
+    - MyBIS
+    - Sistem Maklumat Kepelbagaian Biologi Malaysia
+    - Malaysia Biodiversity Centre
+  country: MY
+  languages: [ms, en]
+
+resources:
+  - id: mybis-biodiversity
+    name: Malaysian biodiversity records
+    aliases:
+      - MyBIS species
+      - spesies
+      - biodiversity data
+      - kepelbagaian biologi
+      - protected areas
+    publisher: mybis
+    description: >-
+      Species and habitat information for Malaysia: an explorable species catalogue with
+      taxonomy and conservation status, occurrence records, protected area information and
+      summary analysis views.
+    categories: [environment, science-research]
+    tags: [biodiversity, species, wildlife, conservation, environment, ecology, mybis]
+    access:
+      type: public
+      details: >-
+        Species and habitat records are freely browsable in the portal. Reuse terms are not
+        stated; the portal does not advertise an open licence.
+    geography:
+      coverage: [malaysia]
+      granularity: [national, state, site]
+    languages: [ms, en]
+    endpoints:
+      - type: landing-page
+        url: https://www.mybis.gov.my/
+        label: MyBIS portal
+      - type: explorer
+        url: https://www.mybis.gov.my/one/discover.php
+        label: Discover species records
+      - type: dashboard
+        url: https://www.mybis.gov.my/one/analysis.php
+        label: Biodiversity analysis
+    last_verified: 2026-10-04
+    notes: >-
+      Verified 2026-10-04: portal, species explorer and analysis views all respond. No public
+      machine-readable API was found on the domain; no licence is asserted. Update frequency
+      is not recorded.
+    contributors: []

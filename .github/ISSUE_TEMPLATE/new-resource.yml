@@ -1,0 +1,35 @@
+name: New data resource
+description: Suggest a Malaysian data resource for the directory
+title: "[Resource]: "
+labels: ["candidate-resource"]
+body:
+  - type: input
+    id: name
+    attributes: {label: Resource name}
+    validations: {required: true}
+  - type: input
+    id: publisher
+    attributes: {label: Publisher / owner}
+    validations: {required: true}
+  - type: input
+    id: url
+    attributes: {label: Primary URL}
+    validations: {required: true}
+  - type: textarea
+    id: description
+    attributes: {label: What data is available?}
+    validations: {required: true}
+  - type: dropdown
+    id: access
+    attributes:
+      label: Access
+      options: [Open, Public, Registration required, Request, Research access, Paid, Restricted, Not sure]
+  - type: textarea
+    id: endpoints
+    attributes: {label: Other endpoints / formats}
+  - type: input
+    id: license
+    attributes: {label: Licence, if known}
+  - type: textarea
+    id: notes
+    attributes: {label: Notes / evidence}

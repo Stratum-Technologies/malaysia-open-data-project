@@ -1,0 +1,63 @@
+publisher:
+  id: doe
+  name: Department of Environment Malaysia
+  abbreviation: DOE
+  type: government
+  url: https://www.doe.gov.my/
+  description: >-
+    The federal agency responsible for environmental regulation and enforcement, including
+    air and water quality monitoring, environmental impact assessment and scheduled waste
+    control.
+  aliases:
+    - Jabatan Alam Sekitar
+    - JAS
+    - DOE Malaysia
+  country: MY
+  languages: [ms, en]
+
+resources:
+  - id: doe-environmental-data
+    name: Environmental quality data and reports
+    aliases:
+      - JAS data
+      - air quality index
+      - indeks kualiti udara
+      - IKU
+      - environmental impact assessment reports
+      - laporan EIA
+    publisher: doe
+    description: >-
+      The department's shared data and reports, including environmental quality standards and
+      indices, environmental impact assessment (EIA) reports, and pollution monitoring
+      material published for public reference.
+    categories: [environment]
+    tags: [environment, air-quality, water-quality, eia, pollution, doe, jas]
+    access:
+      type: public
+      details: >-
+        Reports and guidance are freely viewable on the department's site. Reuse terms are not
+        stated, so no licence is asserted here.
+    geography:
+      coverage: [malaysia]
+      granularity: [national, state]
+    languages: [ms, en]
+    endpoints:
+      - type: landing-page
+        url: https://www.doe.gov.my/perkongsian-data-dan-laporan/
+        label: Data and report sharing
+      - type: publication
+        url: https://www.doe.gov.my/standard-dan-indeks-kualiti/
+        label: Quality standards and indices
+      - type: report
+        url: https://www.doe.gov.my/category/laporan-eia/
+        label: EIA reports
+      - type: landing-page
+        url: https://www.doe.gov.my/
+        label: Department of Environment website
+        notes: Served in Malay; some sections are also published in English.
+    last_verified: 2026-10-04
+    notes: >-
+      Verified 2026-10-04: all four pages respond. Real-time air quality readings are surfaced
+      through the department's separate monitoring systems rather than this page. Update
+      frequency is not recorded.
+    contributors: []

@@ -1,0 +1,65 @@
+publisher:
+  id: suruhanjaya-tenaga
+  name: Energy Commission Malaysia
+  abbreviation: ST
+  type: statutory-body
+  url: https://www.st.gov.my/
+  description: >-
+    The regulator for Peninsular Malaysia's electricity and gas supply industry, established
+    by statute. Publishes reliability and performance indices for the grid.
+  aliases:
+    - Suruhanjaya Tenaga
+    - Energy Commission
+    - ST
+    - Energy Commission of Malaysia
+  country: MY
+  languages: [ms, en]
+  notes: >-
+    Established under the Energy Commission Act 2001, so recorded as a statutory body.
+
+resources:
+  - id: st-grid-reliability
+    name: Electricity supply reliability indices
+    aliases:
+      - SAIDI
+      - SAIFI
+      - SARFI
+      - system average interruption duration index
+      - grid reliability
+      - keandalan bekalan elektrik
+    publisher: suruhanjaya-tenaga
+    description: >-
+      The commission's published electricity supply reliability indices for the grid:
+      System Average Interruption Duration Index (SAIDI), System Average Interruption
+      Frequency Index (SAIFI) and System Average RMS Frequency Index (SARFI).
+    categories: [energy]
+    tags: [energy, electricity, reliability, saidi, saifi, grid, regulator]
+    access:
+      type: public
+      details: >-
+        The indices are published on the commission's website and freely viewable. Reuse terms
+        are not stated, so no licence is asserted.
+    geography:
+      coverage: [malaysia]
+      granularity: [national]
+    languages: [en, ms]
+    endpoints:
+      - type: landing-page
+        url: https://www.st.gov.my/security/system-average-interruption-duration-index-saidi
+        label: SAIDI (interruption duration)
+      - type: landing-page
+        url: https://www.st.gov.my/security/system-average-interruption-frequency-index-saifi
+        label: SAIFI (interruption frequency)
+      - type: landing-page
+        url: https://www.st.gov.my/security/system-average-rms-frequency-index-sarfi
+        label: SARFI (RMS frequency)
+      - type: landing-page
+        url: https://www.st.gov.my/
+        label: Energy Commission website
+    related_resources: [seda-renewable-energy]
+    last_verified: 2026-10-04
+    notes: >-
+      Verified 2026-10-04: the three index pages and the site root all respond. Coverage is
+      Peninsular Malaysia, in line with the commission's statutory remit. Update frequency is
+      not recorded.
+    contributors: []

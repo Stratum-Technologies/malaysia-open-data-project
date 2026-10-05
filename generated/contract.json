@@ -1,0 +1,11 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-10-05T03:07:34.061Z",
+  "commit": "unknown",
+  "source": "https://github.com/minimalviability/malaysia-data",
+  "files": [
+    "catalogue.json",
+    "directory.json",
+    "directory.csv"
+  ]
+}

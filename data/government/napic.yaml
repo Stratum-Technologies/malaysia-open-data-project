@@ -1,0 +1,70 @@
+publisher:
+  id: napic
+  name: National Property Information Centre
+  abbreviation: NAPIC
+  type: government
+  url: https://napic.jpph.gov.my/
+  description: >-
+    The property data centre of the Valuation and Property Services Department (JPPH),
+    Ministry of Finance. Publishes Malaysian property market data, transaction records and
+    price indices.
+  aliases:
+    - NAPIC
+    - Pusat Maklumat Harta Tanah Negara
+    - JPPH
+    - Jabatan Penilaian dan Perkhidmatan Harta
+  country: MY
+  languages: [ms, en]
+  notes: >-
+    NAPIC sits within JPPH, a federal department under the Ministry of Finance, so it is
+    recorded as a government publisher rather than a statutory body.
+
+resources:
+  - id: napic-property-data
+    name: Malaysian property market data
+    aliases:
+      - property market report
+      - laporan pasaran harta tanah
+      - house prices
+      - Malaysian House Price Index
+      - transaction data
+      - harta tanah
+    publisher: napic
+    description: >-
+      Malaysian property market information: time series of property market indicators, the
+      Malaysian House Price Index, property transaction records and interactive
+      visualisations of the market by state and property type.
+    categories: [housing-property, economy]
+    tags: [property, housing, prices, index, transactions, napic, jpph, real-estate]
+    access:
+      type: public
+      details: >-
+        Time series, transaction and visualisation pages are freely viewable. Some detailed
+        NAPIC reports and data extracts are sold or require an account, so access is recorded
+        as public rather than open.
+    geography:
+      coverage: [malaysia]
+      granularity: [national, state]
+    languages: [ms, en]
+    endpoints:
+      - type: landing-page
+        url: https://napic.jpph.gov.my/
+        label: NAPIC portal
+      - type: explorer
+        url: https://napic.jpph.gov.my/data-siri-masa
+        label: Time series data
+      - type: explorer
+        url: https://napic.jpph.gov.my/data-transaksi
+        label: Transaction data
+      - type: dashboard
+        url: https://napic.jpph.gov.my/visualisasi-data
+        label: Data visualisation
+      - type: publication
+        url: https://napic.jpph.gov.my/archives/pasaran-harta-tanah
+        label: Property market reports
+    last_verified: 2026-10-04
+    notes: >-
+      Verified 2026-10-04: portal, time series, transaction, visualisation and report archive
+      pages all respond. Paid and account-gated sections exist on the portal. No machine-
+      readable API was found. Update frequency is not recorded.
+    contributors: []

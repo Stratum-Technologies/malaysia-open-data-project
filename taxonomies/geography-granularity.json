@@ -1,0 +1,19 @@
+[
+  "national",
+  "region",
+  "state",
+  "federal-territory",
+  "district",
+  "local-authority",
+  "mukim",
+  "parliamentary-constituency",
+  "state-constituency",
+  "postcode",
+  "station",
+  "site",
+  "facility",
+  "point",
+  "coordinate",
+  "grid",
+  "other"
+]

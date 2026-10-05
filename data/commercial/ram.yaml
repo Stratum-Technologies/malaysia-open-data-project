@@ -1,0 +1,63 @@
+publisher:
+  id: ram
+  name: RAM Holdings Berhad
+  abbreviation: RAM
+  type: commercial
+  url: https://www.ram.com.my/
+  description: >-
+    A Malaysian credit rating agency (RAM Ratings) and risk-analytics provider. It
+    publishes credit ratings for issuers and debt instruments, rating announcements,
+    rating methodologies and subscription research.
+  aliases:
+    - RAM Ratings
+    - RAM Group
+    - Rating Agency Malaysia
+  country: MY
+  languages: [en]
+
+resources:
+  - id: ram-credit-ratings
+    name: RAM credit ratings and rating announcements
+    aliases:
+      - RAM Ratings
+      - credit ratings
+      - rating announcements
+      - bond ratings
+    publisher: ram
+    description: >-
+      Credit ratings and rating actions published by RAM Ratings for Malaysian and
+      regional issuers, including corporate bonds, sukuk and financial institutions,
+      together with rating methodologies and subscription research.
+    categories: [finance, business-companies]
+    tags: [credit-ratings, ratings, bonds, sukuk, risk, bond-pricing]
+    access:
+      type: paid
+      paid: true
+      registration_required: true
+      details: >-
+        Rating announcements are listed publicly; detailed rating reports, analytics
+        and data are sold through a subscription (e-purchase). The rating search page
+        resolves to a member login.
+    geography:
+      coverage: [malaysia]
+      granularity: [national]
+    languages: [en]
+    endpoints:
+      - type: search
+        url: https://www.ram.com.my/find-a-rating/?a=entity&reset=1
+        label: Find a rating
+        auth: account
+      - type: publication
+        url: https://www.ram.com.my/news-events/?tab=list-ratingannouncement
+        label: Rating announcements
+      - type: commercial-access
+        url: https://www.ram.com.my/epurchase?module=subscribe
+        label: RAM e-purchase subscription
+      - type: landing-page
+        url: https://www.ram.com.my/
+        label: RAM Holdings Berhad
+    last_verified: 2026-10-04
+    notes: >-
+      Verified 2026-10-04: all four URLs respond. The rating search resolves to a member
+      login page, so ratings data sits behind an account; rating announcements are
+      viewable without one.

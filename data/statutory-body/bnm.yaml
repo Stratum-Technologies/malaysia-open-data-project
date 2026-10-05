@@ -1,0 +1,55 @@
+publisher:
+  id: bnm
+  name: Bank Negara Malaysia
+  abbreviation: BNM
+  type: statutory-body
+  url: https://www.bnm.gov.my/
+  description: >-
+    Malaysia's central bank. Publishes monetary, banking and financial statistics, and
+    operates an Open API for programmatic access to selected series.
+  aliases:
+    - Central Bank of Malaysia
+    - Bank Pusat Negara Malaysia
+  country: MY
+  languages: [ms, en]
+
+resources:
+  - id: bnm-open-api
+    name: BNM Open API
+    aliases:
+      - Bank Negara API
+      - BNM API
+      - OPR
+      - overnight policy rate
+      - exchange rates
+      - kadar pertukaran
+    publisher: bnm
+    description: >-
+      Programmatic access to Bank Negara Malaysia's published series, including the
+      overnight policy rate, exchange rates, interest rates and monetary statistics.
+      Access requires registering for an API token through the Open API portal.
+    categories: [finance, economy]
+    tags: [api, banking, central-bank, interest-rates, exchange-rates, monetary]
+    access:
+      type: register
+      registration_required: true
+      details: >-
+        Request URLs follow the api.bnm.gov.my host, but a token issued through the Open
+        API portal is required before requests succeed.
+    geography:
+      coverage: [malaysia]
+      granularity: [national]
+    languages: [en]
+    endpoints:
+      - type: api-docs
+        url: https://apikijangportal.bnm.gov.my/
+        label: BNM Open API portal
+        documentation: https://apikijangportal.bnm.gov.my/?page_id=629
+      - type: landing-page
+        url: https://www.bnm.gov.my/
+        label: Bank Negara Malaysia
+    last_verified: 2026-10-04
+    notes: >-
+      Verified 2026-10-04: the Open API portal responds. The api.bnm.gov.my host has no
+      browsable route at its root, so no individual API path is asserted here — register
+      on the portal, obtain a token, then follow its documentation.

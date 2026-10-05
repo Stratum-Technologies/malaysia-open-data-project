@@ -1,0 +1,66 @@
+publisher:
+  id: moh
+  name: Ministry of Health Malaysia
+  abbreviation: MOH
+  type: government
+  url: https://www.moh.gov.my/
+  description: >-
+    Malaysia's federal health ministry. Runs KKMNOW, the ministry's public data portal,
+    where national health indicators are published as dashboards and downloadable datasets.
+  aliases:
+    - Kementerian Kesihatan Malaysia
+    - KKM
+    - KKMNOW
+    - MyHealthData
+  country: MY
+  languages: [ms, en]
+  notes: >-
+    The ministry homepage at moh.gov.my returned HTTP 403 to automated requests on
+    2026-10-04, so it is recorded as gated rather than broken.
+
+resources:
+  - id: moh-kkmnow
+    name: KKMNOW health data
+    aliases:
+      - KKMNOW
+      - KKM NOW
+      - data.moh.gov.my
+      - Data Kesihatan
+      - hospital bed utilisation
+      - blood donation
+    publisher: moh
+    description: >-
+      The Ministry of Health's public data platform. Presents national health indicators as
+      interactive dashboards and publishes the underlying datasets through a data catalogue.
+      Dashboards cover COVID-19, COVID-19 vaccination, hospital bed utilisation, blood
+      donation, organ donation and the PEKA B40 screening programme.
+    categories: [health]
+    tags: [health, hospitals, covid-19, vaccination, kkmnow, dashboard, ministry-of-health]
+    access:
+      type: public
+      details: >-
+        Dashboards and the data catalogue are freely viewable. Reuse terms are not stated on
+        the portal, so no licence is asserted here.
+    geography:
+      coverage: [malaysia]
+      granularity: [national, state]
+    languages: [ms, en]
+    endpoints:
+      - type: landing-page
+        url: https://data.moh.gov.my/
+        label: KKMNOW portal
+      - type: explorer
+        url: https://data.moh.gov.my/data-catalogue
+        label: Data catalogue
+      - type: dashboard
+        url: https://data.moh.gov.my/dashboard/covid-19
+        label: COVID-19 dashboard
+      - type: dashboard
+        url: https://data.moh.gov.my/dashboard/hospital-bed-utilisation
+        label: Hospital bed utilisation dashboard
+    last_verified: 2026-10-04
+    notes: >-
+      Verified 2026-10-04: portal, catalogue and the two dashboards checked all respond.
+      The portal links to data.gov.my and open.dosm.gov.my for related releases. Update
+      frequency and temporal coverage are left unrecorded because they were not confirmed.
+    contributors: []

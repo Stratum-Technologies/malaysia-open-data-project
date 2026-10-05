@@ -1,0 +1,61 @@
+publisher:
+  id: mot
+  name: Ministry of Transport Malaysia
+  abbreviation: MOT
+  type: government
+  url: https://www.mot.gov.my/
+  description: >-
+    The federal ministry responsible for land, maritime and aviation transport. Publishes
+    transport sector reports and statistics across its modes.
+  aliases:
+    - MOT
+    - Kementerian Pengangkutan Malaysia
+    - KPM
+  country: MY
+  languages: [ms, en]
+
+resources:
+  - id: mot-transport-statistics
+    name: Transport sector reports and statistics
+    aliases:
+      - statistik pengangkutan
+      - transport statistics
+      - land transport reports
+      - maritime statistics
+      - aviation reports
+    publisher: mot
+    description: >-
+      Reports and statistics covering Malaysian land, maritime and aviation transport,
+      including sector statistics collections and the national freight data reports published
+      by the ministry and its agencies.
+    categories: [transport, economy]
+    tags: [transport, statistics, aviation, maritime, land-transport, freight, mot]
+    access:
+      type: public
+      details: >-
+        Reports and statistics pages are freely viewable. Reuse terms are not stated, so no
+        licence is asserted.
+    geography:
+      coverage: [malaysia]
+      granularity: [national]
+    languages: [en, ms]
+    endpoints:
+      - type: landing-page
+        url: https://www.mot.gov.my/en/browse-by-topic/reports-and-stats
+        label: Reports and statistics
+      - type: publication
+        url: https://www.mot.gov.my/en/land/reports
+        label: Land transport reports
+      - type: publication
+        url: https://www.mot.gov.my/en/logistic/reports-and-stats
+        label: Logistics reports and statistics
+      - type: publication
+        url: https://www.mot.gov.my/en/aviation/reports
+        label: Aviation reports
+    related_resources: [jpj-vehicle-registrations, ktmb-train-services]
+    last_verified: 2026-10-04
+    notes: >-
+      Verified 2026-10-04: the reports and statistics index plus the land, logistics and
+      aviation pages all respond. Content is published as documents rather than as
+      machine-readable datasets. Update frequency is not recorded.
+    contributors: []

@@ -1,0 +1,55 @@
+publisher:
+  id: mygdx
+  name: Malaysian Government Central Data Exchange
+  abbreviation: MyGDX
+  type: government
+  url: https://www.mygdx.gov.my/
+  description: >-
+    The federal government's central platform for sharing data between public agencies.
+    Provides governed access to government datasets and services for authorised users.
+  aliases:
+    - MyGDX
+    - Malaysian Government Data Exchange
+    - Pusat Pertukaran Data Kerajaan
+  country: MY
+  languages: [ms, en]
+
+resources:
+  - id: mygdx-government-data-exchange
+    name: MyGDX government data exchange
+    aliases:
+      - MyGDX
+      - data exchange
+      - pertukaran data
+      - government datasets
+      - GDX
+    publisher: mygdx
+    description: >-
+      A platform for sharing data between Malaysian government agencies, providing
+      data exchange, dataset statistics and verification services. Access is intended for
+      public sector users and authorised parties rather than the general public.
+    categories: [elections-government]
+    tags: [government, data-exchange, gdx, inter-agency, public-sector]
+    access:
+      type: restricted
+      registration_required: true
+      details: >-
+        The platform is designed for government agencies. Public visitors can read the
+        landing pages, but datasets and exchange services require authorised access.
+    geography:
+      coverage: [malaysia]
+      granularity: [national]
+    languages: [ms, en]
+    endpoints:
+      - type: landing-page
+        url: https://www.mygdx.gov.my/
+        label: MyGDX portal
+      - type: dashboard
+        url: https://www.mygdx.gov.my/ms/landing-page/statistic
+        label: Dataset statistics
+    last_verified: 2026-10-04
+    notes: >-
+      Verified 2026-10-04: the portal and its statistics page respond. The dataset content
+      itself is not publicly accessible; no dataset URL is asserted. Update frequency is not
+      recorded.
+    contributors: []

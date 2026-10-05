@@ -1,0 +1,20 @@
+publisher:
+  id: metmalaysia
+  name: Malaysian Meteorological Department
+  abbreviation: METMalaysia
+  type: government
+  url: https://www.met.gov.my/
+
+resources:
+  - id: metmalaysia-example-weather
+    name: Weather and Climate Data Resource
+    description: Example of a weather resource that may expose several endpoint types under one logical listing.
+    publisher: metmalaysia
+    categories: [weather-climate]
+    tags: [weather, climate]
+    access: {type: unknown}
+    endpoints:
+      - type: landing-page
+        url: https://www.met.gov.my/
+    last_verified: 2026-10-04
+    notes: EXAMPLE ONLY — enumerate and verify actual endpoints separately.

@@ -1,0 +1,51 @@
+publisher:
+  id: hdx
+  name: Humanitarian Data Exchange
+  abbreviation: HDX
+  type: international
+  url: https://data.humdata.org/
+  description: >-
+    An open platform run by the United Nations OCHA Centre for Humanitarian Data that
+    aggregates humanitarian datasets, including country-level data for Malaysia.
+  aliases:
+    - HDX
+    - OCHA HDX
+    - Humanitarian Data Exchange
+  country: CH
+  languages: [en]
+
+resources:
+  - id: hdx-malaysia
+    name: Humanitarian datasets for Malaysia
+    aliases:
+      - HDX Malaysia
+      - Malaysia humanitarian data
+      - disaster data Malaysia
+    publisher: hdx
+    description: >-
+      Humanitarian and crisis-related datasets covering Malaysia — administrative
+      boundaries, population estimates, displacement and disaster risk — contributed by
+      UN agencies, NGOs and governments.
+    categories: [social, environment]
+    tags: [humanitarian, disaster, crisis, boundaries, population, ocha]
+    access:
+      type: open
+      details: Datasets are individually published; most are open, some are restricted.
+    license:
+      name: Varies by dataset
+      verified: false
+      notes: >-
+        Each HDX dataset states its own licence. Check the dataset page before reuse.
+    geography:
+      coverage: [malaysia]
+      granularity: [national, state, district]
+    languages: [en]
+    endpoints:
+      - type: landing-page
+        url: https://data.humdata.org/
+        label: Humanitarian Data Exchange
+        notes: Datasets can be browsed and downloaded from the platform; an API is also documented there.
+    last_verified: 2026-10-04
+    notes: >-
+      Verified 2026-10-04: the platform responds. A Malaysia-specific listing URL was not
+      asserted because it could not be confirmed during verification.

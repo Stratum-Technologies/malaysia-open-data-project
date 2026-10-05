@@ -1,0 +1,104 @@
+publisher:
+  id: united-nations
+  name: United Nations
+  abbreviation: UN
+  type: international
+  url: https://data.un.org/
+  description: >-
+    The United Nations Statistics Division publishes UN Data, an aggregated portal of
+    official statistics for member states including Malaysia, and the global SDG
+    indicators API.
+  aliases:
+    - UN
+    - United Nations Statistics Division
+    - UNSD
+    - UN Data
+  country: US
+  languages: [en]
+
+resources:
+  # The portal and the SDG API are distinct services over different data, so they are two
+  # resources.
+  - id: un-data-portal
+    name: UN Data portal
+    aliases:
+      - UN Data
+      - data.un.org
+      - UN statistical databases
+    publisher: united-nations
+    description: >-
+      An aggregated search and download portal bringing together United Nations
+      statistical databases, with country-level series for Malaysia across population,
+      economy, trade, health and social topics.
+    categories: [demographics, economy, social]
+    tags: [statistics, indicators, population, sdg, united-nations]
+    access:
+      type: open
+      details: No registration required for browsing or downloading.
+    license:
+      name: Varies by dataset
+      verified: false
+      notes: >-
+        Each underlying UN database states its own terms. Check the source before reuse.
+    geography:
+      coverage: [malaysia, global]
+      granularity: [national]
+    temporal:
+      frequency: annual
+    languages: [en]
+    endpoints:
+      - type: landing-page
+        url: https://data.un.org/
+        label: UN Data home
+      - type: explorer
+        url: https://data.un.org/Explorer.aspx
+        label: UN Data explorer
+    last_verified: 2026-10-04
+    notes: >-
+      Verified 2026-10-04. Both the portal home and the explorer respond. No bulk-download
+      path is asserted because the documented handler URL returned 404 during verification.
+
+  - id: un-sdg-indicators
+    name: UN Sustainable Development Goal indicators
+    aliases:
+      - UN SDG API
+      - SDG indicators Malaysia
+      - global indicator framework
+    publisher: united-nations
+    description: >-
+      The global Sustainable Development Goal indicator database, with Malaysia's reported
+      values for the SDG indicator framework, served through the UN Statistics Division
+      SDG API.
+    categories: [social, economy, environment]
+    tags: [sdg, indicators, sustainable-development, statistics, api]
+    access:
+      type: open
+      details: No registration or key required.
+    license:
+      name: CC BY 3.0 IGO
+      verified: false
+      notes: >-
+        UN SDG indicator data is commonly published under a Creative Commons IGO licence.
+        Confirm the current terms on the publisher's site before reuse.
+    geography:
+      coverage: [malaysia, global]
+      granularity: [national]
+    temporal:
+      frequency: annual
+    languages: [en]
+    endpoints:
+      - type: api
+        url: https://unstats.un.org/sdgapi/v1/sdg/GeoArea/List
+        label: SDG API geographic area list
+        auth: none
+        format: json
+        notes: Malaysia is geographic area code 458.
+      - type: api
+        url: https://unstats.un.org/sdgapi/v1/sdg/Indicator/List
+        label: SDG API indicator list
+        auth: none
+        format: json
+    last_verified: 2026-10-04
+    notes: >-
+      Verified 2026-10-04. Both SDG API endpoints respond without a key. The licence is not
+      asserted as verified.

@@ -1,0 +1,67 @@
+publisher:
+  id: world-bank
+  name: World Bank
+  abbreviation: WB
+  type: international
+  url: https://data.worldbank.org/
+  description: >-
+    An international financial institution that publishes a large open collection of
+    development indicators for most countries, including Malaysia, with a documented API.
+  aliases:
+    - World Bank Group
+    - World Bank Open Data
+    - IBRD
+  country: US
+  languages: [en]
+
+resources:
+  # The country page and the API serve the same indicators, so they are endpoints of one
+  # resource rather than two listings.
+  - id: world-bank-malaysia-indicators
+    name: World Bank development indicators for Malaysia
+    aliases:
+      - World Bank Malaysia data
+      - development indicators
+      - Malaysia GDP World Bank
+    publisher: world-bank
+    description: >-
+      Comparable development and economic indicators for Malaysia — population, GDP,
+      trade, health, education and more — presented on a country page and available in
+      full, for every country, through the World Bank's Indicators API.
+    categories: [economy, social]
+    tags: [indicators, development, gdp, population, trade, statistics]
+    access:
+      type: open
+      details: No registration and no API key required.
+    license:
+      name: CC BY 4.0
+      url: https://creativecommons.org/licenses/by/4.0/
+      verified: false
+      notes: >-
+        World Bank open data is generally published under CC BY 4.0. Confirm the current
+        terms on the publisher's site before reuse.
+    geography:
+      coverage: [malaysia, global]
+      granularity: [national]
+    temporal:
+      frequency: annual
+    languages: [en]
+    endpoints:
+      - type: landing-page
+        url: https://data.worldbank.org/country/malaysia
+        label: Malaysia country page
+      - type: api
+        url: https://api.worldbank.org/v2/country/MYS
+        label: Indicators API (Malaysia)
+        auth: none
+        notes: Append /indicator/{code} to request a series, and format=json for JSON.
+      - type: api
+        url: https://api.worldbank.org/v2/indicator
+        label: Indicator catalogue
+        auth: none
+      - type: bulk-download
+        url: https://data.worldbank.org/
+        label: Bulk downloads
+    last_verified: 2026-10-04
+    notes: >-
+      Verified 2026-10-04: both API endpoints and the country page respond.

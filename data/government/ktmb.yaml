@@ -1,0 +1,59 @@
+publisher:
+  id: ktmb
+  name: Keretapi Tanah Melayu Berhad
+  abbreviation: KTMB
+  type: government
+  url: https://www.ktmb.com.my/
+  description: >-
+    Malaysia's national railway operator, running intercity, ETS, Komuter and freight
+    services on the peninsula. Publishes timetables, route maps and station information.
+  aliases:
+    - KTMB
+    - Malayan Railways
+    - KTM Berhad
+    - Keretapi Tanah Melayu
+  country: MY
+  languages: [ms, en]
+
+resources:
+  - id: ktmb-train-services
+    name: KTMB train services, timetables and routes
+    aliases:
+      - KTMB timetable
+      - jadual perjalanan KTM
+      - ETS timetable
+      - Komuter schedule
+      - station information
+    publisher: ktmb
+    description: >-
+      The operator's public service information: train timetables by service class, an
+      interactive route and network map, station details, and a live train chart. Covers the
+      intercity, ETS, Komuter and freight networks.
+    categories: [transport]
+    tags: [rail, railway, train, timetable, ktmb, komuter, ets, transit]
+    access:
+      type: public
+      details: Freely viewable on the operator's website. Reuse terms are not stated.
+    geography:
+      coverage: [malaysia]
+      granularity: [station, national]
+    languages: [ms, en]
+    endpoints:
+      - type: landing-page
+        url: https://www.ktmb.com.my/TrainTime.html
+        label: Timetables
+      - type: map
+        url: https://www.ktmb.com.my/MapsAndRoute.html
+        label: Network map and routes
+      - type: explorer
+        url: https://apps.ktmb.com.my/TrainCharted/Home/Index
+        label: Live train chart
+      - type: landing-page
+        url: https://www.ktmb.com.my/
+        label: KTMB website
+    last_verified: 2026-10-04
+    notes: >-
+      Verified 2026-10-04: timetables, route map, train chart and the site root all respond.
+      The site is served in Malay and English. No machine-readable timetable feed was found;
+      no openness of licence is asserted.
+    contributors: []

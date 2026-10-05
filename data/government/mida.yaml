@@ -1,0 +1,54 @@
+publisher:
+  id: mida
+  name: Malaysian Investment Development Authority
+  abbreviation: MIDA
+  type: government
+  url: https://www.mida.gov.my/
+  description: >-
+    The federal investment promotion agency. Publishes approved manufacturing and services
+    investment statistics for Malaysia and its states.
+  aliases:
+    - MIDA
+    - Lembaga Pembangunan Pelaburan Malaysia
+  country: MY
+  languages: [ms, en]
+
+resources:
+  - id: mida-investment-statistics
+    name: Approved investment statistics
+    aliases:
+      - investment statistics
+      - pelaburan diluluskan
+      - approved investments
+      - FDI
+      - manufacturing investment
+    publisher: mida
+    description: >-
+      Statistics on investment projects approved in Malaysia, including approved
+      manufacturing and services investment by state and by source country, published as
+      summary statistics and downloadable reports.
+    categories: [economy, business-companies]
+    tags: [investment, fdi, manufacturing, statistics, mida, approved-projects]
+    access:
+      type: public
+      details: Freely viewable. Reuse terms are not stated, so no licence is asserted here.
+    geography:
+      coverage: [malaysia]
+      granularity: [national, state]
+    languages: [en, ms]
+    endpoints:
+      - type: landing-page
+        url: https://www.mida.gov.my/why-malaysia/investment-statistics/
+        label: Investment statistics
+      - type: publication
+        url: https://www.mida.gov.my/report
+        label: Reports
+      - type: landing-page
+        url: https://www.mida.gov.my/
+        label: MIDA website
+    related_resources: [matrade-trade-statistics]
+    last_verified: 2026-10-04
+    notes: >-
+      Verified 2026-10-04: the statistics page, reports page and site root all respond. The
+      agency also publishes some datasets on data.gov.my. Update frequency is not recorded.
+    contributors: []

@@ -1,0 +1,56 @@
+publisher:
+  id: mygdi
+  name: Malaysian Geospatial Data Infrastructure
+  abbreviation: MyGDI
+  type: government
+  url: https://www.mygeoportal.gov.my/
+  description: >-
+    Malaysia's national geospatial data infrastructure, providing a geoportal for discovering
+    and using authoritative map and spatial data from federal agencies.
+  aliases:
+    - MyGDI
+    - MyGeoportal
+    - Malaysian Geospatial Data Infrastructure
+  country: MY
+  languages: [ms, en]
+
+resources:
+  - id: mygdi-geoportal
+    name: MyGDI geoportal
+    aliases:
+      - MyGDI
+      - MyGeoportal
+      - geospatial data
+      - data geospatial
+      - spatial data
+      - peta
+    publisher: mygdi
+    description: >-
+      The national geoportal for Malaysian geospatial data. Provides discovery of spatial
+      datasets and metadata published by federal agencies, and access to geospatial
+      applications and data update information.
+    categories: [geography]
+    tags: [geospatial, gis, maps, spatial-data, metadata, mygdi, geoportal]
+    access:
+      type: public
+      details: >-
+        The geoportal and its metadata are freely browsable. Reuse terms for individual
+        datasets are not stated on the landing page, so no licence is asserted.
+    geography:
+      coverage: [malaysia]
+      granularity: [national, state]
+    languages: [ms, en]
+    endpoints:
+      - type: landing-page
+        url: https://www.mygeoportal.gov.my/
+        label: MyGeoportal
+      - type: registry
+        url: https://mygeoportal.gov.my/
+        label: Geoportal (alternate host)
+    related_resources: [dosm-open-data, moh-kkmnow]
+    last_verified: 2026-10-04
+    notes: >-
+      Verified 2026-10-04: the geoportal responds on both the www and bare host. The site
+      advertises MyGDI Explorer and metadata update sessions. Individual spatial services were
+      not verified here. Update frequency is not recorded.
+    contributors: []

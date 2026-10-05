@@ -1,0 +1,60 @@
+publisher:
+  id: mcmc
+  name: Malaysian Communications and Multimedia Commission
+  abbreviation: MCMC
+  type: statutory-body
+  url: https://www.mcmc.gov.my/
+  description: >-
+    The regulator for the communications and multimedia industry, established by statute.
+    Publishes statistics on the telecoms, broadcasting and postal sectors.
+  aliases:
+    - MCMC
+    - Suruhanjaya Komunikasi dan Multimedia Malaysia
+    - SKMM
+  country: MY
+  languages: [ms, en]
+  notes: >-
+    Established under the Communications and Multimedia Act 1998, so recorded as a statutory
+    body rather than a government department.
+
+resources:
+  - id: mcmc-communications-statistics
+    name: Communications and multimedia statistics
+    aliases:
+      - MCMC statistics
+      - statistik komunikasi
+      - telecommunications statistics
+      - broadband penetration
+      - postal statistics
+    publisher: mcmc
+    description: >-
+      The regulator's published figures for the communications and multimedia sectors,
+      covering telecommunications, broadband, broadcasting and postal services, together with
+      the commission's reports and annual publications.
+    categories: [technology-telecoms, economy]
+    tags: [telecoms, broadband, communications, statistics, mcmc, internet, regulator]
+    access:
+      type: public
+      details: >-
+        Statistics and reports are freely viewable. Reuse terms are not stated, so no licence
+        is asserted.
+    geography:
+      coverage: [malaysia]
+      granularity: [national]
+    languages: [en, ms]
+    endpoints:
+      - type: landing-page
+        url: https://www.mcmc.gov.my/en/resources/statistics
+        label: Statistics
+      - type: publication
+        url: https://www.mcmc.gov.my/en/resources/reports
+        label: Reports
+      - type: landing-page
+        url: https://www.mcmc.gov.my/
+        label: MCMC website
+    last_verified: 2026-10-04
+    notes: >-
+      Verified 2026-10-04: the statistics index, reports page and site root all respond. A
+      statistical-reports path tested on that date returned HTTP 404 and is not recorded.
+      Update frequency is not recorded.
+    contributors: []

@@ -34,7 +34,7 @@ const MAX_REDIRECTS = 5;
 const TIMEOUT_MS = 8_000;
 const CONCURRENCY = 5;
 const USER_AGENT =
-  'MalaysiaDataDirectory-LinkChecker/1.0 (+https://github.com/minimalviability/malaysia-data; endpoint health, contact via repository issues)';
+  'MalaysiaDataDirectory-LinkChecker/1.0 (+https://github.com/Stratum-Technologies/malaysia-open-data-project; endpoint health, contact via repository issues)';
 
 /** Resolve a hostname and refuse anything that is not a public address. */
 async function assertPublic(hostname: string): Promise<void> {

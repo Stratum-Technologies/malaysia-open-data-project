@@ -24,7 +24,7 @@ const provenance = {
   schema_version: SCHEMA_VERSION,
   generated_at: '2026-10-04T00:00:00.000Z',
   commit: 'test',
-  source: 'https://github.com/minimalviability/malaysia-data',
+  source: 'https://github.com/Stratum-Technologies/malaysia-open-data-project',
 };
 
 /** Minimal RFC 4180 reader — enough to prove the writer quotes and escapes correctly. */

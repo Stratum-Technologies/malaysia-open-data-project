@@ -5,9 +5,9 @@
     "commit"
   ],
   "files": {
-    "catalogue.json": "09b22ee907d6d36fa14396c79ef715237c41d266ba8857da1ed27efa0146013b",
-    "directory.json": "d3e9c77f0879519b823b46dd199227fb8de05b2d3cd160597b8dcfc7b7a366cd",
-    "directory.csv": "5c940c361e0e13219afe36857ebeba17e6a247444f7d00b235e518a94491bd55",
-    "contract.json": "3e0ccba76fbc0fb6bd1e19c8d0db11e2262c3de1e2c5a0e1f34f46c186cfeba5"
+    "catalogue.json": "9dedb62938ddded68494ff737daff5b26031328dc7561f0ff8b314819dd2d6f2",
+    "directory.json": "42916923dac7542f582073954d456ce3d7c753baf273c1b6e95c8493eb679f12",
+    "directory.csv": "f9fb720e6614aada2b2e6aaec52f03c750b7788dbbe8025745364877d3cfee5c",
+    "contract.json": "b0f138433bc544b4161184c77f0c1bd817851908bf760978fe180c4f55bfa8f9"
   }
 }
